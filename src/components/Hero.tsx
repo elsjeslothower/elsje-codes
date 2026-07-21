@@ -1,4 +1,10 @@
+"use client";
+
+import { useContent } from "@/context/LanguageContext";
+
 export default function Hero() {
+  const t = useContent();
+
   return (
     <section id="top" className="relative overflow-hidden">
       <div
@@ -22,30 +28,31 @@ export default function Hero() {
         <p
           className="animate-fade-in-up font-mono text-sm uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber"
         >
-          Elsje Slothower
+          {t.hero.eyebrow}
         </p>
         <h1
           className="animate-fade-in-up mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight tracking-tight sm:text-6xl"
           style={{ animationDelay: "80ms" }}
         >
-          Developer, designer, artisan.
+          {t.hero.title}
         </h1>
         <p
           className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
           style={{ animationDelay: "160ms" }}
         >
-          I ship small, working pieces of software to solve personal problems. 
-          With a background in backend work, I start every project with an emphasis on database functionality and scalability. 
-          Like with life, build it nice or build it twice, so I try to whiteboard 
-          <em>exactly</em> where I want my solutions to go before writing my first line of code. 
-          Even though all my professional experience is in backend development, I'm always inclined to make everything on the frontend as pretty as can be.
+          {t.hero.bio1Pre}
+          <em>{t.hero.bio1Emphasis}</em>
+          {t.hero.bio1Post}
         </p>
         <p
           className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
           style={{ animationDelay: "160ms" }}
         >
-          I also run a small stained glass business on the side and try to document the process of making and selling my work online, mistakes included. 
-          Feel free to check out my <a href="https://elsje.studio" className="text-glass-blue hover:text-glass-violet">stained glass work</a> if you're curious.
+          {t.hero.bio2Pre}
+          <a href="https://elsje.studio" className="text-glass-blue hover:text-glass-violet">
+            {t.hero.bio2LinkText}
+          </a>
+          {t.hero.bio2Post}
         </p>
         <div
           className="animate-fade-in-up mt-9 flex flex-wrap gap-4"
@@ -55,13 +62,13 @@ export default function Hero() {
             href="#projects"
             className="rounded-full bg-glass-blue px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-violet"
           >
-            See my work
+            {t.hero.ctaProjects}
           </a>
           <a
             href="#contact"
             className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber"
           >
-            Get in touch
+            {t.hero.ctaContact}
           </a>
         </div>
       </div>

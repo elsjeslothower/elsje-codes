@@ -1,25 +1,31 @@
-const links = [
-  {
-    label: "Email",
-    href: "mailto:slothowerelsje@gmail.com",
-    value: "slothowerelsje@gmail.com",
-  },
-  {
-    label: "GitHub",
-    href: "https://github.com/elsjeslothower",
-    value: "github.com/elsjeslothower",
-  },
-];
+"use client";
+
+import { useContent } from "@/context/LanguageContext";
 
 export default function Contact() {
+  const t = useContent();
+
+  const links = [
+    {
+      label: t.contact.emailLabel,
+      href: "mailto:slothowerelsje@gmail.com",
+      value: "slothowerelsje@gmail.com",
+    },
+    {
+      label: t.contact.githubLabel,
+      href: "https://github.com/elsjeslothower",
+      value: "github.com/elsjeslothower",
+    },
+  ];
+
   return (
     <section id="contact" className="border-t border-border bg-surface">
       <div className="mx-auto max-w-5xl px-6 py-20">
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
-          Contact
+          {t.contact.heading}
         </h2>
         <p className="mt-6 max-w-xl font-display text-2xl font-semibold leading-snug sm:text-3xl">
-          Building something interesting? I&apos;d like to hear about it.
+          {t.contact.tagline}
         </p>
         <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4">
           {links.map((link) => (
