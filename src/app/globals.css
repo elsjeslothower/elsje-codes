@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --color-paper: #faf8f4;
-  --color-paper-alt: #f1ede4;
+  --color-paper: #faf9f8;
+  --color-paper-alt: #faf8f4;
   --color-lead: #16151c;
   --color-lead-soft: #38364a;
   --color-ink: #1c1a24;
@@ -43,7 +43,7 @@
   --color-glass-ruby: var(--color-glass-ruby);
 
   --font-sans: var(--font-geist-sans);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-CMU-serif);
   --font-mono: var(--font-geist-mono);
 }
 

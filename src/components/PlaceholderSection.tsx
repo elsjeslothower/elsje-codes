@@ -5,7 +5,7 @@ import { useContent } from "@/context/LanguageContext";
 export default function PlaceholderSection({
   contentKey,
 }: {
-  contentKey: "resume" | "puzzle" | "steppingStones";
+  contentKey: "puzzle" | "steppingStones";
 }) {
   const t = useContent();
   const section = t[contentKey];

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
+import ConstructionBanner from "@/components/ConstructionBanner";
+import SpanishNotice from "@/components/SpanishNotice";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -50,7 +52,11 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          <ConstructionBanner />
+          <SpanishNotice />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

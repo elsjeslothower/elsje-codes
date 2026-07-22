@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
-import PlaceholderSection from "@/components/PlaceholderSection";
+import ResumeContent from "@/components/ResumeContent";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export default function ResumePage() {
     <>
       <Nav />
       <main className="flex-1">
-        <PlaceholderSection contentKey="resume" />
+        <ResumeContent />
       </main>
       <Footer />
     </>

@@ -2,18 +2,25 @@
 
 import { useContent } from "@/context/LanguageContext";
 
-const stack = [
-  "FastAPI",
-  "SQLAlchemy 2.0",
-  "PostgreSQL",
-  "Anthropic Claude API",
-  "HTML / Tailwind",
+const stacks = [
+  ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
+  ["React", "React Router", "Axios", "Userfront", "Heroku"],
+];
+
+const hrefs = [
+  "https://github.com/elsjeslothower/stained-glass-api",
+  "https://github.com/elsjeslothower/front-end-pantry-pickings",
 ];
 
 const accents = [
   "var(--color-glass-blue)",
   "var(--color-glass-violet)",
   "var(--color-glass-amber)",
+];
+
+const statusStyles = [
+  { bg: "var(--color-glass-amber)", color: "var(--color-lead)" }, // Now building
+  { bg: "var(--color-glass-blue)", color: "#ffffff" }, // Completed
 ];
 
 export default function Projects() {
@@ -26,66 +33,78 @@ export default function Projects() {
           {t.projects.heading}
         </h2>
 
-        <div className="mt-8 rounded-2xl border border-border p-8 sm:p-10">
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-foreground-muted">
-                {t.projects.eyebrow}
+        <div className="mt-8 space-y-8">
+          {t.projects.items.map((project, i) => (
+            <div key={project.title} className="rounded-2xl border border-border p-8 sm:p-10">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <span
+                    className="inline-block rounded-full px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wide"
+                    style={{ background: statusStyles[i].bg, color: statusStyles[i].color }}
+                  >
+                    {project.status}
+                  </span>
+                  <p className="mt-2 font-mono text-xs uppercase tracking-widest text-foreground-muted">
+                    {project.eyebrow}
+                  </p>
+                  <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
+                    {project.title}
+                  </h3>
+                </div>
+              </div>
+
+              <p className="mt-4 max-w-2xl leading-relaxed text-foreground-muted">
+                {project.descriptionPre}
+                <span className="font-medium text-foreground">
+                  {project.descriptionEmphasis}
+                </span>
+                {project.descriptionPost}
               </p>
-              <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
-                {t.projects.title}
-              </h3>
+
+              <ul className="mt-6 flex flex-wrap gap-2">
+                {stacks[i].map((item) => (
+                  <li
+                    key={item}
+                    className="rounded-full border border-border px-3 py-1 font-mono text-xs text-foreground-muted"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              {project.timeline.length > 0 && (
+                <ol className="mt-10 space-y-6 border-l border-border pl-6">
+                  {project.timeline.map((entry, j) => (
+                    <li key={entry.week} className="relative">
+                      <span
+                        aria-hidden
+                        className="absolute -left-[29px] top-1.5 h-3 w-3 rounded-full"
+                        style={{ background: accents[j] }}
+                      />
+                      <p className="font-mono text-xs uppercase tracking-widest text-foreground-muted">
+                        {entry.week}
+                      </p>
+                      <p className="mt-1 font-medium">{entry.title}</p>
+                      <p className="mt-1 max-w-xl text-sm leading-relaxed text-foreground-muted">
+                        {entry.detail}
+                      </p>
+                    </li>
+                  ))}
+                </ol>
+              )}
+
+              <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium">
+                <a
+                  href={hrefs[i]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-glass-blue px-5 py-2.5 text-white transition-colors hover:bg-glass-violet"
+                >
+                  {project.cta}
+                </a>
+              </div>
             </div>
-          </div>
-
-          <p className="mt-4 max-w-2xl leading-relaxed text-foreground-muted">
-            {t.projects.descriptionPre}
-            <span className="font-medium text-foreground">
-              {t.projects.descriptionEmphasis}
-            </span>
-            {t.projects.descriptionPost}
-          </p>
-
-          <ul className="mt-6 flex flex-wrap gap-2">
-            {stack.map((item) => (
-              <li
-                key={item}
-                className="rounded-full border border-border px-3 py-1 font-mono text-xs text-foreground-muted"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
-
-          <ol className="mt-10 space-y-6 border-l border-border pl-6">
-            {t.projects.timeline.map((entry, i) => (
-              <li key={entry.week} className="relative">
-                <span
-                  aria-hidden
-                  className="absolute -left-[29px] top-1.5 h-3 w-3 rounded-full"
-                  style={{ background: accents[i] }}
-                />
-                <p className="font-mono text-xs uppercase tracking-widest text-foreground-muted">
-                  {entry.week}
-                </p>
-                <p className="mt-1 font-medium">{entry.title}</p>
-                <p className="mt-1 max-w-xl text-sm leading-relaxed text-foreground-muted">
-                  {entry.detail}
-                </p>
-              </li>
-            ))}
-          </ol>
-
-          <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium">
-            <a
-              href="https://github.com/elsjeslothower/stained-glass-api"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-glass-blue px-5 py-2.5 text-white transition-colors hover:bg-glass-violet"
-            >
-              {t.projects.cta}
-            </a>
-          </div>
+          ))}
         </div>
       </div>
     </section>

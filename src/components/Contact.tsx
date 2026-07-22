@@ -16,6 +16,16 @@ export default function Contact() {
       href: "https://github.com/elsjeslothower",
       value: "github.com/elsjeslothower",
     },
+    {
+      label: t.contact.linkedinLabel,
+      href: "https://linkedin.com/in/elsje-slothower",
+      value: "linkedin.com/in/elsje-slothower",
+    },
+    {
+      label: t.contact.calendlyLabel,
+      href: "https://calendly.com/slothower-elsje/coffee-chat",
+      value: "calendly.com/slothower-elsje/coffee-chat",
+    },
   ];
 
   return (

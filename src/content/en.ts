@@ -1,4 +1,5 @@
 export const en = {
+  banner: "Still under construction",
   nav: {
     links: {
       about: "About",
@@ -34,33 +35,50 @@ export const en = {
       ": a FastAPI backend that turns a photo and description into a structured, human-reviewed price estimate using Claude's vision API.",
   },
   projects: {
-    heading: "Now building",
-    eyebrow: "Portfolio project 2 of 4 — backend/API focus",
-    title: "Stained Glass Quote Tool",
-    descriptionPre:
-      "Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate — ",
-    descriptionEmphasis: "a human always reviews before it's sent",
-    descriptionPost: ". Built for a real small stained-glass business.",
-    timeline: [
+    heading: "Projects",
+    items: [
       {
-        week: "Week 1",
-        title: "CRUD skeleton",
-        detail: "Schema and endpoints for customers, quotes, and line items.",
+        status: "Now building",
+        eyebrow: "Portfolio project 2 of 4 — backend/API focus",
+        title: "Stained Glass Quote Tool",
+        descriptionPre:
+          "Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate — ",
+        descriptionEmphasis: "a human always reviews before it's sent",
+        descriptionPost: ". Built for a real small stained-glass business.",
+        timeline: [
+          {
+            week: "Week 1",
+            title: "CRUD skeleton",
+            detail: "Schema and endpoints for customers, quotes, and line items.",
+          },
+          {
+            week: "Week 2",
+            title: "AI estimate",
+            detail:
+              "A vision call turns a photo + description into structured, defensively-parsed JSON — verbatim raw response stored alongside for auditability.",
+          },
+          {
+            week: "Week 3",
+            title: "Frontend scaffolding",
+            detail:
+              "Static HTML/Tailwind UI for quotes, customers, and estimate review — no build step.",
+          },
+        ],
+        cta: "View on GitHub",
       },
       {
-        week: "Week 2",
-        title: "AI estimate",
-        detail:
-          "A vision call turns a photo + description into structured, defensively-parsed JSON — verbatim raw response stored alongside for auditability.",
-      },
-      {
-        week: "Week 3",
-        title: "Frontend scaffolding",
-        detail:
-          "Static HTML/Tailwind UI for quotes, customers, and estimate review — no build step.",
+        status: "Completed",
+        eyebrow: "Ada Developers Academy — Capstone project",
+        title: "Pantry Pickings",
+        descriptionPre:
+          "A dinner-party web app that helps hosts pick a recipe using ingredients they already have on hand — ",
+        descriptionEmphasis:
+          "cost-effective, and mindful of guests' dietary preferences and intolerances",
+        descriptionPost: ".",
+        timeline: [],
+        cta: "View on GitHub",
       },
     ],
-    cta: "View on GitHub",
   },
   skills: {
     heading: "Skills",
@@ -68,17 +86,104 @@ export const en = {
   },
   contact: {
     heading: "Contact",
-    tagline: "Building something interesting? I'd like to hear about it.",
+    tagline: "You're the solder to my copper foil. Let's connect.",
     emailLabel: "Email",
     githubLabel: "GitHub",
+    linkedinLabel: "LinkedIn",
+    calendlyLabel: "Book a chat",
   },
   footer: {
     builtWith: "Built with Next.js & Tailwind.",
   },
   resume: {
     heading: "Resume",
-    placeholder:
-      "Resume content coming soon — a downloadable PDF and/or an on-page summary will go here.",
+    name: "Elsje Slothower",
+    title: "Software Developer",
+    location: "Seattle, WA (US)",
+    email: "slothowerelsje@gmail.com",
+    linkedinLabel: "linkedin.com/in/elsje-slothower",
+    githubLabel: "github.com/elsjeslothower",
+    phone: "(253) 509-8262",
+    summary:
+      "Software Developer focused on delivering production-ready web and enterprise solutions through hands-on deployment and front-end engineering. Seeks to apply strong debugging, UI design, and collaborative deployment skills to build resilient systems.",
+    downloadPdfLabel: "Download PDF",
+    sectionLabels: {
+      employment: "Employment history",
+      skills: "Skills",
+      education: "Education",
+      extracurriculars: "Extracurriculars",
+    },
+    jobs: [
+      {
+        title: "Software Implementation Consultant",
+        org: "Fast Enterprises, Salem, OR (US)",
+        dates: "Apr 2024 – Present",
+        bullets: [
+          "Developed two onsite software deployments for municipal governments in Unemployment Insurance and Driver & Vehicle Services respectively, completing installs and configuration within agreed timelines.",
+          "Trained client users on configuration and reporting features through hands-on workshops and step-by-step guides.",
+          "Reduced known issues in the production environment from over 2,000 errors to under 100.",
+          "Created post-implementation support help topics and triage procedures that shortened incident resolution handoffs to support teams.",
+        ],
+      },
+      {
+        title: "Front End Web Developer Intern",
+        org: "Kyndryl (formerly Skytap), Remote (US)",
+        dates: "Mar 2023 – Aug 2023",
+        bullets: [
+          "Wrote Jest unit tests for core modules, catching regressions before QA and improving code reliability.",
+          "Refactored legacy Backbone MVC scripts into modular React functions, reducing runtime and easing maintenance.",
+          "Adopted Agile/Scrum practices, cutting task rollover to under 10% between sprints.",
+          "Implemented front end UI features for the company's online application for customers and businesses.",
+        ],
+      },
+    ],
+    skillsList: [
+      "UI/UX Design",
+      "Problem Solving",
+      "Team Collaboration",
+      "C#",
+      "FinTech",
+      "React",
+      "JavaScript",
+      "Web Development",
+      "Meticulous",
+      "Critical Thinking",
+      "Creativity",
+      "Time Management",
+      "Python",
+      "SQL",
+      "API Development",
+      "AI",
+      "HTML",
+      "CSS",
+      "REST",
+      "CI/CD",
+      "Jira",
+    ],
+    education: [
+      {
+        degree: "Bachelor's in Journalism and Public Interest",
+        org: "University of Washington-Seattle Campus, Seattle, WA (US)",
+        dates: "Sep 2018 – Dec 2021",
+        description:
+          "Undergraduate degree with a minor in music. Published in multiple Seattle magazines. Qualified Dean's List recipient for majority of quarters attended.",
+      },
+      {
+        degree: "Software Engineering Certificate",
+        org: "Ada Developers Academy, Seattle, WA (US)",
+        dates: "Sep 2022 – Jul 2023",
+        description:
+          'Selective software development program with a less than 8% acceptance rate specializing in full stack web development and computer science fundamentals. Capstone project "Pantry Pickings" featured a virtual pantry that takes existing ingredients and suggests meals to reduce food waste.',
+      },
+    ],
+    extracurriculars: [
+      {
+        role: "Committee Member",
+        org: "Fast for All at Fast Enterprises",
+        description:
+          "Member of committee whose mission is to enhance employee experiences through implementing more equitable benefits, creating and managing employee resource groups (ERGs), and administrating biannual company-wide volunteer opportunities.",
+      },
+    ],
   },
   puzzle: {
     heading: "Puzzle",
