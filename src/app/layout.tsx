@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
 import ConstructionBanner from "@/components/ConstructionBanner";
-import SpanishNotice from "@/components/SpanishNotice";
+import SpanishNotice from "@/components/SpanishBanner";
 import "./globals.css";
 
 const geistSans = Geist({

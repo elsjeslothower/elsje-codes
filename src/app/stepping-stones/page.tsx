@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
-import PlaceholderSection from "@/components/PlaceholderSection";
+import SteppingStones from "@/components/SteppingStones";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default function SteppingStonesPage() {
     <>
       <Nav />
       <main className="flex-1">
-        <PlaceholderSection contentKey="steppingStones" />
+        <SteppingStones />
       </main>
       <Footer />
     </>

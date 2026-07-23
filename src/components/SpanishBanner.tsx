@@ -10,8 +10,8 @@ export default function SpanishNotice() {
   return (
     <div className="bg-glass-violet px-6 py-2 text-center">
       <p className="text-xs text-white sm:text-sm">
-        Estoy estudiando español y intentano traducir esto website solamente.
-        ¡Gracias para visitando mi portafolio!
+        Estoy estudiando español y intentando traducir esto website por mi cuenta.
+        ¡Gracias por visitando mi portafolio!
       </p>
     </div>
   );

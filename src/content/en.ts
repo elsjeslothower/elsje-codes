@@ -1,13 +1,13 @@
 export const en = {
-  banner: "Still under construction",
+  banner: "Under construction",
   nav: {
     links: {
       about: "About",
       projects: "Projects",
       skills: "Skills",
-      contact: "Contact",
       resume: "Resume",
       puzzle: "Puzzle",
+      contact: "Contact",
     },
   },
   hero: {
@@ -38,8 +38,8 @@ export const en = {
     heading: "Projects",
     items: [
       {
-        status: "Now building",
         eyebrow: "Portfolio project 2 of 4 — backend/API focus",
+        status: "In Progress",
         title: "Stained Glass Quote Tool",
         descriptionPre:
           "Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate — ",
@@ -67,8 +67,8 @@ export const en = {
         cta: "View on GitHub",
       },
       {
-        status: "Completed",
         eyebrow: "Ada Developers Academy — Capstone project",
+        status: "Complete",
         title: "Pantry Pickings",
         descriptionPre:
           "A dinner-party web app that helps hosts pick a recipe using ingredients they already have on hand — ",
@@ -142,7 +142,6 @@ export const en = {
       "Problem Solving",
       "Team Collaboration",
       "C#",
-      "FinTech",
       "React",
       "JavaScript",
       "Web Development",
@@ -192,7 +191,8 @@ export const en = {
   },
   steppingStones: {
     heading: "Stepping Stones",
-    placeholder: "This page is intentionally unlisted. Content coming soon.",
+    paragraph1: "You made it, you smart cookie! This is the 'mistakes' corner - displaying lessons learned along the way, stumbling to mastery.",
+    placeholder: "",
   },
 };
 
