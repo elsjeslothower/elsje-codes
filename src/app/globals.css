@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --color-paper: #faf9f8;
+  --color-paper: #faf2ed;
   --color-paper-alt: #faf8f4;
   --color-lead: #16151c;
   --color-lead-soft: #38364a;
