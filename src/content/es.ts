@@ -203,6 +203,8 @@ export const es: SiteContent = {
   },
   steppingStones: {
     heading: "[ES] Stepping Stones",
+    paragraph1:
+      "[ES] You made it, you smart cookie! This is the 'mistakes' corner - displaying lessons learned along the way, stumbling to mastery.",
     placeholder: "[ES] This page is intentionally unlisted. Content coming soon.",
   },
 };
