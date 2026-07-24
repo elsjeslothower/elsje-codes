@@ -4,7 +4,7 @@ import ResumeContent from "@/components/ResumeContent";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Resume — elsje.codes",
+  title: "Elsje Slothower's Resume",
 };
 
 export default function ResumePage() {

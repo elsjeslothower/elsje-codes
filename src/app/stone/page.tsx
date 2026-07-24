@@ -4,7 +4,7 @@ import SteppingStones from "@/components/SteppingStones";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Stepping Stones — elsje.codes",
+  title: "Elsje Slothower's Stepping Stones",
   robots: { index: false, follow: false },
 };
 
