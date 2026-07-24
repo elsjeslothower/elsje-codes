@@ -198,13 +198,12 @@ export const es: SiteContent = {
   },
   puzzle: {
     heading: "[ES] Puzzle",
-    placeholder:
-      "[ES] An interactive puzzle will live here eventually. Check back soon.",
+    paragraph1: "[ES] Guess the 5-letter word in 6 tries. If the letters turn green, they're in the right spot. If they turn amber, they're in the word but in the wrong spot. If they are gray, they're not in the word at all.",
+    paragraph2: "[ES] Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section."
   },
   steppingStones: {
     heading: "[ES] Stepping Stones",
     paragraph1:
       "[ES] You made it, you smart cookie! This is the 'mistakes' corner - displaying lessons learned along the way, stumbling to mastery.",
-    placeholder: "[ES] This page is intentionally unlisted. Content coming soon.",
   },
 };
