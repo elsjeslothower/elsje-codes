@@ -3,10 +3,10 @@
 import { useContent } from "@/context/LanguageContext";
 
 const groupItems = [
-  ["Python", "TypeScript", "JavaScript", "SQL"],
+  ["C#", "Python", "TypeScript", "JavaScript", "SQL"],
   ["FastAPI", "SQLAlchemy", "PostgreSQL", "REST APIs", "Pydantic"],
-  ["React", "Next.js", "Tailwind CSS"],
-  ["Git / GitHub", "pytest", "LLM API integration"],
+  ["React", "Next.js", "Tailwind CSS", "MVC-style architecture", "Responsive design"],
+  ["Git / GitHub", "pytest", "LLM API integration", "CI / CD", "Jira"],
 ];
 
 export default function Skills() {

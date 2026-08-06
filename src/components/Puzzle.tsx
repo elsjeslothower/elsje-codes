@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useContent } from "@/context/LanguageContext";
+import { en } from "@/content/en";
 
 const ANSWER = "STONE";
 const WORD_LENGTH = 5;
@@ -94,7 +95,12 @@ export default function Puzzle() {
       setMessage("You got it!");
     } else if (nextGuesses.length >= MAX_GUESSES) {
       setStatus("lost");
-      setMessage(`The word was ${ANSWER}`);
+      if (t === en) {
+        setMessage(`Ah, nice try! You rock anyway. The word is: ${ANSWER}`);
+      }
+      else {
+        setMessage(`Eso si que es; la palabra es: ${ANSWER}`);
+      }
     }
   }, [current, guesses, status]);
 
@@ -169,6 +175,28 @@ export default function Puzzle() {
       <p className="mt-4 max-w-xl text-lg leading-relaxed text-foreground-muted">
         {t.puzzle.paragraph2}
       </p>
+
+      <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+        {(
+          [
+            ["correct", t.puzzle.legendCorrect],
+            ["present", t.puzzle.legendPresent],
+            ["absent", t.puzzle.legendAbsent],
+          ] as const
+        ).map(([key, label]) => (
+          <li key={key} className="flex items-center gap-2 text-sm text-foreground-muted">
+            <span
+              aria-hidden
+              className="h-4 w-4 rounded border"
+              style={{
+                background: STATUS_STYLE[key].background,
+                borderColor: STATUS_STYLE[key].borderColor,
+              }}
+            />
+            {label}
+          </li>
+        ))}
+      </ul>
 
       <div className="mt-8 flex flex-col items-center gap-6">
         <div className="flex flex-col gap-1.5">

@@ -6,64 +6,41 @@ export const en = {
       projects: "Projects",
       skills: "Skills",
       resume: "Resume",
-      puzzle: "Puzzle",
+      puzzle: "Wordle",
       contact: "Contact",
     },
   },
   hero: {
     eyebrow: "Elsje Slothower",
-    title: "Developer, designer, artisan.",
-    bio1Pre:
-      "I ship small, working pieces of software to solve personal problems. With a background in backend work, I start every project with an emphasis on database functionality and scalability. Like with life, build it nice or build it twice, so I try to whiteboard ",
-    bio1Emphasis: "exactly",
-    bio1Post:
-      " where I want my solutions to go before writing my first line of code. Even though all my professional experience is in backend development, I'm always inclined to make everything on the frontend as pretty as can be.",
-    bio2Pre:
-      "I also run a small stained glass business on the side and try to document the process of making and selling my work online, mistakes included. Feel free to check out my ",
-    bio2LinkText: "stained glass work",
+    title: "Artist, Creator, Developer.",
+    bio1Pre: "I solve problems with software.",
+    bio1Post: "With a background in front and backend work, my projects emphasize database functionality and user experience.",
+    bio2Pre: "I also run a small stained glass business on the side and try to document the process of making and selling my work online, mistakes included. Feel free to check out my ",
+    bio2LinkText: "stained glass",
     bio2Post: " if you're curious.",
-    ctaProjects: "See my work",
+    ctaProjects: "See my code",
     ctaContact: "Get in touch",
   },
   about: {
     heading: "About",
     paragraph1:
-      "I'm a developer working through a series of portfolio projects, each one shipped in short, resumable sessions and documented as I build — the wins, the roadmap, and the parts still marked “not yet verified.”",
-    paragraph2Pre: "Currently deep in ",
-    paragraph2LinkText: "a stained-glass quoting tool",
+      "I'm a developer working through a series of portfolio projects, each one shipped in short, resumable sessions and documented in real-time.",
+    paragraph2Pre: "Currently developing ",
+    paragraph2LinkText: "a stained glass quoting tool",
     paragraph2Post:
-      ": a FastAPI backend that turns a photo and description into a structured, human-reviewed price estimate using Claude's vision API.",
+      ": a FastAPI backend that turns a photo and description into a strutured price estimate using Claude's vision API.",
   },
   projects: {
     heading: "Projects",
     items: [
       {
-        eyebrow: "Portfolio project 2 of 4 — backend/API focus",
+        eyebrow: "AI-Centric Personal Project",
         status: "In Progress",
         title: "Stained Glass Quote Tool",
         descriptionPre:
-          "Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate — ",
-        descriptionEmphasis: "a human always reviews before it's sent",
-        descriptionPost: ". Built for a real small stained-glass business.",
-        timeline: [
-          {
-            week: "Week 1",
-            title: "CRUD skeleton",
-            detail: "Schema and endpoints for customers, quotes, and line items.",
-          },
-          {
-            week: "Week 2",
-            title: "AI estimate",
-            detail:
-              "A vision call turns a photo + description into structured, defensively-parsed JSON — verbatim raw response stored alongside for auditability.",
-          },
-          {
-            week: "Week 3",
-            title: "Frontend scaffolding",
-            detail:
-              "Static HTML/Tailwind UI for quotes, customers, and estimate review — no build step.",
-          },
-        ],
+          "Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate. Notably, ",
+        descriptionEmphasis: "a human always reviews the estimate before it's sent",
+        descriptionPost: ". Built for a real stained glass small business.",
         cta: "View on GitHub",
       },
       {
@@ -140,12 +117,11 @@ export const en = {
     skillsList: [
       "UI/UX Design",
       "Problem Solving",
-      "Team Collaboration",
       "C#",
       "React",
       "JavaScript",
       "Web Development",
-      "Meticulous",
+      "Fullstack",
       "Critical Thinking",
       "Creativity",
       "Time Management",
@@ -182,12 +158,25 @@ export const en = {
         description:
           "Member of committee whose mission is to enhance employee experiences through implementing more equitable benefits, creating and managing employee resource groups (ERGs), and administrating biannual company-wide volunteer opportunities.",
       },
+      {
+        role: "Volunteer",
+        org: "Salem Health Cancer Center",
+        description: "Participant in volunteer effort to knit and crochet hats for cancer patients undergoing chemotherapy.",
+      },
+      {
+        role: "Community Member",
+        org: "Common People Yoga",
+        description: "Member of a community yoga studio that emphasizes accessibility and inclusivity in yoga practice, including offering classes for people with disabilities and neurodivergent folks.",
+      }
     ],
   },
   puzzle: {
-    heading: "Puzzle",
-    paragraph1: "Guess the 5-letter word in 6 tries. If the letters turn green, they're in the right spot. If they turn amber, they're in the word but in the wrong spot. If they are gray, they're not in the word at all.",
-    paragraph2: "Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section."
+    heading: "Wordle Dupe",
+    paragraph1: "Guess the 5-letter word in 6 tries.",
+    paragraph2: "Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section.",
+    legendCorrect: "Right spot",
+    legendPresent: "In the word, wrong spot",
+    legendAbsent: "Not in the word"
   },
   steppingStones: {
     heading: "Stepping Stones",

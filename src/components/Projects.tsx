@@ -1,11 +1,16 @@
 "use client";
 
 import { useContent } from "@/context/LanguageContext";
+import { ImageIcon } from "./icons";
 
 const stacks = [
   ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
   ["React", "React Router", "Axios", "Userfront", "Heroku"],
 ];
+
+// Drop a path here (e.g. "/projects/stained-glass.jpg") once a photo is ready —
+// leave as null to keep showing the placeholder for that project.
+const images: (string | null)[] = [null, "/projects/pantry_pickings.png"];
 
 const hrefs = [
   "https://github.com/elsjeslothower/stained-glass-api",
@@ -35,73 +40,72 @@ export default function Projects() {
 
         <div className="mt-8 space-y-8">
           {t.projects.items.map((project, i) => (
-            <div key={project.title} className="rounded-2xl border border-border p-8 sm:p-10">
-              <div className="flex flex-wrap items-start justify-between gap-4">
-                <div>
-                  <span
-                    className="inline-block rounded-full px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wide"
-                    style={{ background: statusStyles[i].bg, color: statusStyles[i].color }}
-                  >
-                    {project.status}
-                  </span>
-                  <p className="mt-2 font-mono text-xs uppercase tracking-widest text-foreground-muted">
-                    {project.eyebrow}
-                  </p>
-                  <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
-                    {project.title}
-                  </h3>
-                </div>
+            <div key={project.title} className="overflow-hidden rounded-2xl border border-border">
+              <div className="flex aspect-[16/9] w-full items-center justify-center border-b border-border bg-surface">
+                {images[i] ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={images[i]!}
+                    alt={project.title}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center gap-2 text-foreground-muted">
+                    <ImageIcon className="h-6 w-6" />
+                    <span className="font-mono text-xs uppercase tracking-widest">
+                      Photo coming soon
+                    </span>
+                  </div>
+                )}
               </div>
 
-              <p className="mt-4 max-w-2xl leading-relaxed text-foreground-muted">
-                {project.descriptionPre}
-                <span className="font-medium text-foreground">
-                  {project.descriptionEmphasis}
-                </span>
-                {project.descriptionPost}
-              </p>
+              <div className="p-8 sm:p-10">
+                <div className="flex flex-wrap items-start justify-between gap-4">
+                  <div>
+                    <span
+                      className="inline-block rounded-full px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wide"
+                      style={{ background: statusStyles[i].bg, color: statusStyles[i].color }}
+                    >
+                      {project.status}
+                    </span>
+                    <p className="mt-2 font-mono text-xs uppercase tracking-widest text-foreground-muted">
+                      {project.eyebrow}
+                    </p>
+                    <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
+                      {project.title}
+                    </h3>
+                  </div>
+                </div>
 
-              <ul className="mt-6 flex flex-wrap gap-2">
-                {stacks[i].map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-border px-3 py-1 font-mono text-xs text-foreground-muted"
-                  >
-                    {item}
-                  </li>
-                ))}
-              </ul>
+                <p className="mt-4 max-w-2xl leading-relaxed text-foreground-muted">
+                  {project.descriptionPre}
+                  <span className="font-medium text-foreground">
+                    {project.descriptionEmphasis}
+                  </span>
+                  {project.descriptionPost}
+                </p>
 
-              {project.timeline.length > 0 && (
-                <ol className="mt-10 space-y-6 border-l border-border pl-6">
-                  {project.timeline.map((entry, j) => (
-                    <li key={entry.week} className="relative">
-                      <span
-                        aria-hidden
-                        className="absolute -left-[29px] top-1.5 h-3 w-3 rounded-full"
-                        style={{ background: accents[j] }}
-                      />
-                      <p className="font-mono text-xs uppercase tracking-widest text-foreground-muted">
-                        {entry.week}
-                      </p>
-                      <p className="mt-1 font-medium">{entry.title}</p>
-                      <p className="mt-1 max-w-xl text-sm leading-relaxed text-foreground-muted">
-                        {entry.detail}
-                      </p>
+                <ul className="mt-6 flex flex-wrap gap-2">
+                  {stacks[i].map((item) => (
+                    <li
+                      key={item}
+                      className="rounded-full border border-border px-3 py-1 font-mono text-xs text-foreground-muted"
+                    >
+                      {item}
                     </li>
                   ))}
-                </ol>
-              )}
+                </ul>
 
-              <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium">
-                <a
-                  href={hrefs[i]}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-glass-blue px-5 py-2.5 text-white transition-colors hover:bg-glass-violet"
-                >
-                  {project.cta}
-                </a>
+                <div className="mt-8 flex flex-wrap gap-4 text-sm font-medium">
+                  <a
+                    href={hrefs[i]}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full bg-glass-blue px-5 py-2.5 text-white transition-colors hover:bg-glass-violet"
+                  >
+                    {project.cta}
+                  </a>
+                </div>
               </div>
             </div>
           ))}

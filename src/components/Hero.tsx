@@ -41,7 +41,11 @@ export default function Hero() {
           style={{ animationDelay: "160ms" }}
         >
           {t.hero.bio1Pre}
-          <em>{t.hero.bio1Emphasis}</em>
+        </p>
+        <p
+          className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
+          style={{ animationDelay: "160ms" }}
+        >
           {t.hero.bio1Post}
         </p>
         <p
@@ -49,7 +53,11 @@ export default function Hero() {
           style={{ animationDelay: "160ms" }}
         >
           {t.hero.bio2Pre}
-          <a href="https://elsje.studio" className="text-glass-blue hover:text-glass-violet">
+          <a 
+            href="https://www.youtube.com/@elsjesglass" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-glass-blue hover:text-glass-violet">
             {t.hero.bio2LinkText}
           </a>
           {t.hero.bio2Post}

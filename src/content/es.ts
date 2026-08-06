@@ -21,9 +21,7 @@ export const es: SiteContent = {
     title: "[ES] Developer, designer, artisan.",
     bio1Pre:
       "[ES] I ship small, working pieces of software to solve personal problems. With a background in backend work, I start every project with an emphasis on database functionality and scalability. Like with life, build it nice or build it twice, so I try to whiteboard ",
-    bio1Emphasis: "[ES] exactly",
-    bio1Post:
-      " [ES] where I want my solutions to go before writing my first line of code. Even though all my professional experience is in backend development, I'm always inclined to make everything on the frontend as pretty as can be.",
+    bio1Post: "[ES] With a background in front and backend work, my projects emphasize database functionality and user experience.",
     bio2Pre:
       "[ES] I also run a small stained glass business on the side and try to document the process of making and selling my work online, mistakes included. Feel free to check out my ",
     bio2LinkText: "[ES] stained glass work",
@@ -51,25 +49,6 @@ export const es: SiteContent = {
           "[ES] Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate — ",
         descriptionEmphasis: "[ES] a human always reviews before it's sent",
         descriptionPost: ". [ES] Built for a real small stained-glass business.",
-        timeline: [
-          {
-            week: "[ES] Week 1",
-            title: "[ES] CRUD skeleton",
-            detail: "[ES] Schema and endpoints for customers, quotes, and line items.",
-          },
-          {
-            week: "[ES] Week 2",
-            title: "[ES] AI estimate",
-            detail:
-              "[ES] A vision call turns a photo + description into structured, defensively-parsed JSON — verbatim raw response stored alongside for auditability.",
-          },
-          {
-            week: "[ES] Week 3",
-            title: "[ES] Frontend scaffolding",
-            detail:
-              "[ES] Static HTML/Tailwind UI for quotes, customers, and estimate review — no build step.",
-          },
-        ],
         cta: "[ES] View on GitHub",
       },
       {
@@ -199,7 +178,10 @@ export const es: SiteContent = {
   puzzle: {
     heading: "[ES] Puzzle",
     paragraph1: "[ES] Guess the 5-letter word in 6 tries. If the letters turn green, they're in the right spot. If they turn amber, they're in the word but in the wrong spot. If they are gray, they're not in the word at all.",
-    paragraph2: "[ES] Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section."
+    paragraph2: "[ES] Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section.",
+    legendCorrect: "[ES] Right spot",
+    legendPresent: "[ES] In the word, wrong spot",
+    legendAbsent: "[ES] Not in the word"
   },
   steppingStones: {
     heading: "[ES] Stepping Stones",
