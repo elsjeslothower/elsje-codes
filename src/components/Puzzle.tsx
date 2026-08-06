@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useContent } from "@/context/LanguageContext";
-import { en } from "@/content/en";
 
 const ANSWER = "STONE";
 const WORD_LENGTH = 5;
@@ -83,7 +82,7 @@ export default function Puzzle() {
   const submitGuess = useCallback(() => {
     if (status !== "playing") return;
     if (current.length !== WORD_LENGTH) {
-      setMessage("Not enough letters");
+      setMessage(t.puzzle.notEnoughLetters);
       window.setTimeout(() => setMessage(""), 1200);
       return;
     }
@@ -92,17 +91,12 @@ export default function Puzzle() {
     setCurrent("");
     if (current === ANSWER) {
       setStatus("won");
-      setMessage("You got it!");
+      setMessage(t.puzzle.wonMessage);
     } else if (nextGuesses.length >= MAX_GUESSES) {
       setStatus("lost");
-      if (t === en) {
-        setMessage(`Ah, nice try! You rock anyway. The word is: ${ANSWER}`);
-      }
-      else {
-        setMessage(`Eso si que es; la palabra es: ${ANSWER}`);
-      }
+      setMessage(`${t.puzzle.lostMessagePrefix}${ANSWER}`);
     }
-  }, [current, guesses, status]);
+  }, [current, guesses, status, t]);
 
   const pressKey = useCallback(
     (key: string) => {
@@ -253,7 +247,7 @@ export default function Puzzle() {
             onClick={resetGame}
             className="rounded-full bg-glass-blue px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-glass-violet"
           >
-            Play again
+            {t.puzzle.playAgain}
           </button>
         )}
       </div>

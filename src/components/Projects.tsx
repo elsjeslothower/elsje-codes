@@ -37,6 +37,9 @@ export default function Projects() {
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
           {t.projects.heading}
         </h2>
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
+          {t.projects.paragraph1}
+        </p>
 
         <div className="mt-8 space-y-8">
           {t.projects.items.map((project, i) => (
@@ -53,7 +56,7 @@ export default function Projects() {
                   <div className="flex flex-col items-center gap-2 text-foreground-muted">
                     <ImageIcon className="h-6 w-6" />
                     <span className="font-mono text-xs uppercase tracking-widest">
-                      Photo coming soon
+                      {t.projects.photoComingSoon}
                     </span>
                   </div>
                 )}

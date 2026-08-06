@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useContent } from "@/context/LanguageContext";
 
 const SESSION_KEY = "signatureIntroPlayed";
 
 export default function SignatureIntro() {
+  const t = useContent();
   const [visible, setVisible] = useState(false);
   const [fadingOut, setFadingOut] = useState(false);
 
@@ -47,7 +49,7 @@ export default function SignatureIntro() {
         className="max-h-[60vh] max-w-[80vw] bg-background object-contain"
       />
       <span className="absolute bottom-6 right-6 font-mono text-xs uppercase tracking-widest text-foreground-muted">
-        Skip
+        {t.signatureIntro.skip}
       </span>
     </div>
   );

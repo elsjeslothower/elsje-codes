@@ -9,6 +9,10 @@ export const en = {
       puzzle: "Wordle",
       contact: "Contact",
     },
+    toggleDarkMode: "Toggle dark mode",
+    switchLanguage: "Switch language",
+    openMenu: "Open menu",
+    closeMenu: "Close menu",
   },
   hero: {
     eyebrow: "Elsje Slothower",
@@ -23,15 +27,23 @@ export const en = {
   },
   about: {
     heading: "About",
-    paragraph1:
-      "I'm a developer working through a series of portfolio projects, each one shipped in short, resumable sessions and documented in real-time.",
-    paragraph2Pre: "Currently developing ",
-    paragraph2LinkText: "a stained glass quoting tool",
-    paragraph2Post:
-      ": a FastAPI backend that turns a photo and description into a strutured price estimate using Claude's vision API.",
+    developerHeading: "Developer",
+    developerPre:
+      "Ada Developers Academy gave me my start in software development, but the spark started in high school when I took a coding extracurricular. The basic building blocks of programming began with ",
+    developerLinkText: "Snap!",
+    developerPost:
+      " and I've been building on that foundation ever since. Critical thinking, problem solving, and creativity are the skills that I bring to every project I work on.",
+    creatorHeading: "Creator",
+    creatorText:
+      "My bachelor's degree is in Journalism and Public Interest. I have a long history of creating, whether it's publishing articles, fostering community engagement, or posting on social media. In my current position, I create software while creating a relationship of trust with my clients. I enjoy the creative process of building software, and I enjoy the creative process of building relationships.",
+    artistHeading: "Artist",
+    artistText:
+      "I like working my hands as well as my brain. Curiosity is the key, and I cultivate it anywhere and everywhere I can. Progressing through a project from start to finish is satisfying, and it's even better to share your creations with others. Stained glass is my outlet when I see something beautiful in the world and want others to see it too.",
   },
   projects: {
     heading: "Projects",
+    paragraph1: "A running collection of what I've built and what I'm building.",
+    photoComingSoon: "Photo coming soon",
     items: [
       {
         eyebrow: "AI-Centric Personal Project",
@@ -44,7 +56,7 @@ export const en = {
         cta: "View on GitHub",
       },
       {
-        eyebrow: "Ada Developers Academy — Capstone project",
+        eyebrow: "Ada Developers Academy Capstone project",
         status: "Complete",
         title: "Pantry Pickings",
         descriptionPre:
@@ -176,11 +188,45 @@ export const en = {
     paragraph2: "Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section.",
     legendCorrect: "Right spot",
     legendPresent: "In the word, wrong spot",
-    legendAbsent: "Not in the word"
+    legendAbsent: "Not in the word",
+    notEnoughLetters: "Not enough letters",
+    wonMessage: "You got it!",
+    lostMessagePrefix: "Ah, nice try! You rock anyway. The word is: ",
+    playAgain: "Play again",
   },
   steppingStones: {
     heading: "Stepping Stones",
     paragraph1: "You made it, you smart cookie! This is the 'mistakes' corner - displaying lessons learned along the way, stumbling to mastery.",
+    photoComingSoon: "Photo coming soon",
+    stones: [
+      {
+        status: "Lesson",
+        eyebrow: "Placeholder eyebrow",
+        title: "Lesson title goes here",
+        description:
+          "Placeholder text — write about what went wrong and what you learned from it.",
+        tags: ["Tag one", "Tag two"],
+      },
+      {
+        status: "Lesson",
+        eyebrow: "Placeholder eyebrow",
+        title: "Lesson title goes here",
+        description:
+          "Placeholder text — write about what went wrong and what you learned from it.",
+        tags: ["Tag one", "Tag two"],
+      },
+      {
+        status: "Lesson",
+        eyebrow: "Placeholder eyebrow",
+        title: "Lesson title goes here",
+        description:
+          "Placeholder text — write about what went wrong and what you learned from it.",
+        tags: ["Tag one", "Tag two"],
+      },
+    ],
+  },
+  signatureIntro: {
+    skip: "Skip",
   },
 };
 

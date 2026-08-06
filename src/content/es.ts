@@ -15,6 +15,10 @@ export const es: SiteContent = {
       resume: "Resume",
       puzzle: "Diversión",
     },
+    toggleDarkMode: "[ES] Toggle dark mode",
+    switchLanguage: "[ES] Switch language",
+    openMenu: "[ES] Open menu",
+    closeMenu: "[ES] Close menu",
   },
   hero: {
     eyebrow: "Elsje Slothower",
@@ -31,15 +35,23 @@ export const es: SiteContent = {
   },
   about: {
     heading: "[ES] About",
-    paragraph1:
-      "[ES] I'm a developer working through a series of portfolio projects, each one shipped in short, resumable sessions and documented as I build — the wins, the roadmap, and the parts still marked “not yet verified.”",
-    paragraph2Pre: "[ES] Currently deep in ",
-    paragraph2LinkText: "[ES] a stained-glass quoting tool",
-    paragraph2Post:
-      ": [ES] a FastAPI backend that turns a photo and description into a structured, human-reviewed price estimate using Claude's vision API.",
+    developerHeading: "[ES] Developer",
+    developerPre:
+      "[ES] Ada Developers Academy gave me my start in software development, but the spark started in high school when I took a coding extracurricular. The basic building blocks of programming began with ",
+    developerLinkText: "[ES] Snap!",
+    developerPost:
+      " [ES] and I've been building on that foundation ever since. Critical thinking, problem solving, and creativity are the skills that I bring to every project I work on.",
+    creatorHeading: "[ES] Creator",
+    creatorText:
+      "[ES] My bachelor's degree is in Journalism and Public Interest. I have a long history of creating, whether it's publishing articles, fostering community engagement, or posting on social media. In my current position, I create software while creating a relationship of trust with my clients. I enjoy the creative process of building software, and I enjoy the creative process of building relationships.",
+    artistHeading: "[ES] Artist",
+    artistText:
+      "[ES] I like working my hands as well as my brain. Curiosity is the key, and I cultivate it anywhere and everywhere I can. Progressing through a project from start to finish is satisfying, and it's even better to share your creations with others. Stained glass is my outlet when I see something beautiful in the world and want others to see it too.",
   },
   projects: {
     heading: "[ES] Projects",
+    paragraph1: "[ES] A running collection of what I've built and what I'm building — some finished, some still in progress.",
+    photoComingSoon: "[ES] Photo coming soon",
     items: [
       {
         status: "[ES] Now building",
@@ -173,6 +185,18 @@ export const es: SiteContent = {
         description:
           "[ES] Member of committee whose mission is to enhance employee experiences through implementing more equitable benefits, creating and managing employee resource groups (ERGs), and administrating biannual company-wide volunteer opportunities.",
       },
+      {
+        role: "[ES] Volunteer",
+        org: "Salem Health Cancer Center",
+        description:
+          "[ES] Participant in volunteer effort to knit and crochet hats for cancer patients undergoing chemotherapy.",
+      },
+      {
+        role: "[ES] Community Member",
+        org: "Common People Yoga",
+        description:
+          "[ES] Member of a community yoga studio that emphasizes accessibility and inclusivity in yoga practice, including offering classes for people with disabilities and neurodivergent folks.",
+      },
     ],
   },
   puzzle: {
@@ -181,11 +205,45 @@ export const es: SiteContent = {
     paragraph2: "[ES] Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section.",
     legendCorrect: "[ES] Right spot",
     legendPresent: "[ES] In the word, wrong spot",
-    legendAbsent: "[ES] Not in the word"
+    legendAbsent: "[ES] Not in the word",
+    notEnoughLetters: "[ES] Not enough letters",
+    wonMessage: "[ES] You got it!",
+    lostMessagePrefix: "Eso si que es; la palabra es: ",
+    playAgain: "[ES] Play again",
   },
   steppingStones: {
     heading: "[ES] Stepping Stones",
     paragraph1:
       "[ES] You made it, you smart cookie! This is the 'mistakes' corner - displaying lessons learned along the way, stumbling to mastery.",
+    photoComingSoon: "[ES] Photo coming soon",
+    stones: [
+      {
+        status: "[ES] Lesson",
+        eyebrow: "[ES] Placeholder eyebrow",
+        title: "[ES] Lesson title goes here",
+        description:
+          "[ES] Placeholder text — write about what went wrong and what you learned from it.",
+        tags: ["[ES] Tag one", "[ES] Tag two"],
+      },
+      {
+        status: "[ES] Lesson",
+        eyebrow: "[ES] Placeholder eyebrow",
+        title: "[ES] Lesson title goes here",
+        description:
+          "[ES] Placeholder text — write about what went wrong and what you learned from it.",
+        tags: ["[ES] Tag one", "[ES] Tag two"],
+      },
+      {
+        status: "[ES] Lesson",
+        eyebrow: "[ES] Placeholder eyebrow",
+        title: "[ES] Lesson title goes here",
+        description:
+          "[ES] Placeholder text — write about what went wrong and what you learned from it.",
+        tags: ["[ES] Tag one", "[ES] Tag two"],
+      },
+    ],
+  },
+  signatureIntro: {
+    skip: "[ES] Skip",
   },
 };
