@@ -19,7 +19,7 @@ export const en = {
     title: "Artist, Creator, Developer.",
     bio1Pre: "I solve problems with software.",
     bio1Post: "With a background in front and backend work, my projects emphasize database functionality and user experience.",
-    bio2Pre: "I also run a small stained glass business on the side and try to document the process of making and selling my work online, mistakes included. Feel free to check out my ",
+    bio2Pre: "I also run a small stained glass business on the side to document the process of making and selling my work online, mistakes included. Feel free to check out my ",
     bio2LinkText: "stained glass",
     bio2Post: " if you're curious.",
     ctaProjects: "See my code",
@@ -171,21 +171,26 @@ export const en = {
           "Member of committee whose mission is to enhance employee experiences through implementing more equitable benefits, creating and managing employee resource groups (ERGs), and administrating biannual company-wide volunteer opportunities.",
       },
       {
-        role: "Volunteer",
-        org: "Salem Health Cancer Center",
-        description: "Participant in volunteer effort to knit and crochet hats for cancer patients undergoing chemotherapy.",
+        role: "Stitch Supporter",
+        org: "Salem Health Cancer Resource Center",
+        description: "Participant in 'Purls of Love', a volunteer effort to sew, knit, and crochet hats for cancer patients undergoing chemotherapy.",
       },
       {
         role: "Community Member",
         org: "Common People Yoga",
         description: "Member of a community yoga studio that emphasizes accessibility and inclusivity in yoga practice, including offering classes for people with disabilities and neurodivergent folks.",
+      },
+      {
+        role: "Small Business Owner",
+        org: "Elsje's Glass",
+        description: "Creator of a YouTube channel that documents the process of making and selling stained glass art, including tutorials, behind-the-scenes content, and reflections on the creative process.",
       }
     ],
   },
   puzzle: {
     heading: "Wordle Dupe",
     paragraph1: "Guess the 5-letter word in 6 tries.",
-    paragraph2: "Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret section.",
+    paragraph2: "Once you have guessed the word, type the answer into the URL following elsje.codes/_____ for a secret.",
     legendCorrect: "Right spot",
     legendPresent: "In the word, wrong spot",
     legendAbsent: "Not in the word",
@@ -196,7 +201,7 @@ export const en = {
   },
   steppingStones: {
     heading: "Stepping Stones",
-    paragraph1: "You made it, you smart cookie! This is the 'mistakes' corner - displaying lessons learned along the way, stumbling to mastery.",
+    paragraph1: "You made it, you smart cookie! Since we all stumble to mastery, it's important to reflect on lessons learned. Here are some of mine.",
     photoComingSoon: "Photo coming soon",
     stones: [
       {
@@ -227,6 +232,12 @@ export const en = {
   },
   signatureIntro: {
     skip: "Skip",
+  },
+  notFound: {
+    eyebrow: "404",
+    heading: "This pane didn't make it.",
+    body: "The page you're looking for isn't part of the pattern.",
+    cta: "To the Drawing Board",
   },
 };
 

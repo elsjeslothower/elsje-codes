@@ -8,12 +8,12 @@ export const es: SiteContent = {
   banner: "En construcción",
   nav: {
     links: {
-      about: "Despues de Mi",
+      about: "Sobre Mí",
       projects: "Proyectos",
       skills: "Habilidades",
       contact: "Contacto",
-      resume: "Resume",
-      puzzle: "Diversión",
+      resume: "Currículum",
+      puzzle: "Juego de Palabras",
     },
     toggleDarkMode: "Cambiar a modo oscuro",
     switchLanguage: "Cambiar idioma",
@@ -187,16 +187,22 @@ export const es: SiteContent = {
           "Miembro de un comité cuya misión es mejorar la experiencia de los empleados, implementando beneficios más equitativos, creando grupos de recursos para empleados (ERGs), y organizando oportunidades de voluntariado dos veces al año.",
       },
       {
-        role: "Voluntaria",
-        org: "Salem Health Cancer Center",
+        role: "Voluntaria de Costura",
+        org: "Salem Health Cancer Resource Center",
         description:
-          "Participé en un esfuerzo voluntario para tejer y crochetear gorros para pacientes de cáncer en quimioterapia.",
+          "Participante en 'Purls of Love', un esfuerzo voluntario para coser, tejer, y crochetear gorros para pacientes de cáncer en quimioterapia.",
       },
       {
         role: "Miembro de la Comunidad",
         org: "Common People Yoga",
         description:
           "Miembro de un estudio de yoga comunitario que promueve la accesibilidad e inclusión en la práctica de yoga, incluyendo clases para personas con discapacidades y personas neurodivergentes.",
+      },
+      {
+        role: "Dueña de Pequeño Negocio",
+        org: "Elsje's Glass",
+        description:
+          "Creadora de un canal de YouTube que documenta el proceso de hacer y vender arte de vidrio de colores, incluyendo tutoriales, contenido detrás de cámaras, y reflexiones sobre el proceso creativo.",
       },
     ],
   },
@@ -205,7 +211,7 @@ export const es: SiteContent = {
     paragraph1:
       "Adivina la palabra de 5 letras en 6 intentos. Si las letras se vuelven verdes, están en el lugar correcto. Si se vuelven color ámbar, están en la palabra pero en el lugar equivocado. Si son grises, no están en la palabra.",
     paragraph2:
-      "Cuando adivines la palabra, escribe la respuesta en la URL después de elsje.codes/_____ para encontrar una sección secreta.",
+      "Cuando adivines la palabra, escribe la respuesta en la URL después de elsje.codes/_____ para encontrar una secreta.",
     legendCorrect: "Lugar correcto",
     legendPresent: "En la palabra, lugar equivocado",
     legendAbsent: "No está en la palabra",
@@ -217,7 +223,7 @@ export const es: SiteContent = {
   steppingStones: {
     heading: "Piedras del Camino",
     paragraph1:
-      "¡Lo lograste, qué inteligente eres! Este es el rincón de los 'errores' — aquí muestro las lecciones que aprendí en el camino, tropezando hacia la maestría.",
+      "¡Lo lograste, qué inteligente eres! Como todos tropezamos en el camino hacia la maestría, es importante reflexionar sobre las lecciones aprendidas. Aquí están algunas de las mías.",
     photoComingSoon: "Foto próximamente",
     stones: [
       {
@@ -248,5 +254,11 @@ export const es: SiteContent = {
   },
   signatureIntro: {
     skip: "Saltar",
+  },
+  notFound: {
+    eyebrow: "404",
+    heading: "Este panel no sobrevivió.",
+    body: "La página que buscas no es parte del patrón.",
+    cta: "Volver al inicio",
   },
 };

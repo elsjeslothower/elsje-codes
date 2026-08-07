@@ -26,8 +26,19 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   function toggleLanguage() {
     const next: Language = language === "en" ? "es" : "en";
-    setLanguage(next);
-    localStorage.setItem("language", next);
+    function apply() {
+      setLanguage(next);
+      localStorage.setItem("language", next);
+    }
+    const canAnimate =
+      typeof document !== "undefined" &&
+      "startViewTransition" in document &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (canAnimate) {
+      (document as Document & { startViewTransition: (cb: () => void) => void }).startViewTransition(apply);
+    } else {
+      apply();
+    }
   }
 
   return (

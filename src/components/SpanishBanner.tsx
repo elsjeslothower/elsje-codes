@@ -8,8 +8,8 @@ export default function SpanishNotice() {
   if (language !== "es") return null;
 
   return (
-    <div className="bg-glass-violet px-6 py-2 text-center">
-      <p className="text-xs text-white sm:text-sm">
+    <div className="bg-glass-amber px-6 py-2 text-center">
+      <p className="font-mono text-xs text-[var(--color-lead)]">
         Estoy estudiando español y intentando traducir esto website por mi cuenta.
         ¡Gracias por visitando mi portafolio!
       </p>

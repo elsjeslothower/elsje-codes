@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
-import ConstructionBanner from "@/components/ConstructionBanner";
 import SpanishNotice from "@/components/SpanishBanner";
 import "./globals.css";
 
@@ -62,7 +61,6 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <LanguageProvider>
-          <ConstructionBanner />
           <SpanishNotice />
           {children}
         </LanguageProvider>

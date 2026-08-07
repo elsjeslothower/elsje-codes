@@ -15,6 +15,7 @@ export default function Nav() {
     { href: "/#projects", label: t.nav.links.projects },
     { href: "/resume/", label: t.nav.links.resume },
     { href: "/#puzzle", label: t.nav.links.puzzle },
+    { href: "/#contact", label: t.nav.links.contact },
   ];
 
   return (

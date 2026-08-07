@@ -56,7 +56,7 @@ export default function ResumeContent() {
           <a
             href="/resume/Elsje-Slothower-Resume.pdf"
             download
-            className="rounded-full bg-glass-blue px-5 py-2.5 text-white transition-colors hover:bg-glass-violet"
+            className="rounded-full bg-glass-green px-5 py-2.5 text-white transition-colors hover:bg-glass-blue"
           >
             {r.downloadPdfLabel}
           </a>

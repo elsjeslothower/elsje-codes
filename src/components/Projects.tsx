@@ -10,7 +10,7 @@ const stacks = [
 
 // Drop a path here (e.g. "/projects/stained-glass.jpg") once a photo is ready —
 // leave as null to keep showing the placeholder for that project.
-const images: (string | null)[] = [null, "/projects/pantry_pickings.png"];
+const images: (string | null)[] = ["/projects/stained-glass-AI.webp", "/projects/pantry_pickings.png"];
 
 const hrefs = [
   "https://github.com/elsjeslothower/stained-glass-api",
@@ -25,7 +25,7 @@ const accents = [
 
 const statusStyles = [
   { bg: "var(--color-glass-amber)", color: "var(--color-lead)" }, // Now building
-  { bg: "var(--color-glass-blue)", color: "#ffffff" }, // Completed
+  { bg: "var(--color-glass-green)", color: "#ffffff" }, // Completed
 ];
 
 export default function Projects() {
@@ -104,7 +104,7 @@ export default function Projects() {
                     href={hrefs[i]}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-glass-blue px-5 py-2.5 text-white transition-colors hover:bg-glass-violet"
+                    className="rounded-full bg-glass-green px-5 py-2.5 text-white transition-colors hover:bg-glass-blue"
                   >
                     {project.cta}
                   </a>

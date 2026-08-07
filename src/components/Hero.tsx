@@ -15,18 +15,18 @@ export default function Hero() {
         <svg viewBox="0 0 200 200" className="h-full w-full">
           <g stroke="var(--color-lead)" strokeWidth="1.5" fill="none">
             <polygon points="100,10 180,60 160,150 40,150 20,60" />
-            <polygon points="100,10 180,60 130,90 100,60" fill="var(--color-glass-blue)" fillOpacity="0.55" />
-            <polygon points="180,60 160,150 130,90" fill="var(--color-glass-violet)" fillOpacity="0.5" />
+            <polygon points="100,10 180,60 130,90 100,60" fill="var(--color-glass-green)" fillOpacity="0.55" />
+            <polygon points="180,60 160,150 130,90" fill="var(--color-glass-blue)" fillOpacity="0.5" />
             <polygon points="160,150 40,150 100,60 130,90" fill="var(--color-glass-amber)" fillOpacity="0.5" />
             <polygon points="40,150 20,60 100,60" fill="var(--color-glass-ruby)" fillOpacity="0.45" />
-            <polygon points="100,10 20,60 100,60" fill="var(--color-glass-blue)" fillOpacity="0.35" />
+            <polygon points="100,10 20,60 100,60" fill="var(--color-glass-green)" fillOpacity="0.35" />
           </g>
         </svg>
       </div>
 
       <div className="relative mx-auto max-w-5xl px-6 pt-20 pb-24 sm:pt-28 sm:pb-32">
         <p
-          className="animate-fade-in-up font-mono text-sm uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber"
+          className="animate-fade-in-up font-mono text-sm uppercase tracking-[0.2em] text-glass-green dark:text-glass-amber"
         >
           {t.hero.eyebrow}
         </p>
@@ -68,7 +68,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="rounded-full bg-glass-blue px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-violet"
+            className="rounded-full bg-glass-green px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
           >
             {t.hero.ctaProjects}
           </a>

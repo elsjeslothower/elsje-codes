@@ -22,9 +22,9 @@ const STATUS_STYLE: Record<
   { background: string; color: string; borderColor: string }
 > = {
   correct: {
-    background: "var(--color-glass-blue)",
+    background: "var(--color-glass-green)",
     color: "#ffffff",
-    borderColor: "var(--color-glass-blue)",
+    borderColor: "var(--color-glass-green)",
   },
   present: {
     background: "var(--color-glass-amber)",
@@ -245,7 +245,7 @@ export default function Puzzle() {
           <button
             type="button"
             onClick={resetGame}
-            className="rounded-full bg-glass-blue px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-glass-violet"
+            className="rounded-full bg-glass-green px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
           >
             {t.puzzle.playAgain}
           </button>
