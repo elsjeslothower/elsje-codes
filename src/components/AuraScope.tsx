@@ -7,7 +7,7 @@ export default function AuraScope() {
 
     return (
         <div className="mx-auto max-w-5xl px-6 py-24">
-            <p className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
+            <div className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
                 style={{ animationDelay: "160ms" }}
             >
                 <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
@@ -19,7 +19,7 @@ export default function AuraScope() {
                 <p className="mt-4 max-w-md text-lg leading-relaxed text-foreground-muted">
                     {t.auraScope.body}
                 </p>
-            </p>
+            </div>
             <div
                 className="animate-fade-in-up flex flex-wrap gap-4"
                 style={{ animationDelay: "240ms" }}
