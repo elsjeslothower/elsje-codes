@@ -51,6 +51,8 @@ export const es: SiteContent = {
     photoComingSoon: "Foto próximamente",
     previousPhoto: "Foto anterior",
     nextPhoto: "Foto siguiente",
+    goToPhoto: "Ir a la foto",
+    photoLabel: "Foto",
     loginCta: "Iniciar",
     items: [
       {

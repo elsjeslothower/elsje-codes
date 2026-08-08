@@ -41,12 +41,12 @@ export default function ProjectImageCarousel({
         className="flex h-full w-full transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
-        {images.map((src) => (
+        {images.map((src, i) => (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             key={src}
             src={src}
-            alt={alt}
+            alt={images.length > 1 ? `${alt} — ${t.projects.photoLabel} ${i + 1}/${images.length}` : alt}
             className="h-full w-full flex-shrink-0 object-cover"
           />
         ))}
@@ -77,7 +77,7 @@ export default function ProjectImageCarousel({
                 key={i}
                 type="button"
                 onClick={() => setIndex(i)}
-                aria-label={`${i + 1}`}
+                aria-label={`${t.projects.goToPhoto} ${i + 1}`}
                 className={`h-1.5 w-1.5 rounded-full shadow-sm transition-colors ${
                   i === index ? "bg-white" : "bg-white/50"
                 }`}

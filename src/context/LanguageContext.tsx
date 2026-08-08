@@ -24,6 +24,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     if (stored === "es" || stored === "en") setLanguage(stored);
   }, []);
 
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
   function toggleLanguage() {
     const next: Language = language === "en" ? "es" : "en";
     function apply() {

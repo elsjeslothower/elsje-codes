@@ -245,7 +245,7 @@ export default function Puzzle() {
           <button
             type="button"
             onClick={resetGame}
-            className="rounded-full bg-glass-green px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
+            className="rounded-full bg-glass-green-text px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
           >
             {t.puzzle.playAgain}
           </button>

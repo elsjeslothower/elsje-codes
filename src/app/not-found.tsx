@@ -53,7 +53,7 @@ export default function NotFound() {
           </p>
           <a
             href="/"
-            className="mt-8 rounded-full bg-glass-green px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
+            className="mt-8 rounded-full bg-glass-green-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
           >
             {t.notFound.cta}
           </a>

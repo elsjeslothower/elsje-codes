@@ -16,6 +16,10 @@
   --color-glass-ruby: #c0304a;
   --color-glass-green: #16a34a;
 
+  /* Darker green and amber for WCAG where needed*/
+  --color-glass-green-text: #0f7a37;
+  --color-glass-amber-text: #7d5e12;
+
   --background: var(--color-paper);
   --surface: #ffffff;
   --foreground: var(--color-ink);
@@ -29,6 +33,10 @@
   --foreground: #f2efe8;
   --foreground-muted: #b9b5c9;
   --border-color: #322f40;
+
+  /* Dark backgrounds already give the bright originals enough contrast. */
+  --color-glass-green-text: var(--color-glass-green);
+  --color-glass-amber-text: var(--color-glass-amber);
 }
 
 @theme inline {
@@ -43,6 +51,8 @@
   --color-glass-amber: var(--color-glass-amber);
   --color-glass-ruby: var(--color-glass-ruby);
   --color-glass-green: var(--color-glass-green);
+  --color-glass-green-text: var(--color-glass-green-text);
+  --color-glass-amber-text: var(--color-glass-amber-text);
 
   --font-sans: var(--font-geist-sans);
   --font-display: var(--font-CMU-serif);

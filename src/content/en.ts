@@ -46,6 +46,8 @@ export const en = {
     photoComingSoon: "Photo coming soon",
     previousPhoto: "Previous photo",
     nextPhoto: "Next photo",
+    goToPhoto: "Go to photo",
+    photoLabel: "Photo",
     loginCta: "Login",
     items: [
       {

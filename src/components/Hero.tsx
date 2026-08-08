@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-5xl px-6 pt-20 pb-24 sm:pt-28 sm:pb-32">
         <p
-          className="animate-fade-in-up font-mono text-sm uppercase tracking-[0.2em] text-glass-green dark:text-glass-amber"
+          className="animate-fade-in-up font-mono text-sm uppercase tracking-[0.2em] text-glass-green-text dark:text-glass-amber"
         >
           {t.hero.eyebrow}
         </p>
@@ -68,13 +68,13 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="rounded-full bg-glass-green px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
+            className="rounded-full bg-glass-green-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
           >
             {t.hero.ctaProjects}
           </a>
           <a
             href="#contact"
-            className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber"
+            className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
           >
             {t.hero.ctaContact}
           </a>

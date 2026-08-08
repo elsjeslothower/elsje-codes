@@ -94,7 +94,7 @@ export default function Projects() {
                     href={hrefs[i]}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-glass-green px-5 py-2.5 text-white transition-colors hover:bg-glass-blue"
+                    className="rounded-full bg-glass-green-text px-5 py-2.5 text-white transition-colors hover:bg-glass-blue"
                   >
                     {project.cta}
                   </a>
@@ -103,7 +103,7 @@ export default function Projects() {
                       href={loginHrefs[i]}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber"
+                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
                     >
                       {t.projects.loginCta}
                     </a>

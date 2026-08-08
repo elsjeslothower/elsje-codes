@@ -42,7 +42,7 @@ export default function Nav() {
               onClick={() => setMenuOpen((open) => !open)}
               aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
               aria-expanded={menuOpen}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground-muted transition-colors hover:border-glass-amber hover:text-glass-amber sm:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground-muted transition-colors hover:border-glass-amber hover:text-glass-amber-text sm:hidden"
             >
               {menuOpen ? <CloseIcon className="h-4 w-4" /> : <MenuIcon className="h-4 w-4" />}
             </button>

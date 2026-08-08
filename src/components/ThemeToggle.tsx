@@ -23,7 +23,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={t.nav.toggleDarkMode}
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground-muted transition-colors hover:border-glass-amber hover:text-glass-amber"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground-muted transition-colors hover:border-glass-amber hover:text-glass-amber-text"
     >
       <span key={isDark ? "dark" : "light"} className="animate-toggle-pop">
         {isDark ? (
