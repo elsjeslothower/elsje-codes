@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { ImageIcon, ChevronLeftIcon, ChevronRightIcon } from "./icons";
 import { useContent } from "@/context/LanguageContext";
 
@@ -42,13 +43,16 @@ export default function ProjectImageCarousel({
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {images.map((src, i) => (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            key={src}
-            src={src}
-            alt={images.length > 1 ? `${alt} — ${t.projects.photoLabel} ${i + 1}/${images.length}` : alt}
-            className="h-full w-full flex-shrink-0 object-cover"
-          />
+          <div key={src} className="relative h-full w-full flex-shrink-0">
+            <Image
+              src={src}
+              alt={images.length > 1 ? `${alt} — ${t.projects.photoLabel} ${i + 1}/${images.length}` : alt}
+              fill
+              sizes="(min-width: 1024px) 976px, 100vw"
+              className="object-cover"
+              priority={i === 0}
+            />
+          </div>
         ))}
       </div>
 

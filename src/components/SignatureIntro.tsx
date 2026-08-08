@@ -45,6 +45,7 @@ export default function SignatureIntro() {
         autoPlay
         muted
         playsInline
+        preload="metadata"
         onEnded={finish}
         className="max-h-[60vh] max-w-[80vw] bg-background object-contain"
       />

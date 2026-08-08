@@ -12,8 +12,8 @@ const stacks = [
 // more than one shows the left/right slideshow arrows. Leave an array empty to keep
 // showing the placeholder for that project.
 const images: string[][] = [
-  ["/projects/quote_tool/stained-glass-quoter-1.png", "/projects/quote_tool/stained-glass-quoter-2.png", "/projects/quote_tool/stained-glass-quoter-3.png"],
-  ["/projects/pantry_pickings.png"],
+  ["/projects/quote_tool/stained-glass-quoter-1.webp", "/projects/quote_tool/stained-glass-quoter-2.webp", "/projects/quote_tool/stained-glass-quoter-3.webp"],
+  ["/projects/pantry_pickings.webp"],
 ];
 
 const hrefs = [
