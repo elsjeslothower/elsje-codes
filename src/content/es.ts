@@ -1,9 +1,5 @@
 import type { SiteContent } from "./en";
 
-// PLACEHOLDER — not translated yet. Every string below is prefixed "[ES]"
-// so it's obvious in the UI which spots still need real Spanish text.
-// Replace each value with its Spanish translation; keep the object shape
-// identical to en.ts (same keys, same nesting) or TypeScript will flag it.
 export const es: SiteContent = {
   banner: "En construcción",
   nav: {
@@ -13,7 +9,7 @@ export const es: SiteContent = {
       skills: "Habilidades",
       contact: "Contacto",
       resume: "Currículum",
-      puzzle: "Juego de Palabras",
+      puzzle: "Juego de Palabra",
     },
     toggleDarkMode: "Cambiar a modo oscuro",
     switchLanguage: "Cambiar idioma",
@@ -22,15 +18,15 @@ export const es: SiteContent = {
   },
   hero: {
     eyebrow: "Elsje Slothower",
-    title: "Desarrolladora, diseñadora, artesana.",
+    title: "Desarrolladora, diseñadora, artista.",
     bio1Pre:
-      "Creo programas pequeños para resolver problemas personales. Tengo experiencia en el backend, y en cada proyecto pienso primero en las bases de datos y la escalabilidad.",
+      "Soluciono problemas con código. Tengo experiencia en el backend, y en cada proyecto pienso primero en las bases de datos y la escalabilidad.",
     bio1Post: "También trabajo en el frontend, y me importa mucho la experiencia del usuario.",
     bio2Pre:
       "Además, tengo un pequeño negocio de vidrio de colores. Trato de mostrar todo el proceso de crear y vender mi arte en línea, incluyendo los errores. Si tienes curiosidad, puedes ver mi ",
     bio2LinkText: "trabajo de vidrio",
     bio2Post: " si quieres.",
-    ctaProjects: "Ver mi trabajo",
+    ctaProjects: "Ver mi código",
     ctaContact: "Contáctame",
   },
   about: {
@@ -53,6 +49,9 @@ export const es: SiteContent = {
     paragraph1:
       "Una colección de lo que he creado y lo que estoy creando — algunos proyectos terminados, otros todavía en proceso.",
     photoComingSoon: "Foto próximamente",
+    previousPhoto: "Foto anterior",
+    nextPhoto: "Foto siguiente",
+    loginCta: "Iniciar",
     items: [
       {
         status: "En progreso",
@@ -102,8 +101,8 @@ export const es: SiteContent = {
     heading: "Currículum",
     name: "Elsje Slothower",
     title: "Desarrolladora de Software",
-    location: "Seattle, WA (EE. UU.)",
-    email: "slothowerelsje@gmail.com",
+    location: "Salem, OR (EE. UU.)",
+    email: "contact@elsje.codes",
     linkedinLabel: "linkedin.com/in/elsje-slothower",
     githubLabel: "github.com/elsjeslothower",
     phone: "(253) 509-8262",

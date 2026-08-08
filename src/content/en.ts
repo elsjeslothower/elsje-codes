@@ -42,8 +42,11 @@ export const en = {
   },
   projects: {
     heading: "Projects",
-    paragraph1: "A running collection of what I've built and what I'm building.",
+    paragraph1: "What I've built and what I'm building.",
     photoComingSoon: "Photo coming soon",
+    previousPhoto: "Previous photo",
+    nextPhoto: "Next photo",
+    loginCta: "Login",
     items: [
       {
         eyebrow: "AI-Centric Personal Project",
@@ -60,9 +63,9 @@ export const en = {
         status: "Complete",
         title: "Pantry Pickings",
         descriptionPre:
-          "A dinner-party web app that helps hosts pick a recipe using ingredients they already have on hand — ",
+          "A dinner-party web app that helps hosts pick a recipe using ingredients they already have on hand. The app is intentionally designed - quick, simple, budget-friendly, and ",
         descriptionEmphasis:
-          "cost-effective, and mindful of guests' dietary preferences and intolerances",
+          "mindful of guests' dietary preferences and intolerances",
         descriptionPost: ".",
         timeline: [],
         cta: "View on GitHub",
@@ -88,8 +91,8 @@ export const en = {
     heading: "Resume",
     name: "Elsje Slothower",
     title: "Software Developer",
-    location: "Seattle, WA (US)",
-    email: "slothowerelsje@gmail.com",
+    location: "Salem, OR (US)",
+    email: "contact@elsje.codes",
     linkedinLabel: "linkedin.com/in/elsje-slothower",
     githubLabel: "github.com/elsjeslothower",
     phone: "(253) 509-8262",
@@ -207,25 +210,25 @@ export const en = {
       {
         status: "Lesson",
         eyebrow: "Placeholder eyebrow",
-        title: "Lesson title goes here",
+        title: "Lesson title",
         description:
-          "Placeholder text — write about what went wrong and what you learned from it.",
+          "Description",
         tags: ["Tag one", "Tag two"],
       },
       {
         status: "Lesson",
         eyebrow: "Placeholder eyebrow",
-        title: "Lesson title goes here",
+        title: "Lesson title",
         description:
-          "Placeholder text — write about what went wrong and what you learned from it.",
+          "Description",
         tags: ["Tag one", "Tag two"],
       },
       {
         status: "Lesson",
         eyebrow: "Placeholder eyebrow",
-        title: "Lesson title goes here",
+        title: "Lesson title",
         description:
-          "Placeholder text — write about what went wrong and what you learned from it.",
+          "Description",
         tags: ["Tag one", "Tag two"],
       },
     ],

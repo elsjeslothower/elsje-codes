@@ -1,5 +1,4 @@
-// Shared fetch helper + API base configuration. No build step by design —
-// this is a thin scaffold over the API, not a product frontend (see README).
+// Shared fetch helper + API base configuration.
 
 const DEFAULT_API_BASE = "https://api.elsje.codes";
 

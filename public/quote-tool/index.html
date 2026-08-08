@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quotes — Stained Glass Quote Tool</title>
+  <title>Stained Glass Quote Tool</title>
+  <link rel="icon" type="image/svg+xml" href="/quote-tool/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -44,6 +45,7 @@
         <label for="api-base-input" class="text-ink/50">API base</label>
         <input id="api-base-input" type="text" class="border border-ink/20 rounded-sm px-2 py-1 w-56 text-xs bg-white/60 focus:outline-none focus:ring-1 focus:ring-ink/40" />
         <a id="logout-link" href="#" class="text-ink/60 hover:text-ink">Log out</a>
+        <a href="https://elsje.codes" class="text-ink/60 hover:text-ink">Return to elsje.codes</a>
       </div>
     </div>
   </header>
@@ -107,7 +109,7 @@
       try {
         customersCache = await apiFetch("/customers");
         if (customersCache.length === 0) {
-          select.innerHTML = `<option value="">No customers yet — add one first</option>`;
+          select.innerHTML = `<option value="">No customers yet</option>`;
           return;
         }
         select.innerHTML = customersCache

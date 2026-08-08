@@ -22,7 +22,7 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: "<elsje.codes/>",
-  description: "Portfolio of Elsje Slothower — developer, designer, artisan",
+  description: "Elsje Slothower's Portfolio",
   icons: {
     icon: [
       { url: "/favicon/favicon.ico" },

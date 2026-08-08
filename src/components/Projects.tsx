@@ -1,21 +1,27 @@
 "use client";
 
 import { useContent } from "@/context/LanguageContext";
-import { ImageIcon } from "./icons";
+import ProjectImageCarousel from "./ProjectImageCarousel";
 
 const stacks = [
   ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
   ["React", "React Router", "Axios", "Userfront", "Heroku"],
 ];
 
-// Drop a path here (e.g. "/projects/stained-glass.jpg") once a photo is ready —
-// leave as null to keep showing the placeholder for that project.
-const images: (string | null)[] = ["/projects/stained-glass-AI.webp", "/projects/pantry_pickings.png"];
+// Add as many paths as you like per project (e.g. "/projects/image.jpg")
+// more than one shows the left/right slideshow arrows. Leave an array empty to keep
+// showing the placeholder for that project.
+const images: string[][] = [
+  ["/projects/quote_tool/stained-glass-quoter-1.png", "/projects/quote_tool/stained-glass-quoter-2.png", "/projects/quote_tool/stained-glass-quoter-3.png"],
+  ["/projects/pantry_pickings.png"],
+];
 
 const hrefs = [
   "https://github.com/elsjeslothower/stained-glass-api",
   "https://github.com/elsjeslothower/front-end-pantry-pickings",
 ];
+
+const loginHrefs: (string | null)[] = ["https://elsje.codes/quote-tool/", null];
 
 const accents = [
   "var(--color-glass-blue)",
@@ -44,23 +50,7 @@ export default function Projects() {
         <div className="mt-8 space-y-8">
           {t.projects.items.map((project, i) => (
             <div key={project.title} className="overflow-hidden rounded-2xl border border-border">
-              <div className="flex aspect-[16/9] w-full items-center justify-center border-b border-border bg-surface">
-                {images[i] ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={images[i]!}
-                    alt={project.title}
-                    className="h-full w-full object-cover"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center gap-2 text-foreground-muted">
-                    <ImageIcon className="h-6 w-6" />
-                    <span className="font-mono text-xs uppercase tracking-widest">
-                      {t.projects.photoComingSoon}
-                    </span>
-                  </div>
-                )}
-              </div>
+              <ProjectImageCarousel images={images[i]} alt={project.title} />
 
               <div className="p-8 sm:p-10">
                 <div className="flex flex-wrap items-start justify-between gap-4">
@@ -108,6 +98,16 @@ export default function Projects() {
                   >
                     {project.cta}
                   </a>
+                  {loginHrefs[i] && (
+                    <a
+                      href={loginHrefs[i]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber"
+                    >
+                      {t.projects.loginCta}
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

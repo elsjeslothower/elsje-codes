@@ -8,8 +8,8 @@ export default function Contact() {
   const links = [
     {
       label: t.contact.emailLabel,
-      href: "mailto:slothowerelsje@gmail.com",
-      value: "slothowerelsje@gmail.com",
+      href: "mailto:contact@elsje.codes",
+      value: "contact@elsje.codes",
     },
     {
       label: t.contact.githubLabel,
@@ -23,8 +23,8 @@ export default function Contact() {
     },
     {
       label: t.contact.calendlyLabel,
-      href: "https://calendly.com/slothower-elsje/coffee-chat",
-      value: "calendly.com/slothower-elsje/coffee-chat",
+      href: "https://calendly.com/elsje-slothower/chat",
+      value: "https://calendly.com/elsje-slothower/chat",
     },
   ];
 
