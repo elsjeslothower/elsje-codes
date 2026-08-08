@@ -21,8 +21,19 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://elsje.codes"),
   title: "<elsje.codes/>",
   description: "Elsje Slothower's Portfolio",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "<elsje.codes/>",
+    description: "Elsje Slothower's Portfolio",
+    url: "https://elsje.codes",
+    siteName: "elsje.codes",
+    type: "website",
+  },
   icons: {
     icon: [
       { url: "/favicon/favicon.ico" },

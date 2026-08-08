@@ -5,6 +5,10 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Elsje Slothower's Resume",
+  description: "Elsje Slothower's experience, skills, and education.",
+  alternates: {
+    canonical: "/resume",
+  },
 };
 
 export default function ResumePage() {
