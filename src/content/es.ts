@@ -54,19 +54,34 @@ export const es: SiteContent = {
     goToPhoto: "Ir a la foto",
     photoLabel: "Foto",
     loginCta: "Iniciar",
+    auraScopeCta: "Pruébalo",
+    // statusStyle quick ref: 0 = "En progreso" (amber), 1 = "Completo" (green)
     items: [
       {
-        status: "En progreso",
-        eyebrow: "Proyecto personal centrado en IA",
+        status: "Completo",
+        statusStyle: 1,
+        eyebrow: "Proyecto personal centrado en AI",
         title: "Stained Glass Quote Tool",
         descriptionPre:
-          "Backend que convierte la foto y descripción de un proyecto de un cliente en un presupuesto estructurado y editable. Una llamada de IA con visión genera el primer cálculo. Cabe destacar que ",
+          "Backend que convierte la foto y descripción de un proyecto de un cliente en un presupuesto estructurado y editable. Una llamada de AI con visión genera el primer cálculo. Cabe destacar que ",
         descriptionEmphasis: "una persona siempre revisa el presupuesto antes de enviarlo",
         descriptionPost: ". Hecho para un negocio real y pequeño de vidrio de colores.",
         cta: "Ver en GitHub",
       },
       {
+        status: "En progreso",
+        statusStyle: 0,
+        eyebrow: "Visualizador de colores y numeros",
+        title: "AuraScope",
+        descriptionPre:
+          "Una texo-a-arte que toma una cadena de letras y números para crear un hermoso mosaico. Escribe cualquier ",
+        descriptionEmphasis: "palabra, frase o número de la suerte",
+        descriptionPost: " quieres hacerlo y ver.",
+        cta: "Ver en GitHub",
+      },
+      {
         status: "Completo",
+        statusStyle: 1,
         eyebrow: "Proyecto final de Ada Developers Academy",
         title: "Pantry Pickings",
         descriptionPre:
@@ -252,6 +267,12 @@ export const es: SiteContent = {
         tags: ["Etiqueta uno", "Etiqueta dos"],
       },
     ],
+  },
+  auraScope: {
+    eyebrow: "Visualizador de colores y números",
+    heading: "AuraScope",
+    body: "Muy Pronto: Una herramienta de texto-a-arte que toma una cadena de letras y números para crear un hermoso mosaico. Escribe cualquier palabra, frase o número de la suerte que quieras hacer y ver.",
+    cta: "Devolver a Proyectos",
   },
   signatureIntro: {
     skip: "Saltar",

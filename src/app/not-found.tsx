@@ -1,11 +1,21 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { useContent } from "@/context/LanguageContext";
 
 export default function NotFound() {
   const t = useContent();
+  const router = useRouter();
+
+  function goBack() {
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      router.push("/");
+    }
+  }
 
   return (
     <>
@@ -51,12 +61,13 @@ export default function NotFound() {
           <p className="mt-4 max-w-md text-lg leading-relaxed text-foreground-muted">
             {t.notFound.body}
           </p>
-          <a
-            href="/"
+          <button
+            type="button"
+            onClick={goBack}
             className="mt-8 rounded-full bg-glass-green-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
           >
             {t.notFound.cta}
-          </a>
+          </button>
         </div>
       </main>
       <Footer />

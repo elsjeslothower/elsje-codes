@@ -5,6 +5,7 @@ import ProjectImageCarousel from "./ProjectImageCarousel";
 
 const stacks = [
   ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
+  ["TBD"],
   ["React", "React Router", "Axios", "Userfront", "Heroku"],
 ];
 
@@ -13,15 +14,18 @@ const stacks = [
 // showing the placeholder for that project.
 const images: string[][] = [
   ["/projects/quote_tool/stained-glass-quoter-1.webp", "/projects/quote_tool/stained-glass-quoter-2.webp", "/projects/quote_tool/stained-glass-quoter-3.webp"],
+  [],
   ["/projects/pantry_pickings.webp"],
 ];
 
 const hrefs = [
   "https://github.com/elsjeslothower/stained-glass-api",
+  "https://github.com/elsjeslothower/aura-scope",
   "https://github.com/elsjeslothower/front-end-pantry-pickings",
 ];
 
-const loginHrefs: (string | null)[] = ["https://elsje.codes/quote-tool/", null];
+const loginHrefs: (string | null)[] = ["https://elsje.codes/quote-tool/", null, null];
+const auraScopeHrefs: (string | null)[] = [null, "https://elsje.codes/auraScope/", null];
 
 const accents = [
   "var(--color-glass-blue)",
@@ -30,8 +34,8 @@ const accents = [
 ];
 
 const statusStyles = [
-  { bg: "var(--color-glass-amber)", color: "var(--color-lead)" }, // Now building
-  { bg: "var(--color-glass-green)", color: "#ffffff" }, // Completed
+  { bg: "var(--color-glass-amber)", color: "var(--color-glass-amber-text)" },
+  { bg: "var(--color-glass-green)", color: "#ffffff" },
 ];
 
 export default function Projects() {
@@ -57,7 +61,7 @@ export default function Projects() {
                   <div>
                     <span
                       className="inline-block rounded-full px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wide"
-                      style={{ background: statusStyles[i].bg, color: statusStyles[i].color }}
+                      style={{ background: statusStyles[project.statusStyle].bg, color: statusStyles[project.statusStyle].color }}
                     >
                       {project.status}
                     </span>
@@ -106,6 +110,16 @@ export default function Projects() {
                       className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
                     >
                       {t.projects.loginCta}
+                    </a>
+                  )}
+                  {auraScopeHrefs[i] && (
+                    <a
+                      href={auraScopeHrefs[i]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
+                    >
+                      {t.projects.auraScopeCta}
                     </a>
                   )}
                 </div>

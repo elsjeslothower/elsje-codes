@@ -49,10 +49,13 @@ export const en = {
     goToPhoto: "Go to photo",
     photoLabel: "Photo",
     loginCta: "Login",
+    auraScopeCta: "Try it out",
+    // statusStyle quick ref: 0 = "Now building" (amber), 1 = "Completed" (green)
     items: [
       {
         eyebrow: "AI-Centric Personal Project",
-        status: "In Progress",
+        status: "Complete",
+        statusStyle: 1,
         title: "Stained Glass Quote Tool",
         descriptionPre:
           "Backend that turns a customer's photo and project description into a structured, editable price quote. An LLM vision call produces the first-pass estimate. Notably, ",
@@ -61,8 +64,20 @@ export const en = {
         cta: "View on GitHub",
       },
       {
+        eyebrow: "Kaleidoscopic, Alphanumeric Visualizer",
+        status: "In Progress",
+        statusStyle: 0,
+        title: "AuraScope",
+        descriptionPre:
+          "A text-to-art algorithm that takes a string of letters and numbers to create a beautiful mosaic. Type in any",
+        descriptionEmphasis: "word, phrase, or lucky number",
+        descriptionPost: " you may have gotten from a fortune cookie, and see what happens.",
+        cta: "View on GitHub",
+      },
+      {
         eyebrow: "Ada Developers Academy Capstone project",
         status: "Complete",
+        statusStyle: 1,
         title: "Pantry Pickings",
         descriptionPre:
           "A dinner-party web app that helps hosts pick a recipe using ingredients they already have on hand. The app is intentionally designed - quick, simple, budget-friendly, and ",
@@ -234,6 +249,12 @@ export const en = {
         tags: ["Tag one", "Tag two"],
       },
     ],
+  },
+  auraScope: {
+    eyebrow: "Kaleidoscopic, Alphanumeric Visualizer",
+    heading: "AuraScope",
+    body: "Coming Soon: A text-to-art tool that takes a string of letters and numbers to create a beautiful mosaic. Write any word, phrase, or lucky number you want to see.",
+    cta: "Back to Projects",
   },
   signatureIntro: {
     skip: "Skip",
