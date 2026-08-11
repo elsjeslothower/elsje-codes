@@ -26,6 +26,7 @@ const hrefs = [
 
 const loginHrefs: (string | null)[] = ["https://elsje.codes/quote-tool/", null, null];
 const auraScopeHrefs: (string | null)[] = [null, "https://elsje.codes/auraScope/", null];
+const pantryHrefs: (string | null)[] = [null, null, "https://front-end-pantry-pickings-snowy.vercel.app/"];
 
 const accents = [
   "var(--color-glass-blue)",
@@ -120,6 +121,16 @@ export default function Projects() {
                       className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
                     >
                       {t.projects.auraScopeCta}
+                    </a>
+                  )}
+                  {pantryHrefs[i] && (
+                    <a
+                      href={pantryHrefs[i]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
+                    >
+                      {t.projects.pantryCta}
                     </a>
                   )}
                 </div>

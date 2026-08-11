@@ -55,6 +55,7 @@ export const es: SiteContent = {
     photoLabel: "Foto",
     loginCta: "Iniciar",
     auraScopeCta: "Pruébalo",
+    pantryCta: "Pruébalo",
     // statusStyle quick ref: 0 = "En progreso" (amber), 1 = "Completo" (green)
     items: [
       {

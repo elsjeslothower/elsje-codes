@@ -50,6 +50,7 @@ export const en = {
     photoLabel: "Photo",
     loginCta: "Login",
     auraScopeCta: "Try it out",
+    pantryCta: "Try it out",
     // statusStyle quick ref: 0 = "Now building" (amber), 1 = "Completed" (green)
     items: [
       {
@@ -69,7 +70,7 @@ export const en = {
         statusStyle: 0,
         title: "AuraScope",
         descriptionPre:
-          "A text-to-art algorithm that takes a string of letters and numbers to create a beautiful mosaic. Type in any",
+          "A text-to-art algorithm that takes a string of letters and numbers to create a beautiful mosaic. Type in any ",
         descriptionEmphasis: "word, phrase, or lucky number",
         descriptionPost: " you may have gotten from a fortune cookie, and see what happens.",
         cta: "View on GitHub",
