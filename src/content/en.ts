@@ -160,7 +160,7 @@ export const en = {
     ],
     jobs: [
       {
-        title: "Software Implementation Consultant",
+        title: "Software Engineer",
         org: "Fast Enterprises, Salem, OR (US)",
         dates: "Apr 2024 – Present",
         bullets: [
@@ -171,7 +171,7 @@ export const en = {
         ],
       },
       {
-        title: "Front End Web Developer Intern",
+        title: "Software Engineer Intern",
         org: "Kyndryl (formerly Skytap), Remote (US)",
         dates: "Mar 2023 – Aug 2023",
         bullets: [

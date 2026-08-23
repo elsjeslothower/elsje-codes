@@ -164,7 +164,7 @@ export const es: SiteContent = {
     ],
     jobs: [
       {
-        title: "Consultora de Implementación de Software",
+        title: "Software Desarrolladora",
         org: "Fast Enterprises, Salem, OR (EE. UU.)",
         dates: "Abril 2024 – Presente",
         bullets: [
@@ -175,7 +175,7 @@ export const es: SiteContent = {
         ],
       },
       {
-        title: "Pasante de Desarrollo Web Frontend",
+        title: "Pasante de Desarrollo",
         org: "Kyndryl (formerly Skytap), Remoto (EE. UU.)",
         dates: "Marzo 2023 – Agosto 2023",
         bullets: [
