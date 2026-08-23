@@ -4,12 +4,12 @@ export const es: SiteContent = {
   banner: "En construcción",
   nav: {
     links: {
-      about: "Sobre Mí",
+      about: "Sobre mí",
       projects: "Proyectos",
       skills: "Habilidades",
-      contact: "Contacto",
       resume: "Currículum",
-      puzzle: "Juego de Palabra",
+      puzzle: "Wordle",
+      contact: "Contacto",
     },
     toggleDarkMode: "Cambiar a modo oscuro",
     switchLanguage: "Cambiar idioma",
@@ -18,77 +18,76 @@ export const es: SiteContent = {
   },
   hero: {
     eyebrow: "Elsje Slothower",
-    title: "Desarrolladora, diseñadora, artista.",
-    bio1Pre:
-      "Soluciono problemas con código. Tengo experiencia en el backend, y en cada proyecto pienso primero en las bases de datos y la escalabilidad.",
-    bio1Post: "También trabajo en el frontend, y me importa mucho la experiencia del usuario.",
+    title: "Artista, creadora, desarrolladora.",
+    bio1Pre: "Soluciono problemas con software.",
+    bio1Post:
+      "Con experiencia en frontend y backend, mis proyectos se enfocan en las bases de datos y la experiencia del usuario.",
     bio2Pre:
-      "Además, tengo un pequeño negocio de vidrio de colores. Trato de mostrar todo el proceso de crear y vender mi arte en línea, incluyendo los errores. Si tienes curiosidad, puedes ver mi ",
-    bio2LinkText: "trabajo de vidrio",
-    bio2Post: " si quieres.",
+      "También tengo un pequeño negocio de vidrio de colores para documentar el proceso de crear y vender mi arte en línea, incluyendo los errores. Si quieres, puedes ver mi ",
+    bio2LinkText: "vidrio de colores",
+    bio2Post: " si tienes curiosidad.",
     ctaProjects: "Ver mi código",
     ctaContact: "Contáctame",
   },
   about: {
-    heading: "Sobre Mí",
+    heading: "Sobre mí",
     developerHeading: "Desarrolladora",
     developerPre:
       "Ada Developers Academy me dio mi primer paso en el desarrollo de software, pero todo empezó en la escuela secundaria cuando tomé una clase de programación. Las bases de la programación empezaron con ",
     developerLinkText: "¡Snap!",
     developerPost:
-      " y sigo construyendo sobre esa base. El pensamiento crítico, la resolución de problemas, y la creatividad son las habilidades que aporto a cada proyecto.",
+      " y desde entonces sigo construyendo sobre esa base. El pensamiento crítico, la resolución de problemas y la creatividad son las habilidades que aporto a cada proyecto.",
     creatorHeading: "Creadora",
     creatorText:
-      "Mi título universitario es en Periodismo e Interés Público. Tengo una larga historia de crear cosas, ya sea escribiendo artículos, conectando con la comunidad, o publicando en redes sociales. En mi trabajo actual, creo software mientras construyo una relación de confianza con mis clientes. Disfruto el proceso creativo de construir software, y también disfruto el proceso creativo de construir relaciones.",
+      "Mi título universitario es en Periodismo e Interés Público. Tengo una larga historia de crear cosas, ya sea publicando artículos, conectando con la comunidad o publicando en redes sociales. En mi trabajo actual, creo software mientras construyo una relación de confianza con mis clientes. Disfruto el proceso creativo de construir software, y también disfruto el proceso creativo de construir relaciones.",
     artistHeading: "Artista",
     artistText:
-      "Me gusta trabajar con las manos tanto como con la mente. La curiosidad es clave, y la practico en todas partes. Terminar un proyecto de principio a fin es muy satisfactorio, y es aún mejor compartir mis creaciones con otras personas. El vidrio de colores es mi manera de mostrar la belleza que veo en el mundo.",
+      "Me gusta trabajar con las manos tanto como con la mente. La curiosidad es la clave, y la practico en todas partes. Terminar un proyecto de principio a fin es muy satisfactorio, y es aún mejor compartir tus creaciones con otras personas. El vidrio de colores es mi manera de mostrar la belleza que veo en el mundo cuando quiero que otros también la vean.",
   },
   projects: {
     heading: "Proyectos",
-    paragraph1:
-      "Una colección de lo que he creado y lo que estoy creando — algunos proyectos terminados, otros todavía en proceso.",
+    paragraph1: "Lo que he creado y lo que estoy creando.",
     photoComingSoon: "Foto próximamente",
     previousPhoto: "Foto anterior",
     nextPhoto: "Foto siguiente",
     goToPhoto: "Ir a la foto",
     photoLabel: "Foto",
-    loginCta: "Iniciar",
+    loginCta: "Iniciar sesión",
     auraScopeCta: "Pruébalo",
     pantryCta: "Pruébalo",
     // statusStyle quick ref: 0 = "En progreso" (amber), 1 = "Completo" (green)
     items: [
       {
+        eyebrow: "Proyecto personal centrado en IA",
         status: "Completo",
         statusStyle: 1,
-        eyebrow: "Proyecto personal centrado en AI",
         title: "Stained Glass Quote Tool",
         descriptionPre:
-          "Backend que convierte la foto y descripción de un proyecto de un cliente en un presupuesto estructurado y editable. Una llamada de AI con visión genera el primer cálculo. Cabe destacar que ",
+          "Backend que convierte la foto y la descripción de un proyecto de un cliente en un presupuesto estructurado y editable. Una llamada de IA con visión genera el primer cálculo. Cabe destacar que ",
         descriptionEmphasis: "una persona siempre revisa el presupuesto antes de enviarlo",
-        descriptionPost: ". Hecho para un negocio real y pequeño de vidrio de colores.",
+        descriptionPost: ". Hecho para un negocio pequeño y real de vidrio de colores.",
         cta: "Ver en GitHub",
       },
       {
+        eyebrow: "Visualizador Alfanumérico Caleidoscópico",
         status: "En progreso",
         statusStyle: 0,
-        eyebrow: "Visualizador de colores y numeros",
         title: "AuraScope",
         descriptionPre:
-          "Una texo-a-arte que toma una cadena de letras y números para crear un hermoso mosaico. Escribe cualquier ",
+          "Un algoritmo de texto a arte que toma una serie de letras y números para crear un mosaico hermoso. Escribe cualquier ",
         descriptionEmphasis: "palabra, frase o número de la suerte",
-        descriptionPost: " quieres hacerlo y ver.",
+        descriptionPost: " que hayas sacado de una galleta de la fortuna, y mira qué pasa.",
         cta: "Ver en GitHub",
       },
       {
+        eyebrow: "Proyecto final de Ada Developers Academy",
         status: "Completo",
         statusStyle: 1,
-        eyebrow: "Proyecto final de Ada Developers Academy",
         title: "Pantry Pickings",
         descriptionPre:
-          "Una aplicación web para fiestas que ayuda a los anfitriones a elegir una receta usando los ingredientes que ya tienen — ",
+          "Una aplicación web para fiestas que ayuda a los anfitriones a elegir una receta usando los ingredientes que ya tienen. La aplicación está diseñada a propósito para ser rápida, simple, económica, y ",
         descriptionEmphasis:
-          "económica, y que toma en cuenta las preferencias e intolerancias alimentarias de los invitados",
+          "atenta a las preferencias e intolerancias alimentarias de los invitados",
         descriptionPost: ".",
         timeline: [],
         cta: "Ver en GitHub",
@@ -97,16 +96,11 @@ export const es: SiteContent = {
   },
   skills: {
     heading: "Habilidades",
-    groupLabels: [
-      "Idiomas",
-      "Backend",
-      "Frontend",
-      "Herramientas y prácticas",
-    ],
+    groupLabels: ["Lenguajes", "Backend", "Frontend", "Herramientas y prácticas"],
   },
   contact: {
     heading: "Contacto",
-    tagline: "¿Estás construyendo algo interesante? Me encantaría saberlo.",
+    tagline: "Eres la soldadura de mi cinta de cobre. Conectemos.",
     emailLabel: "Correo",
     githubLabel: "GitHub",
     linkedinLabel: "LinkedIn",
@@ -137,7 +131,7 @@ export const es: SiteContent = {
       education: "Educación",
       extracurriculars: "Actividades extracurriculares",
     },
-    impactLinkLabel: "Leer más",
+    impactLinkLabel: "Ver más",
     impact: [
       {
         title: "Modernización del sistema del DMV de Oregón",
@@ -171,44 +165,42 @@ export const es: SiteContent = {
     jobs: [
       {
         title: "Consultora de Implementación de Software",
-        org: "Fast Enterprises, Salem, OR (US)",
+        org: "Fast Enterprises, Salem, OR (EE. UU.)",
         dates: "Abril 2024 – Presente",
         bullets: [
-          "Realicé dos implementaciones de software en sitio para gobiernos municipales, en las áreas de Seguro de Desempleo y Servicios Vehiculares, completando las instalaciones dentro del tiempo acordado.",
-          "Capacité a usuarios clientes en configuración y reportes a través de talleres prácticos y guías paso a paso.",
+          "Desarrollé dos implementaciones de software en sitio para gobiernos municipales, en las áreas de Seguro de Desempleo y Servicios Vehiculares, completando las instalaciones y configuraciones dentro de los tiempos acordados.",
+          "Capacité a usuarios clientes en funciones de configuración y reportes a través de talleres prácticos y guías paso a paso.",
           "Reduje los errores conocidos en el ambiente de producción de más de 2,000 a menos de 100.",
-          "Creé temas de ayuda y procedimientos de triage después de la implementación, lo cual redujo el tiempo de resolución de incidentes.",
+          "Creé temas de ayuda y procedimientos de triage después de la implementación, lo cual redujo el tiempo de entrega de incidentes a los equipos de soporte.",
         ],
       },
       {
-        title: "Pasante de Desarrollo Frontend",
-        org: "Kyndryl (formerly Skytap), Remote (US)",
+        title: "Pasante de Desarrollo Web Frontend",
+        org: "Kyndryl (formerly Skytap), Remoto (EE. UU.)",
         dates: "Marzo 2023 – Agosto 2023",
         bullets: [
-          "Escribí pruebas unitarias con Jest para módulos principales, detectando errores antes de la fase de control de calidad.",
-          "Refactoricé scripts antiguos de Backbone MVC a funciones modulares de React, mejorando el rendimiento y facilitando el mantenimiento.",
+          "Escribí pruebas unitarias con Jest para módulos principales, detectando errores antes del control de calidad y mejorando la confiabilidad del código.",
+          "Refactoricé scripts antiguos de Backbone MVC a funciones modulares de React, reduciendo el tiempo de ejecución y facilitando el mantenimiento.",
           "Adopté prácticas de Agile/Scrum, reduciendo las tareas pendientes a menos del 10% entre sprints.",
-          "Implementé funciones de interfaz para la aplicación web de la empresa, usada por clientes y negocios.",
+          "Implementé funciones de interfaz para la aplicación en línea de la empresa, usada por clientes y negocios.",
         ],
       },
     ],
     skillsList: [
       "Diseño UI/UX",
       "Resolución de Problemas",
-      "Colaboración en Equipo",
       "C#",
-      "FinTech",
       "React",
       "JavaScript",
       "Desarrollo Web",
-      "Meticulosa",
+      "Fullstack",
       "Pensamiento Crítico",
       "Creatividad",
       "Gestión del Tiempo",
       "Python",
       "SQL",
       "Desarrollo de APIs",
-      "AI",
+      "IA",
       "HTML",
       "CSS",
       "REST",
@@ -218,17 +210,17 @@ export const es: SiteContent = {
     education: [
       {
         degree: "Licenciatura en Periodismo e Interés Público",
-        org: "University of Washington-Seattle Campus, Seattle, WA (US)",
-        dates: "Sep 2018 – Dic 2021",
+        org: "University of Washington-Seattle Campus, Seattle, WA (EE. UU.)",
+        dates: "Septiembre 2018 – Diciembre 2021",
         description:
           "Título universitario con especialización menor en música. Publiqué artículos en varias revistas de Seattle. Estuve en la Lista del Decano la mayoría de los trimestres.",
       },
       {
         degree: "Certificado en Ingeniería de Software",
-        org: "Ada Developers Academy, Seattle, WA (US)",
-        dates: "Sep 2022 – Jul 2023",
+        org: "Ada Developers Academy, Seattle, WA (EE. UU.)",
+        dates: "Septiembre 2022 – Julio 2023",
         description:
-          'Programa selectivo de desarrollo de software con una tasa de aceptación menor al 8%, enfocado en desarrollo web full stack y fundamentos de ciencias de la computación. El proyecto final "Pantry Pickings" fue una despensa virtual que sugiere recetas usando los ingredientes que ya tienes.',
+          'Programa selectivo de desarrollo de software con una tasa de aceptación menor al 8%, enfocado en desarrollo web full stack y fundamentos de ciencias de la computación. El proyecto final "Pantry Pickings" fue una despensa virtual que sugiere comidas usando los ingredientes que ya tienes, para reducir el desperdicio de comida.',
       },
     ],
     extracurriculars: [
@@ -236,19 +228,19 @@ export const es: SiteContent = {
         role: "Miembro del Comité",
         org: "Fast for All at Fast Enterprises",
         description:
-          "Miembro de un comité cuya misión es mejorar la experiencia de los empleados, implementando beneficios más equitativos, creando grupos de recursos para empleados (ERGs), y organizando oportunidades de voluntariado dos veces al año.",
+          "Miembro de un comité cuya misión es mejorar la experiencia de los empleados, implementando beneficios más equitativos, creando y administrando grupos de recursos para empleados (ERGs), y organizando oportunidades de voluntariado dos veces al año para toda la empresa.",
       },
       {
         role: "Voluntaria de Costura",
         org: "Purls of Love",
         description:
-          "Participante en un esfuerzo voluntario para coser, tejer, y crochetear gorros para pacientes de cáncer en quimioterapia.",
+          "Participante en un esfuerzo voluntario para coser, tejer y hacer crochet de gorros para pacientes de cáncer en quimioterapia.",
       },
       {
         role: "Miembro de la Comunidad",
         org: "Common People Yoga",
         description:
-          "Miembro de un estudio de yoga comunitario que promueve la accesibilidad e inclusión en la práctica de yoga, incluyendo clases para personas con discapacidades y personas neurodivergentes.",
+          "Miembro de un estudio de yoga comunitario que promueve la accesibilidad y la inclusión en la práctica de yoga, incluyendo clases para personas con discapacidades y personas neurodivergentes.",
       },
       {
         role: "Dueña de Pequeño Negocio",
@@ -259,17 +251,16 @@ export const es: SiteContent = {
     ],
   },
   puzzle: {
-    heading: "Rompecabezas",
-    paragraph1:
-      "Adivina la palabra de 5 letras en 6 intentos. Si las letras se vuelven verdes, están en el lugar correcto. Si se vuelven color ámbar, están en la palabra pero en el lugar equivocado. Si son grises, no están en la palabra.",
+    heading: "Copia de Wordle",
+    paragraph1: "Adivina la palabra de 5 letras en 6 intentos.",
     paragraph2:
-      "Cuando adivines la palabra, escribe la respuesta en la URL después de elsje.codes/_____ para encontrar una secreta.",
+      "Cuando adivines la palabra, escribe la respuesta en la URL después de elsje.codes/_____ para encontrar un secreto.",
     legendCorrect: "Lugar correcto",
     legendPresent: "En la palabra, lugar equivocado",
     legendAbsent: "No está en la palabra",
     notEnoughLetters: "Faltan letras",
     wonMessage: "¡Lo lograste!",
-    lostMessagePrefix: "Eso si que es; la palabra es: ",
+    lostMessagePrefix: "¡Ay, buen intento! De todos modos eres genial. La palabra es: ",
     playAgain: "Jugar de nuevo",
   },
   steppingStones: {
@@ -280,35 +271,32 @@ export const es: SiteContent = {
     stones: [
       {
         status: "Lección",
-        eyebrow: "Texto de ejemplo",
-        title: "Título de la lección aquí",
-        description:
-          "Texto de ejemplo — escribe aquí qué salió mal y qué aprendiste de eso.",
+        eyebrow: "Texto de marcador",
+        title: "Título de la lección",
+        description: "Descripción",
         tags: ["Etiqueta uno", "Etiqueta dos"],
       },
       {
         status: "Lección",
-        eyebrow: "Texto de ejemplo",
-        title: "Título de la lección aquí",
-        description:
-          "Texto de ejemplo — escribe aquí qué salió mal y qué aprendiste de eso.",
+        eyebrow: "Texto de marcador",
+        title: "Título de la lección",
+        description: "Descripción",
         tags: ["Etiqueta uno", "Etiqueta dos"],
       },
       {
         status: "Lección",
-        eyebrow: "Texto de ejemplo",
-        title: "Título de la lección aquí",
-        description:
-          "Texto de ejemplo — escribe aquí qué salió mal y qué aprendiste de eso.",
+        eyebrow: "Texto de marcador",
+        title: "Título de la lección",
+        description: "Descripción",
         tags: ["Etiqueta uno", "Etiqueta dos"],
       },
     ],
   },
   auraScope: {
-    eyebrow: "Visualizador de colores y números",
+    eyebrow: "Visualizador Alfanumérico Caleidoscópico",
     heading: "AuraScope",
-    body: "Muy Pronto: Una herramienta de texto-a-arte que toma una cadena de letras y números para crear un hermoso mosaico. Escribe cualquier palabra, frase o número de la suerte que quieras hacer y ver.",
-    cta: "Devolver a Proyectos",
+    body: "Próximamente: Una herramienta de texto a arte que toma una serie de letras y números para crear un mosaico hermoso. Escribe cualquier palabra, frase o número de la suerte que quieras ver.",
+    cta: "Volver a Proyectos",
   },
   signatureIntro: {
     skip: "Saltar",
