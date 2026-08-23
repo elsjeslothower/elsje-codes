@@ -107,6 +107,8 @@ export const en = {
   },
   resume: {
     heading: "Resume",
+    headshotAlt: "Portrait of Elsje Slothower",
+    logoAlt: "logo",
     name: "Elsje Slothower",
     title: "Software Developer",
     location: "Salem, OR (US)",
@@ -117,12 +119,45 @@ export const en = {
     summary:
       "Software Developer focused on delivering production-ready web and enterprise solutions through hands-on deployment and front-end engineering. Seeks to apply strong debugging, UI design, and collaborative deployment skills to build resilient systems.",
     downloadPdfLabel: "Download PDF",
+    linkedinCta: "View on LinkedIn",
     sectionLabels: {
       employment: "Employment history",
+      impact: "Impact",
       skills: "Skills",
       education: "Education",
       extracurriculars: "Extracurriculars",
     },
+    impactLinkLabel: "See more",
+    impact: [
+      {
+        title: "Oregon DMV System Modernization",
+        org: "Fast Enterprises",
+        summary:
+          "Supported an onsite deployment for Oregon's Driver and Vehicle Services, helping install and configure the new system within agreed timelines. Government press release link coming soon.",
+        link: null,
+      },
+      {
+        title: "Tennessee Unemployment Insurance Tax System Modernization",
+        org: "Fast Enterprises",
+        summary:
+          "Supported Tennessee's rollout of a new Employer e-Services tax system that replaced a manual, paper based process with self service digital tools. Employers can now register instantly, file wage and premium reports online, and correct errors without waiting on state staff. The system went live in May 2025 with no unexpected issues.",
+        link: "https://www.tn.gov/workforce/newsletter/2025/june-unemployment-insurance-tax-system.html",
+      },
+      {
+        title: "Skytap Cloud Connectivity Page Modernization",
+        org: "Kyndryl (formerly Skytap)",
+        summary:
+          "Migrated Skytap Cloud's connectivity page from a legacy Backbone.js implementation to React, improving maintainability and easing future updates.",
+        link: "https://cloud.skytap.com/connectivity",
+      },
+      {
+        title: "BuddyUp! Networking Initiative",
+        org: "Fast for All",
+        summary:
+          "Spearheaded BuddyUp!, an initiative that paired participants with shared interests during company wide networking events, making socializing more approachable for those who might otherwise feel intimidated by it.",
+        link: null,
+      },
+    ],
     jobs: [
       {
         title: "Software Implementation Consultant",
@@ -193,8 +228,8 @@ export const en = {
       },
       {
         role: "Stitch Supporter",
-        org: "Salem Health Cancer Resource Center",
-        description: "Participant in 'Purls of Love', a volunteer effort to sew, knit, and crochet hats for cancer patients undergoing chemotherapy.",
+        org: "Purls of Love",
+        description: "Participant in a volunteer effort to sew, knit, and crochet hats for cancer patients undergoing chemotherapy.",
       },
       {
         role: "Community Member",

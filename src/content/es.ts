@@ -117,6 +117,8 @@ export const es: SiteContent = {
   },
   resume: {
     heading: "Currículum",
+    headshotAlt: "Retrato de Elsje Slothower",
+    logoAlt: "logo",
     name: "Elsje Slothower",
     title: "Desarrolladora de Software",
     location: "Salem, OR (EE. UU.)",
@@ -127,12 +129,45 @@ export const es: SiteContent = {
     summary:
       "Desarrolladora de Software enfocada en crear soluciones web y empresariales listas para producción, con experiencia práctica en implementación y desarrollo frontend. Busco aplicar mis habilidades de depuración, diseño de interfaces, y trabajo en equipo para construir sistemas confiables.",
     downloadPdfLabel: "Descargar PDF",
+    linkedinCta: "Ver en LinkedIn",
     sectionLabels: {
       employment: "Experiencia laboral",
+      impact: "Impacto",
       skills: "Habilidades",
       education: "Educación",
       extracurriculars: "Actividades extracurriculares",
     },
+    impactLinkLabel: "Leer más",
+    impact: [
+      {
+        title: "Modernización del sistema del DMV de Oregón",
+        org: "Fast Enterprises",
+        summary:
+          "Apoyé una implementación en sitio para el Departamento de Vehículos Motorizados de Oregón, ayudando a instalar y configurar el nuevo sistema dentro de los tiempos acordados. El enlace al comunicado de prensa del gobierno vendrá pronto.",
+        link: null,
+      },
+      {
+        title: "Modernización del sistema de impuestos del seguro de desempleo de Tennessee",
+        org: "Fast Enterprises",
+        summary:
+          "Apoyé el lanzamiento de un nuevo sistema de impuestos para empleadores en Tennessee que reemplazó un proceso manual, basado en papel, con herramientas digitales de autoservicio. Ahora los empleadores pueden registrarse al instante, presentar reportes de salarios y primas en línea, y corregir errores sin esperar al personal del estado. El sistema se lanzó en mayo de 2025 sin problemas inesperados.",
+        link: "https://www.tn.gov/workforce/newsletter/2025/june-unemployment-insurance-tax-system.html",
+      },
+      {
+        title: "Modernización de la página de conectividad de Skytap Cloud",
+        org: "Kyndryl (formerly Skytap)",
+        summary:
+          "Migré la página de conectividad de Skytap Cloud de una implementación antigua en Backbone.js a React, mejorando el mantenimiento y facilitando futuras actualizaciones.",
+        link: "https://cloud.skytap.com/connectivity",
+      },
+      {
+        title: "Iniciativa de networking BuddyUp!",
+        org: "Fast for All",
+        summary:
+          "Lideré BuddyUp!, una iniciativa que conectaba a los participantes con intereses en común durante los eventos de networking de toda la empresa, haciendo que socializar fuera más fácil para quienes podrían sentirse intimidados por ello.",
+        link: null,
+      },
+    ],
     jobs: [
       {
         title: "Consultora de Implementación de Software",
@@ -205,9 +240,9 @@ export const es: SiteContent = {
       },
       {
         role: "Voluntaria de Costura",
-        org: "Salem Health Cancer Resource Center",
+        org: "Purls of Love",
         description:
-          "Participante en 'Purls of Love', un esfuerzo voluntario para coser, tejer, y crochetear gorros para pacientes de cáncer en quimioterapia.",
+          "Participante en un esfuerzo voluntario para coser, tejer, y crochetear gorros para pacientes de cáncer en quimioterapia.",
       },
       {
         role: "Miembro de la Comunidad",

@@ -54,7 +54,7 @@ export default function Hero() {
         >
           {t.hero.bio2Pre}
           <a 
-            href="https://www.youtube.com/@elsjesglass" 
+            href="https://www.instagram.com/elsjesglass" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-glass-blue hover:text-glass-violet">
