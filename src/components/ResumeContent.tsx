@@ -113,7 +113,7 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "80ms" }}>
+      <div id="employment" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "80ms" }}>
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
           {r.sectionLabels.employment}
         </h2>
@@ -147,7 +147,7 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "100ms" }}>
+      <div id="impact" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "100ms" }}>
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
           {r.sectionLabels.impact}
         </h2>
@@ -176,7 +176,7 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "120ms" }}>
+      <div id="skills" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "120ms" }}>
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
           {r.sectionLabels.skills}
         </h2>

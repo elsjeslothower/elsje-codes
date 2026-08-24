@@ -266,29 +266,63 @@ export const es: SiteContent = {
   steppingStones: {
     heading: "Piedras del Camino",
     paragraph1:
-      "¡Lo lograste, qué inteligente eres! Como todos tropezamos en el camino hacia la maestría, es importante reflexionar sobre las lecciones aprendidas. Aquí están algunas de las mías.",
+      "¡Lo lograste, qué inteligente eres! 🍪 Como todos tropezamos en el camino hacia la maestría, es importante reflexionar sobre las lecciones aprendidas. Aquí están algunas de las mías.",
     photoComingSoon: "Foto próximamente",
+    readMore: "Leer más",
+    closeModal: "Cerrar",
     stones: [
       {
-        status: "Lección",
-        eyebrow: "Texto de marcador",
-        title: "Título de la lección",
-        description: "Descripción",
-        tags: ["Etiqueta uno", "Etiqueta dos"],
+        status: "Seguridad de IA",
+        link: "/#stained-glass-quote-tool",
+        eyebrow: "Stained Glass Quote Tool",
+        title: "La Importancia de la Autenticación",
+        description:
+          "Una lección de seguridad: adelantarse a los atacantes antes de lanzar una función de IA.",
+        tags: ["Seguridad", "IA"],
+        articleBody:
+          "Antes de lanzar el endpoint de IA de la herramienta de cotización, ya había escuchado lo expuestas que pueden estar las funciones con IA, desde inyección de prompts hasta bots que aumentan los costos de la API. Por eso me aseguré de tener autenticación real antes de que la herramienta llegara a un cliente, no después de que algo saliera mal. Esto reforzó un hábito que sigo teniendo: pensar en cómo se ve una función para alguien que intenta romperla, antes de lanzarla.",
       },
       {
-        status: "Lección",
-        eyebrow: "Texto de marcador",
-        title: "Título de la lección",
-        description: "Descripción",
-        tags: ["Etiqueta uno", "Etiqueta dos"],
+        status: "Escalabilidad",
+        link: "/resume#impact",
+        eyebrow: "Tennessee UI e-Services",
+        title: "Pensar en el Futuro es Clave",
+        description:
+          "Una lección de escalabilidad, aprendida de la manera difícil mientras construía un sistema para el gobierno.",
+        tags: ["Escalabilidad", "Sistemas Gubernamentales"],
+        articleBody:
+          "Mientras construía la página de resumen de Cargos Reembolsables para el nuevo sistema e-Services de Tennessee, aprendí que una función que funciona bien en una demostración puede fallar con datos reales. Algunos empleadores tenían años de registros históricos, y mi primera versión los cargaba todos a la vez. Ahora la escalabilidad es una pregunta que me hago desde el primer día, no después de la primera página lenta.",
       },
       {
-        status: "Lección",
-        eyebrow: "Texto de marcador",
-        title: "Título de la lección",
-        description: "Descripción",
-        tags: ["Etiqueta uno", "Etiqueta dos"],
+        status: "Planificación y Proceso",
+        link: "/#pantry-pickings",
+        eyebrow: "Pantry Pickings",
+        title: "Las Pizarras Son las Mejores Amigas de un Desarrollador",
+        description: "Una lección sobre planificar tu código antes de escribirlo.",
+        tags: ["Planificación", "Diseño de Backend"],
+        articleBody:
+          "Antes de escribir una sola línea de Pantry Pickings, un proyecto individual, pasé horas en la pizarra planeando los flujos de usuario, los modelos de datos y los endpoints de la API por mi cuenta. En ese momento parecía lento, pero dibujarlo reveló errores reales en cómo estaba diseñando el backend, errores que solo habría descubierto mucho más tarde si hubiera empezado a programar primero. Planificar no le quita tiempo a construir, es lo que hace que lo construido se sostenga.",
+      },
+      {
+        status: "Resolución de Problemas",
+        link: "/resume#skills",
+        eyebrow: "Habilidades",
+        title: "Recordar el Razonamiento es Mejor que Memorizar",
+        description: "Una lección de resolución de problemas: por qué entender es mejor que memorizar.",
+        tags: ["Resolución de Problemas", "Repetición Espaciada"],
+        articleBody:
+          "Un libro llamado ''Fluent Forever'' me presentó los sistemas de repetición espaciada, algoritmos respaldados por investigaciones que muestran que son una de las formas más efectivas de fijar información en la memoria a largo plazo. Empecé a usarlo para aprender español, y luego me di cuenta de que el mismo método funciona también para conceptos de programación. Ahora, cuando me encuentro con un problema lógico difícil en el trabajo, recuerdo un razonamiento que realmente he retenido, no una respuesta memorizada que aprendí una vez y olvidé.",
+      },
+      {
+        status: "Trabajo con Clientes",
+        link: "/resume#employment",
+        eyebrow: "Fast Enterprises",
+        title: "A Tiempo y Dentro del Presupuesto",
+        description:
+          "Una lección sobre los desafíos únicos de crear software para gobiernos municipales.",
+        tags: ["Contratos Gubernamentales", "Gestión de Proyectos"],
+        articleBody:
+          "Trabajar en sitio con gobiernos municipales me enseñó que las fechas límite no son solo metas internas, muchas veces las define una ley o un ciclo de presupuesto que no se puede mover. Entre sistemas antiguos y una amplia variedad de comodidad técnica entre el personal, entregar software en este entorno requiere más paciencia y comunicación que un proyecto de cliente típico.",
       },
     ],
   },

@@ -257,32 +257,62 @@ export const en = {
   },
   steppingStones: {
     heading: "Stepping Stones",
-    paragraph1: "You made it, you smart cookie! Since we all stumble to mastery, it's important to reflect on lessons learned. Here are some of mine.",
+    paragraph1: "You made it, you smart cookie! 🍪 Since we all stumble to mastery, it's important to reflect on lessons learned. Here are some of mine.",
     photoComingSoon: "Photo coming soon",
+    readMore: "Read more",
+    closeModal: "Close",
     stones: [
       {
-        status: "Lesson",
-        eyebrow: "Placeholder eyebrow",
-        title: "Lesson title",
-        description:
-          "Description",
-        tags: ["Tag one", "Tag two"],
+        status: "AI Security",
+        link: "/#stained-glass-quote-tool",
+        eyebrow: "Stained Glass Quote Tool",
+        title: "The Importance of Authentication",
+        description: "A lesson in security: staying ahead of bad actors before an AI feature ever ships.",
+        tags: ["Security", "AI"],
+        articleBody:
+          "Before deploying the quote tool's AI endpoint, I'd already heard how exposed LLM-powered features can become easy targets, from prompt injection to bots running up API costs. So I made sure real authentication was in place before the tool ever reached a client, not after something went wrong. It reinforced a habit I still carry: ask what a feature looks like to someone trying to break it, before it ships.",
       },
       {
-        status: "Lesson",
-        eyebrow: "Placeholder eyebrow",
-        title: "Lesson title",
+        status: "Scalability",
+        link: "/resume#impact",
+        eyebrow: "Tennessee UI e-Services",
+        title: "Thinking Ahead Is Key",
         description:
-          "Description",
-        tags: ["Tag one", "Tag two"],
+          "A lesson in scalability, learned the hard way while building for a government system.",
+        tags: ["Scalability", "Government Systems"],
+        articleBody:
+          "While building the Reimbursable Charge summary page for Tennessee's new e-Services system, I learned a feature that works in a demo can buckle under real data. Some employers had years of historical records, and my first pass loaded it all at once. Now scale is a question I ask on day one, not after the first slow page load.",
       },
       {
-        status: "Lesson",
-        eyebrow: "Placeholder eyebrow",
-        title: "Lesson title",
+        status: "Planning & Process",
+        link: "/#pantry-pickings",
+        eyebrow: "Pantry Pickings",
+        title: "Whiteboards Are a Developer's Best Friend",
+        description: "A lesson in planning your code before you write it.",
+        tags: ["Planning", "Backend Design"],
+        articleBody:
+          "Before writing a single line of Pantry Pickings, a solo project, I spent hours at the whiteboard mapping out user flows, data models, and API endpoints on my own. It felt slow at the time, but sketching it out surfaced real errors in how I was designing the backend, ones I would have only caught much later if I'd started coding first. Planning isn't time taken from building, it's what makes the building hold up.",
+      },
+      {
+        status: "Problem Solving",
+        link: "/resume#skills",
+        eyebrow: "Skills",
+        title: "Recalling Is Better Than Memorizing",
+        description: "A lesson in problem solving: why understanding beats memorizing.",
+        tags: ["Problem Solving", "Spaced Repetition"],
+        articleBody:
+          "A book called ''Fluent Forever'' introduced me to spaced repetition systems, algorithms backed by research showing they're one of the most effective ways to wire information into long-term memory. I started using it to learn Spanish, then realized the same approach works for coding concepts too. Now when I hit a tricky logic problem at work, I'm recalling reasoning I've actually retained, not a memorized answer I crammed once and forgot.",
+      },
+      {
+        status: "Client Work",
+        link: "/resume#employment",
+        eyebrow: "Fast Enterprises",
+        title: "On Time and On Budget",
         description:
-          "Description",
-        tags: ["Tag one", "Tag two"],
+          "A lesson in the unique challenges of building software for municipal government.",
+        tags: ["Government Contracts", "Project Management"],
+        articleBody:
+          "Working onsite with municipal governments taught me that deadlines aren't just internal goals, they're often set by law or budget cycles that don't move. Between legacy systems and a wide range of technical comfort among staff, delivering software here takes more patience and communication than a typical client project.",
       },
     ],
   },

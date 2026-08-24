@@ -28,6 +28,8 @@ const loginHrefs: (string | null)[] = ["https://elsje.codes/quote-tool/", null, 
 const auraScopeHrefs: (string | null)[] = [null, "https://elsje.codes/auraScope/", null];
 const pantryHrefs: (string | null)[] = [null, null, "https://front-end-pantry-pickings-snowy.vercel.app/"];
 
+const projectIds = ["stained-glass-quote-tool", "aurascope", "pantry-pickings"];
+
 const accents = [
   "var(--color-glass-blue)",
   "var(--color-glass-violet)",
@@ -54,7 +56,11 @@ export default function Projects() {
 
         <div className="mt-8 space-y-8">
           {t.projects.items.map((project, i) => (
-            <div key={project.title} className="overflow-hidden rounded-2xl border border-border">
+            <div
+              key={project.title}
+              id={projectIds[i]}
+              className="scroll-mt-24 overflow-hidden rounded-2xl border border-border"
+            >
               <ProjectImageCarousel images={images[i]} alt={project.title} />
 
               <div className="p-8 sm:p-10">
