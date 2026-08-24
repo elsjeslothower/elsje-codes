@@ -78,6 +78,17 @@ export const es: SiteContent = {
         cta: "Ver en GitHub",
       },
       {
+        eyebrow: "Mapas para Embarcaciones",
+        status: "En progreso",
+        statusStyle: 0,
+        title: "Pier to Pier",
+        descriptionPre:
+          "Tu compañero personal que te ayuda a llegar desde tu embarcadero hasta ",
+        descriptionEmphasis: "dondequiera que te lleve el agua",
+        descriptionPost: ". Incorpora una API de datos de mareas, un algoritmo de búsqueda de rutas A* que evita tierra firme y aguas poco profundas, y MapKit nativo delimitado al estrecho de Puget.",
+        cta: "Ver en GitHub",
+      },
+      {
         eyebrow: "Proyecto final de Ada Developers Academy",
         status: "Completo",
         statusStyle: 1,

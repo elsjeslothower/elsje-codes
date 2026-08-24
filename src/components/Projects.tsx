@@ -6,6 +6,7 @@ import ProjectImageCarousel from "./ProjectImageCarousel";
 const stacks = [
   ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
   ["TypeScript", "Vite", "ViTest", "Vanilla Canvas 2D API"],
+  ["TBD"],
   ["React", "React Router", "Axios", "Userfront", "Heroku"],
 ];
 
@@ -15,18 +16,21 @@ const stacks = [
 const images: string[][] = [
   ["/projects/quote_tool/stained-glass-quoter-1.webp", "/projects/quote_tool/stained-glass-quoter-2.webp", "/projects/quote_tool/stained-glass-quoter-3.webp"],
   ["/projects/aura_scope/aura-scope-1.webp"], //TODO:, "/projects/aura_scope/aura-scope-2.webp"],
+  [],
   ["/projects/pantry_pickings.webp"],
 ];
 
 const hrefs = [
   "https://github.com/elsjeslothower/stained-glass-api",
   "https://github.com/elsjeslothower/aura-scope",
+  "https://github.com/elsjeslothower/pier-to-pier",
   "https://github.com/elsjeslothower/front-end-pantry-pickings",
 ];
 
 const demoHrefs: (string | null)[] = [
   "https://elsje.codes/quote-tool/",
   "https://elsje.codes/auraScope/",
+  "https://elsje.codes/pier-to-pier/",
   "https://front-end-pantry-pickings-snowy.vercel.app/",
 ];
 

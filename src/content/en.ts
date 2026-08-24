@@ -74,6 +74,17 @@ export const en = {
         cta: "View on GitHub",
       },
       {
+        eyebrow: "Maps for Boats",
+        status: "In Progress",
+        statusStyle: 0,
+        title: "Pier to Pier",
+        descriptionPre:
+          "Your personal buoy buddy that helps you get from your dock to ",
+        descriptionEmphasis: "wherever the water takes you",
+        descriptionPost: ". Incorporates a tide data API, A* pathfinding that avoids land and shallow waters, and a native MapKit scoped to the Puget Sound.",
+        cta: "View on GitHub",
+      },
+      {
         eyebrow: "Ada Developers Academy Capstone project",
         status: "Complete",
         statusStyle: 1,
