@@ -48,9 +48,7 @@ export const en = {
     nextPhoto: "Next photo",
     goToPhoto: "Go to photo",
     photoLabel: "Photo",
-    loginCta: "Login",
-    auraScopeCta: "Try it out",
-    pantryCta: "Try it out",
+    demoCta: "Try it out",
     // statusStyle quick ref: 0 = "Now building" (amber), 1 = "Completed" (green)
     items: [
       {

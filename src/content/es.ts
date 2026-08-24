@@ -52,9 +52,7 @@ export const es: SiteContent = {
     nextPhoto: "Foto siguiente",
     goToPhoto: "Ir a la foto",
     photoLabel: "Foto",
-    loginCta: "Iniciar sesión",
-    auraScopeCta: "Pruébalo",
-    pantryCta: "Pruébalo",
+    demoCta: "Pruébalo",
     // statusStyle quick ref: 0 = "En progreso" (amber), 1 = "Completo" (green)
     items: [
       {

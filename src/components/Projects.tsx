@@ -5,7 +5,7 @@ import ProjectImageCarousel from "./ProjectImageCarousel";
 
 const stacks = [
   ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
-  ["TBD"],
+  ["TypeScript", "Vite", "ViTest", "Vanilla Canvas 2D API"],
   ["React", "React Router", "Axios", "Userfront", "Heroku"],
 ];
 
@@ -14,7 +14,7 @@ const stacks = [
 // showing the placeholder for that project.
 const images: string[][] = [
   ["/projects/quote_tool/stained-glass-quoter-1.webp", "/projects/quote_tool/stained-glass-quoter-2.webp", "/projects/quote_tool/stained-glass-quoter-3.webp"],
-  [],
+  ["/projects/aura_scope/aura-scope-1.webp"], //TODO:, "/projects/aura_scope/aura-scope-2.webp"],
   ["/projects/pantry_pickings.webp"],
 ];
 
@@ -24,9 +24,11 @@ const hrefs = [
   "https://github.com/elsjeslothower/front-end-pantry-pickings",
 ];
 
-const loginHrefs: (string | null)[] = ["https://elsje.codes/quote-tool/", null, null];
-const auraScopeHrefs: (string | null)[] = [null, "https://elsje.codes/auraScope/", null];
-const pantryHrefs: (string | null)[] = [null, null, "https://front-end-pantry-pickings-snowy.vercel.app/"];
+const demoHrefs: (string | null)[] = [
+  "https://elsje.codes/quote-tool/",
+  "https://elsje.codes/auraScope/",
+  "https://front-end-pantry-pickings-snowy.vercel.app/",
+];
 
 const projectIds = ["stained-glass-quote-tool", "aurascope", "pantry-pickings"];
 
@@ -109,34 +111,14 @@ export default function Projects() {
                   >
                     {project.cta}
                   </a>
-                  {loginHrefs[i] && (
+                  {demoHrefs[i] && (
                     <a
-                      href={loginHrefs[i]}
+                      href={demoHrefs[i]!}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
                     >
-                      {t.projects.loginCta}
-                    </a>
-                  )}
-                  {auraScopeHrefs[i] && (
-                    <a
-                      href={auraScopeHrefs[i]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
-                    >
-                      {t.projects.auraScopeCta}
-                    </a>
-                  )}
-                  {pantryHrefs[i] && (
-                    <a
-                      href={pantryHrefs[i]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
-                    >
-                      {t.projects.pantryCta}
+                      {t.projects.demoCta}
                     </a>
                   )}
                 </div>
