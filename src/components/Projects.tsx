@@ -4,10 +4,10 @@ import { useContent } from "@/context/LanguageContext";
 import ProjectImageCarousel from "./ProjectImageCarousel";
 
 const stacks = [
-  ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Anthropic Claude API", "HTML / Tailwind"],
-  ["TypeScript", "Vite", "ViTest", "Vanilla Canvas 2D API"],
-  ["TBD"],
-  ["React", "React Router", "Axios", "Userfront", "Heroku"],
+  ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Railway", "Supabase", "Anthropic Claude API", "HTML / Tailwind"],
+  ["TypeScript", "WebGL2", "Vite", "Vitest", "Vanilla DOM API"],
+  ["React", "TypeScript", "Vite", "Vitest", "Leaflet", "react-leaflet", "Node script (tsx)", "Overpass API"],
+  ["React", "React Router", "Axios", "Clerk (OAuth)", "Heroku", "Flask", "SQLAlchemy 2.0", "PostgreSQL"],
 ];
 
 // Add as many paths as you like per project (e.g. "/projects/image.jpg")
@@ -15,8 +15,8 @@ const stacks = [
 // showing the placeholder for that project.
 const images: string[][] = [
   ["/projects/quote_tool/stained-glass-quoter-1.webp", "/projects/quote_tool/stained-glass-quoter-2.webp", "/projects/quote_tool/stained-glass-quoter-3.webp"],
-  ["/projects/aura_scope/aura-scope-1.webp"], //TODO:, "/projects/aura_scope/aura-scope-2.webp"],
-  [],
+  ["/projects/aura_scope/aura-scope-1.webp"],
+  ["/projects/boat_router/boat-router-homepage.webp"],
   ["/projects/pantry_pickings.webp"],
 ];
 
