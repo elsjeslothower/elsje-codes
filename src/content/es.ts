@@ -18,7 +18,7 @@ export const es: SiteContent = {
   },
   hero: {
     eyebrow: "Elsje Slothower",
-    title: "Artista, creadora, desarrolladora.",
+    title: "Artista, Creadora, Desarrolladora.",
     bio1Pre: "Soluciono problemas con software.",
     bio1Post:
       "Con experiencia en frontend y backend, mis proyectos se enfocan en las bases de datos y la experiencia del usuario.",
