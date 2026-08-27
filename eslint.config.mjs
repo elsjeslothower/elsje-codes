@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // never source demo bundles (quote-tool, pier-to-pier) to lint.
+    "public/**",
   ]),
 ]);
 

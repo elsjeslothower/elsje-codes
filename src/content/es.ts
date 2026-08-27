@@ -85,7 +85,7 @@ export const es: SiteContent = {
         descriptionPre:
           "Tu compañero personal que te ayuda a llegar desde tu embarcadero hasta ",
         descriptionEmphasis: "dondequiera que te lleve el agua",
-        descriptionPost: ". Incorpora una API de datos de mareas, un algoritmo de búsqueda de rutas A* que evita tierra firme y aguas poco profundas, y MapKit nativo delimitado al estrecho de Puget.",
+        descriptionPost: ". Un algoritmo A* construido desde cero traza rutas sobre datos reales de la costa de Puget Sound, evitando tierra firme, con un interruptor para comparar la ruta más corta con una más segura en aguas más profundas.",
         cta: "Ver en GitHub",
       },
       {

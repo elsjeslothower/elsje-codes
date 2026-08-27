@@ -34,7 +34,7 @@ const demoHrefs: (string | null)[] = [
   "https://front-end-pantry-pickings-snowy.vercel.app/",
 ];
 
-const projectIds = ["stained-glass-quote-tool", "aurascope", "pantry-pickings"];
+const projectIds = ["stained-glass-quote-tool", "aurascope", "pier-to-pier", "pantry-pickings"];
 
 const accents = [
   "var(--color-glass-blue)",

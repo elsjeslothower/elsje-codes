@@ -81,7 +81,7 @@ export const en = {
         descriptionPre:
           "Your personal buoy buddy that helps you get from your dock to ",
         descriptionEmphasis: "wherever the water takes you",
-        descriptionPost: ". Incorporates a tide data API, A* pathfinding that avoids land and shallow waters, and a native MapKit scoped to the Puget Sound.",
+        descriptionPost: ". A from-scratch A* pathfinder routes across real Puget Sound coastline data, avoiding land, with a toggle to compare a shortest route against a safer, deeper-water one.",
         cta: "View on GitHub",
       },
       {
