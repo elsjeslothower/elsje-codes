@@ -67,7 +67,11 @@ export default function Projects() {
               id={projectIds[i]}
               className="scroll-mt-24 overflow-hidden rounded-2xl border border-border"
             >
-              <ProjectImageCarousel images={images[i]} alt={project.title} />
+              <ProjectImageCarousel
+                images={images[i]}
+                alt={project.title}
+                href={demoHrefs[i] ?? hrefs[i]}
+              />
 
               <div className="p-8 sm:p-10">
                 <div className="flex flex-wrap items-start justify-between gap-4">

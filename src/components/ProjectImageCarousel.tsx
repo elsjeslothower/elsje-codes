@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ElementType } from "react";
 import Image from "next/image";
 import { ImageIcon, ChevronLeftIcon, ChevronRightIcon } from "./icons";
 import { useContent } from "@/context/LanguageContext";
@@ -8,9 +8,11 @@ import { useContent } from "@/context/LanguageContext";
 export default function ProjectImageCarousel({
   images,
   alt,
+  href,
 }: {
   images: string[];
   alt: string;
+  href?: string;
 }) {
   const t = useContent();
   const [index, setIndex] = useState(0);
@@ -36,9 +38,15 @@ export default function ProjectImageCarousel({
     setIndex((i) => (i === images.length - 1 ? 0 : i + 1));
   }
 
+  const Track: ElementType = href ? "a" : "div";
+  const trackProps = href
+    ? { href, target: "_blank", rel: "noopener noreferrer" }
+    : {};
+
   return (
     <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border bg-surface">
-      <div
+      <Track
+        {...trackProps}
         className="flex h-full w-full transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
@@ -54,7 +62,7 @@ export default function ProjectImageCarousel({
             />
           </div>
         ))}
-      </div>
+      </Track>
 
       {images.length > 1 && (
         <>

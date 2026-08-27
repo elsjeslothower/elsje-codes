@@ -79,8 +79,8 @@ export const es: SiteContent = {
       },
       {
         eyebrow: "Mapas para Embarcaciones",
-        status: "En progreso",
-        statusStyle: 0,
+        status: "Completo",
+        statusStyle: 1,
         title: "Pier to Pier",
         descriptionPre:
           "Tu compañero personal que te ayuda a llegar desde tu embarcadero hasta ",

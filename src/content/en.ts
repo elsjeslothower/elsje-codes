@@ -75,8 +75,8 @@ export const en = {
       },
       {
         eyebrow: "Maps for Boats",
-        status: "In Progress",
-        statusStyle: 0,
+        status: "Complete",
+        statusStyle: 1,
         title: "Pier to Pier",
         descriptionPre:
           "Your personal buoy buddy that helps you get from your dock to ",
