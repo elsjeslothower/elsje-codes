@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 export default function SteppingStonesPage() {
   return (
     <>
-      <ConstructionBanner />
       <Nav />
       <main className="flex-1">
         <SteppingStones />
