@@ -56,12 +56,12 @@ export const es: SiteContent = {
     // statusStyle quick ref: 0 = "En progreso" (amber), 1 = "Completo" (green)
     items: [
       {
-        eyebrow: "Proyecto personal centrado en IA",
+        eyebrow: "Proyecto personal centrado en AI",
         status: "Completo",
         statusStyle: 1,
         title: "Stained Glass Quote Tool",
         descriptionPre:
-          "Backend que convierte la foto y la descripción de un proyecto de un cliente en un presupuesto estructurado y editable. Una llamada de IA con visión genera el primer cálculo. Cabe destacar que ",
+          "Backend que convierte la foto y la descripción de un proyecto de un cliente en un presupuesto estructurado y editable. Una llamada de AI con visión genera el primer cálculo. Cabe destacar que ",
         descriptionEmphasis: "una persona siempre revisa el presupuesto antes de enviarlo",
         descriptionPost: ". Hecho para un negocio pequeño y real de vidrio de colores.",
         cta: "Ver en GitHub",
@@ -209,7 +209,7 @@ export const es: SiteContent = {
       "Python",
       "SQL",
       "Desarrollo de APIs",
-      "IA",
+      "AI",
       "HTML",
       "CSS",
       "REST",
@@ -281,15 +281,15 @@ export const es: SiteContent = {
     closeModal: "Cerrar",
     stones: [
       {
-        status: "Seguridad de IA",
+        status: "Seguridad de AI",
         link: "/#stained-glass-quote-tool",
         eyebrow: "Stained Glass Quote Tool",
         title: "La Importancia de la Autenticación",
         description:
-          "Una lección de seguridad: adelantarse a los atacantes antes de lanzar una función de IA.",
-        tags: ["Seguridad", "IA"],
+          "Una lección de seguridad: adelantarse a los atacantes antes de lanzar una función de AI.",
+        tags: ["Seguridad", "AI"],
         articleBody:
-          "Antes de lanzar el endpoint de IA de la herramienta de cotización, ya había escuchado lo expuestas que pueden estar las funciones con IA, desde inyección de prompts hasta bots que aumentan los costos de la API. Por eso me aseguré de tener autenticación real antes de que la herramienta llegara a un cliente, no después de que algo saliera mal. Esto reforzó un hábito que sigo teniendo: pensar en cómo se ve una función para alguien que intenta romperla, antes de lanzarla.",
+          "Antes de lanzar el endpoint de AI de la herramienta de cotización, ya había escuchado lo expuestas que pueden estar las funciones con AI, desde inyección de prompts hasta bots que aumentan los costos de la API. Por eso me aseguré de tener autenticación real antes de que la herramienta llegara a un cliente, no después de que algo saliera mal. Esto reforzó un hábito que sigo teniendo: pensar en cómo se ve una función para alguien que intenta romperla, antes de lanzarla.",
       },
       {
         status: "Escalabilidad",
