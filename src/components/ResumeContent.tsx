@@ -27,7 +27,7 @@ const extracurricularLogos: (string | null)[] = [
 
 const extracurricularLogoLinks: (string | null)[] = [
   "https://www.fastenterprises.com/community/",
-  "https://www.instagram.com/purlsoflove/",
+  "https://elsjeslothower.github.io/purls-of-love/",
   "https://www.commonpeopleyoga.com/",
   "https://www.youtube.com/@elsjesglass",
 ];

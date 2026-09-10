@@ -56,6 +56,17 @@ export const es: SiteContent = {
     // statusStyle quick ref: 0 = "En progreso" (amber), 1 = "Completo" (green)
     items: [
       {
+        eyebrow: "Sitio Web Sin Fines de Lucro (Pro Bono)",
+        status: "Completo",
+        statusStyle: 1,
+        title: "Purls of Love",
+        descriptionPre:
+          "Un sitio completo hecho de forma gratuita para una organización sin fines de lucro dirigida por voluntarios que teje y hace crochet de mantas y gorros para personas en momentos difíciles, desde bebés en la UCIN hasta familias en refugios. Tiene una galería de trabajos terminados, una página de donaciones, y patrones gratis para ",
+        descriptionEmphasis: "cualquiera que quiera tomar un gancho o agujas y ayudar",
+        descriptionPost: ".",
+        cta: "Ver en GitHub",
+      },
+      {
         eyebrow: "Proyecto personal centrado en AI",
         status: "Completo",
         statusStyle: 1,
@@ -67,17 +78,6 @@ export const es: SiteContent = {
         cta: "Ver en GitHub",
       },
       {
-        eyebrow: "Visualizador Alfanumérico Caleidoscópico",
-        status: "En progreso",
-        statusStyle: 0,
-        title: "AuraScope",
-        descriptionPre:
-          "Un algoritmo de texto a arte que toma una serie de letras y números para crear un mosaico hermoso. Escribe cualquier ",
-        descriptionEmphasis: "palabra, frase o número de la suerte",
-        descriptionPost: " que hayas sacado de una galleta de la fortuna, y mira qué pasa.",
-        cta: "Ver en GitHub",
-      },
-      {
         eyebrow: "Mapas para Embarcaciones",
         status: "Completo",
         statusStyle: 1,
@@ -86,6 +86,17 @@ export const es: SiteContent = {
           "Tu compañero personal que te ayuda a llegar desde tu embarcadero hasta ",
         descriptionEmphasis: "dondequiera que te lleve el agua",
         descriptionPost: ". Un algoritmo A* construido desde cero traza rutas sobre datos reales de la costa de Puget Sound, evitando tierra firme, con un interruptor para comparar la ruta más corta con una más segura en aguas más profundas.",
+        cta: "Ver en GitHub",
+      },
+      {
+        eyebrow: "Visualizador Alfanumérico Caleidoscópico",
+        status: "En progreso",
+        statusStyle: 0,
+        title: "AuraScope",
+        descriptionPre:
+          "Un algoritmo de texto a arte que toma una serie de letras y números para crear un mosaico hermoso. Escribe cualquier ",
+        descriptionEmphasis: "palabra, frase o número de la suerte",
+        descriptionPost: " que hayas sacado de una galleta de la fortuna, y mira qué pasa.",
         cta: "Ver en GitHub",
       },
       {

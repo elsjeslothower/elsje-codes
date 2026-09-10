@@ -52,6 +52,17 @@ export const en = {
     // statusStyle quick ref: 0 = "Now building" (amber), 1 = "Completed" (green)
     items: [
       {
+        eyebrow: "Pro Bono Nonprofit Website",
+        status: "Complete",
+        statusStyle: 1,
+        title: "Purls of Love",
+        descriptionPre:
+          "A full site built pro bono for a volunteer-run nonprofit that knits and crochets blankets and hats for people in hard seasons, from NICU babies to families in shelters. It has a gallery of finished work, a donation page, and free patterns for ",
+        descriptionEmphasis: "anyone who wants to pick up a hook or needles and help",
+        descriptionPost: ".",
+        cta: "View on GitHub",
+      },
+      {
         eyebrow: "AI-Centric Personal Project",
         status: "Complete",
         statusStyle: 1,
@@ -63,17 +74,6 @@ export const en = {
         cta: "View on GitHub",
       },
       {
-        eyebrow: "Kaleidoscopic, Alphanumeric Visualizer",
-        status: "In Progress",
-        statusStyle: 0,
-        title: "AuraScope",
-        descriptionPre:
-          "A text-to-art algorithm that takes a string of letters and numbers to create a beautiful mosaic. Type in any ",
-        descriptionEmphasis: "word, phrase, or lucky number",
-        descriptionPost: " you may have gotten from a fortune cookie, and see what happens.",
-        cta: "View on GitHub",
-      },
-      {
         eyebrow: "Maps for Boats",
         status: "Complete",
         statusStyle: 1,
@@ -82,6 +82,17 @@ export const en = {
           "Your personal buoy buddy that helps you get from your dock to ",
         descriptionEmphasis: "wherever the water takes you",
         descriptionPost: ". A from-scratch A* pathfinder routes across real Puget Sound coastline data, avoiding land, with a toggle to compare a shortest route against a safer, deeper-water one.",
+        cta: "View on GitHub",
+      },
+      {
+        eyebrow: "Kaleidoscopic, Alphanumeric Visualizer",
+        status: "In Progress",
+        statusStyle: 0,
+        title: "AuraScope",
+        descriptionPre:
+          "A text-to-art algorithm that takes a string of letters and numbers to create a beautiful mosaic. Type in any ",
+        descriptionEmphasis: "word, phrase, or lucky number",
+        descriptionPost: " you may have gotten from a fortune cookie, and see what happens.",
         cta: "View on GitHub",
       },
       {

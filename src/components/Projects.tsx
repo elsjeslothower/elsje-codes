@@ -4,9 +4,10 @@ import { useContent } from "@/context/LanguageContext";
 import ProjectImageCarousel from "./ProjectImageCarousel";
 
 const stacks = [
+  ["Next.js", "TypeScript", "Tailwind CSS", "Web3Forms", "GitHub Pages"],
   ["FastAPI", "SQLAlchemy 2.0", "PostgreSQL", "Railway", "Supabase", "Anthropic Claude API", "HTML / Tailwind"],
-  ["TypeScript", "WebGL2", "Vite", "Vitest", "Vanilla DOM API"],
   ["React", "TypeScript", "Vite", "Vitest", "Leaflet", "react-leaflet", "Node script (tsx)", "Overpass API"],
+  ["TypeScript", "WebGL2", "Vite", "Vitest", "Vanilla DOM API"],
   ["React", "React Router", "Axios", "Clerk (OAuth)", "Heroku", "Flask", "SQLAlchemy 2.0", "PostgreSQL"],
 ];
 
@@ -14,27 +15,30 @@ const stacks = [
 // more than one shows the left/right slideshow arrows. Leave an array empty to keep
 // showing the placeholder for that project.
 const images: string[][] = [
+  ["/projects/purls_of_love/purls-of-love-homepage.webp"],
   ["/projects/quote_tool/stained-glass-quoter-1.webp", "/projects/quote_tool/stained-glass-quoter-2.webp", "/projects/quote_tool/stained-glass-quoter-3.webp"],
-  ["/projects/aura_scope/aura-scope-1.webp"],
   ["/projects/boat_router/boat-router-homepage.webp"],
+  ["/projects/aura_scope/aura-scope-1.webp"],
   ["/projects/pantry_pickings.webp"],
 ];
 
 const hrefs = [
+  "https://github.com/elsjeslothower/purls-of-love",
   "https://github.com/elsjeslothower/stained-glass-api",
-  "https://github.com/elsjeslothower/aura-scope",
   "https://github.com/elsjeslothower/pier-to-pier",
+  "https://github.com/elsjeslothower/aura-scope",
   "https://github.com/elsjeslothower/front-end-pantry-pickings",
 ];
 
 const demoHrefs: (string | null)[] = [
+  "https://elsjeslothower.github.io/purls-of-love/",
   "https://elsje.codes/quote-tool/",
-  "https://elsje.codes/auraScope/",
   "https://elsje.codes/pier-to-pier/",
+  "https://elsje.codes/auraScope/",
   "https://front-end-pantry-pickings-snowy.vercel.app/",
 ];
 
-const projectIds = ["stained-glass-quote-tool", "aurascope", "pier-to-pier", "pantry-pickings"];
+const projectIds = ["purls-of-love", "stained-glass-quote-tool", "pier-to-pier", "aurascope", "pantry-pickings"];
 
 const accents = [
   "var(--color-glass-blue)",
