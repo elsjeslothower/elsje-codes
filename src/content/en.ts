@@ -16,12 +16,9 @@ export const en = {
   },
   hero: {
     eyebrow: "Elsje Slothower",
-    title: "Artist, Creator, Developer.",
+    title: "Developer & Consultant.",
     bio1Pre: "I solve problems with software.",
     bio1Post: "With a background in front and backend work, my projects emphasize database functionality and user experience.",
-    bio2Pre: "I also run a small stained glass business on the side to document the process of making and selling my work online, mistakes included. Feel free to check out my ",
-    bio2LinkText: "stained glass",
-    bio2Post: " if you're curious.",
     ctaProjects: "See my code",
     ctaContact: "Get in touch",
   },
@@ -33,12 +30,12 @@ export const en = {
     developerLinkText: "Snap!",
     developerPost:
       " and I've been building on that foundation ever since. Critical thinking, problem solving, and creativity are the skills that I bring to every project I work on.",
-    creatorHeading: "Creator",
+    creatorHeading: "Consultant",
     creatorText:
-      "My bachelor's degree is in Journalism and Public Interest. I have a long history of creating, whether it's publishing articles, fostering community engagement, or posting on social media. In my current position, I create software while creating a relationship of trust with my clients. I enjoy the creative process of building software, and I enjoy the creative process of building relationships.",
-    artistHeading: "Artist",
+      "I've spent as much of my career consulting as coding, leading on-site software deployments for municipal government agencies and training the end users who rely on the systems I help build. I care as much about a smooth rollout and a confident user as I do about clean code, and I bring the same stakeholder management and requirements-gathering skills to every engagement.",
+    artistHeading: "Hybrid",
     artistText:
-      "I like working my hands as well as my brain. Curiosity is the key, and I cultivate it anywhere and everywhere I can. Progressing through a project from start to finish is satisfying, and it's even better to share your creations with others. Stained glass is my outlet when I see something beautiful in the world and want others to see it too.",
+      "The part I'm best at is the overlap: translating between engineers and stakeholders, turning a client's real-world problem into a technical solution, and knowing when a project needs more debugging and when it needs more listening. Mixing development and consulting is where I do my best work.",
   },
   projects: {
     heading: "Projects",
@@ -116,7 +113,7 @@ export const en = {
   },
   contact: {
     heading: "Contact",
-    tagline: "You're the solder to my copper foil. Let's connect.",
+    tagline: "Open to new opportunities and interesting projects. Let's connect.",
     emailLabel: "Email",
     githubLabel: "GitHub",
     linkedinLabel: "LinkedIn",

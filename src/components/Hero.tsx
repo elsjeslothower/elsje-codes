@@ -48,20 +48,6 @@ export default function Hero() {
         >
           {t.hero.bio1Post}
         </p>
-        <p
-          className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
-          style={{ animationDelay: "160ms" }}
-        >
-          {t.hero.bio2Pre}
-          <a 
-            href="https://www.instagram.com/elsjesglass" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-glass-blue hover:text-glass-violet">
-            {t.hero.bio2LinkText}
-          </a>
-          {t.hero.bio2Post}
-        </p>
         <div
           className="animate-fade-in-up mt-9 flex flex-wrap gap-4"
           style={{ animationDelay: "240ms" }}

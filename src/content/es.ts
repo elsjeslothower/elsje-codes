@@ -18,14 +18,10 @@ export const es: SiteContent = {
   },
   hero: {
     eyebrow: "Elsje Slothower",
-    title: "Artista, Creadora, Desarrolladora.",
+    title: "Desarrolladora y Consultora.",
     bio1Pre: "Soluciono problemas con software.",
     bio1Post:
       "Con experiencia en frontend y backend, mis proyectos se enfocan en las bases de datos y la experiencia del usuario.",
-    bio2Pre:
-      "También tengo un pequeño negocio de vidrio de colores para documentar el proceso de crear y vender mi arte en línea, incluyendo los errores. Si quieres, puedes ver mi ",
-    bio2LinkText: "vidrio de colores",
-    bio2Post: " si tienes curiosidad.",
     ctaProjects: "Ver mi código",
     ctaContact: "Contáctame",
   },
@@ -37,12 +33,12 @@ export const es: SiteContent = {
     developerLinkText: "¡Snap!",
     developerPost:
       " y desde entonces sigo construyendo sobre esa base. El pensamiento crítico, la resolución de problemas y la creatividad son las habilidades que aporto a cada proyecto.",
-    creatorHeading: "Creadora",
+    creatorHeading: "Consultora",
     creatorText:
-      "Mi título universitario es en Periodismo e Interés Público. Tengo una larga historia de crear cosas, ya sea publicando artículos, conectando con la comunidad o publicando en redes sociales. En mi trabajo actual, creo software mientras construyo una relación de confianza con mis clientes. Disfruto el proceso creativo de construir software, y también disfruto el proceso creativo de construir relaciones.",
-    artistHeading: "Artista",
+      "He pasado tanto tiempo de mi carrera en consultoría como programando, liderando implementaciones de software en sitio para agencias de gobiernos municipales y capacitando a los usuarios finales que dependen de los sistemas que ayudo a construir. Me importa tanto un lanzamiento exitoso y un usuario seguro de sí mismo como un código limpio, y aporto esas mismas habilidades de gestión de interesados y recopilación de requisitos a cada proyecto.",
+    artistHeading: "Híbrida",
     artistText:
-      "Me gusta trabajar con las manos tanto como con la mente. La curiosidad es la clave, y la practico en todas partes. Terminar un proyecto de principio a fin es muy satisfactorio, y es aún mejor compartir tus creaciones con otras personas. El vidrio de colores es mi manera de mostrar la belleza que veo en el mundo cuando quiero que otros también la vean.",
+      "Lo que mejor hago es el punto medio: traducir entre programadores y las partes interesadas, convertir el problema real de un cliente en una solución técnica, y saber cuándo un proyecto necesita más depuración y cuándo necesita más escucha. Combinar el desarrollo y la consultoría es donde hago mi mejor trabajo.",
   },
   projects: {
     heading: "Proyectos",
@@ -120,7 +116,7 @@ export const es: SiteContent = {
   },
   contact: {
     heading: "Contacto",
-    tagline: "Eres la soldadura de mi cinta de cobre. Conectemos.",
+    tagline: "Abierta a nuevas oportunidades y proyectos interesantes. Conectemos.",
     emailLabel: "Correo",
     githubLabel: "GitHub",
     linkedinLabel: "LinkedIn",
