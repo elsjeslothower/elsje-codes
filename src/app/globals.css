@@ -3,40 +3,52 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --color-paper: #faf2ed;
-  --color-paper-alt: #faf8f4;
-  --color-lead: #16151c;
-  --color-lead-soft: #38364a;
-  --color-ink: #1c1a24;
-  --color-ink-soft: #57536b;
+  /* Neutrals */
+  --color-paper: #f5ede0;
+  --color-paper-alt: #f8f1e6;
+  --color-lead: #062f45;
+  --color-lead-soft: #0d4360;
+  --color-ink: #15181c;
+  --color-ink-soft: #55524a;
 
-  --color-glass-blue: #2452c9;
-  --color-glass-violet: #7c3aed;
-  --color-glass-amber: #dc9a1f;
-  --color-glass-ruby: #c0304a;
-  --color-glass-green: #16a34a;
+  /* Accent suite (light). Dark mode redefines these same names below so
+     every component just says "accent-primary" etc. without caring which
+     theme is active. */
+  --color-accent-primary: #062f45; /* deep blue */
+  --color-accent-secondary: #1e5e59; /* teal */
+  --color-accent-highlight: #c68a3d; /* gold */
+  --color-accent-alert: #a83f2c; /* red */
 
-  /* Darker green and amber for WCAG where needed*/
-  --color-glass-green-text: #0f7a37;
-  --color-glass-amber-text: #7d5e12;
+  /* Darker gold for WCAG where highlight is used as text/borders; secondary
+     already passes as text so accent-secondary-text just matches the base value. */
+  --color-accent-secondary-text: #1e5e59;
+  --color-accent-highlight-text: #8f5f1f;
 
   --background: var(--color-paper);
-  --surface: #ffffff;
+  /*--surface: #b08d5c; */
+  --surface: var(--color-accent-secondary);
   --foreground: var(--color-ink);
-  --foreground-muted: var(--color-ink-soft);
-  --border-color: #e4dfd3;
+  --foreground-muted: var(--color-ink);
+  --border-color: #e4dcc8;
 }
 
 .dark {
   --background: var(--color-lead);
-  --surface: #1f1d29;
-  --foreground: #f2efe8;
-  --foreground-muted: #b9b5c9;
-  --border-color: #322f40;
+  --surface: #0a3a54;
+  --foreground: #f1e9dc;
+  --foreground-muted: #a9b7bd;
+  --border-color: #123f56;
 
-  /* Dark backgrounds already give the bright originals enough contrast. */
-  --color-glass-green-text: var(--color-glass-green);
-  --color-glass-amber-text: var(--color-glass-amber);
+  /* Accent suite (dark) - same names as :root, brighter/inverted values. */
+  --color-accent-primary: #f1e9dc; /* deep blue inverts to cream */
+  --color-accent-secondary: #2e8c82;
+  --color-accent-highlight: #d9a968;
+  --color-accent-alert: #c9614a;
+
+  /* Bright teal fails WCAG as white-on-teal button fill on this dark
+     background; darkened just for that use. Gold already passes as text. */
+  --color-accent-secondary-text: #266f67;
+  --color-accent-highlight-text: #d9a968;
 }
 
 @theme inline {
@@ -46,13 +58,12 @@
   --color-foreground-muted: var(--foreground-muted);
   --color-border: var(--border-color);
 
-  --color-glass-blue: var(--color-glass-blue);
-  --color-glass-violet: var(--color-glass-violet);
-  --color-glass-amber: var(--color-glass-amber);
-  --color-glass-ruby: var(--color-glass-ruby);
-  --color-glass-green: var(--color-glass-green);
-  --color-glass-green-text: var(--color-glass-green-text);
-  --color-glass-amber-text: var(--color-glass-amber-text);
+  --color-accent-primary: var(--color-accent-primary);
+  --color-accent-secondary: var(--color-accent-secondary);
+  --color-accent-highlight: var(--color-accent-highlight);
+  --color-accent-alert: var(--color-accent-alert);
+  --color-accent-secondary-text: var(--color-accent-secondary-text);
+  --color-accent-highlight-text: var(--color-accent-highlight-text);
 
   --font-sans: var(--font-geist-sans);
   --font-display: var(--font-CMU-serif);
@@ -72,53 +83,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-glass-amber);
+  background: var(--color-accent-highlight);
   color: var(--color-lead);
-}
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fade-in-down {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes glass-in {
-  from {
-    opacity: 0;
-    transform: scale(0.92) rotate(-2deg);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.animate-fade-in-down {
-  animation: fade-in-down 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.animate-glass-in {
-  animation: glass-in 1s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes toggle-pop {
@@ -144,9 +110,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-fade-in-up,
-  .animate-fade-in-down,
-  .animate-glass-in,
   .animate-toggle-pop {
     animation: none;
   }

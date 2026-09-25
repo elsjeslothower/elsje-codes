@@ -7,10 +7,8 @@ export default function AuraScope() {
 
     return (
         <div className="mx-auto max-w-5xl px-6 py-24">
-            <div className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
-                style={{ animationDelay: "160ms" }}
-            >
-                <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+            <div className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
+                <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
                     {t.auraScope.eyebrow}
                 </p>
                 <h1 className="mt-4 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -20,13 +18,10 @@ export default function AuraScope() {
                     {t.auraScope.body}
                 </p>
             </div>
-            <div
-                className="animate-fade-in-up flex flex-wrap gap-4"
-                style={{ animationDelay: "240ms" }}
-            >
+            <div className="flex flex-wrap gap-4">
                 <a
                     href="/#projects"
-                    className="mt-8 rounded-full bg-glass-green-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
+                    className="mt-8 rounded-full bg-accent-secondary-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-primary"
                 >
                     {t.auraScope.cta}
                 </a>

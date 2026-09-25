@@ -19,7 +19,7 @@ export default function Nav() {
   ];
 
   return (
-    <header className="animate-fade-in-down sticky top-0 z-50 border-b border-border/80 bg-background/85 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border/80 bg-background/85 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <a href="/" className="font-display text-lg font-semibold tracking-tight">
           {'<'} elsje.codes{'/>'}
@@ -42,7 +42,7 @@ export default function Nav() {
               onClick={() => setMenuOpen((open) => !open)}
               aria-label={menuOpen ? t.nav.closeMenu : t.nav.openMenu}
               aria-expanded={menuOpen}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground-muted transition-colors hover:border-glass-amber hover:text-glass-amber-text sm:hidden"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground-muted transition-colors hover:border-accent-highlight hover:text-accent-highlight-text sm:hidden"
             >
               {menuOpen ? <CloseIcon className="h-4 w-4" /> : <MenuIcon className="h-4 w-4" />}
             </button>
@@ -51,7 +51,7 @@ export default function Nav() {
       </nav>
 
       {menuOpen && (
-        <ul className="animate-fade-in-down flex flex-col gap-1 border-t border-border/80 px-6 py-4 text-sm text-foreground-muted sm:hidden">
+        <ul className="flex flex-col gap-1 border-t border-border/80 px-6 py-4 text-sm text-foreground-muted sm:hidden">
           {links.map((link) => (
             <li key={link.href}>
               <a

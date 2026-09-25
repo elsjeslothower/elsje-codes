@@ -22,14 +22,14 @@ const STATUS_STYLE: Record<
   { background: string; color: string; borderColor: string }
 > = {
   correct: {
-    background: "var(--color-glass-green)",
+    background: "var(--color-accent-secondary)",
     color: "#ffffff",
-    borderColor: "var(--color-glass-green)",
+    borderColor: "var(--color-accent-secondary)",
   },
   present: {
-    background: "var(--color-glass-amber)",
+    background: "var(--color-accent-highlight)",
     color: "var(--color-lead)",
-    borderColor: "var(--color-glass-amber)",
+    borderColor: "var(--color-accent-highlight)",
   },
   absent: {
     background: "var(--foreground-muted)",
@@ -46,7 +46,7 @@ const EMPTY_STYLE = {
 
 const KEY_EMPTY_STYLE = {
   background: "var(--surface)",
-  color: "var(--foreground)",
+  color: "#f5ede0",
   borderColor: "var(--border)",
 };
 
@@ -160,7 +160,7 @@ export default function Puzzle() {
 
   return (
     <section id="puzzle" className="mx-auto max-w-5xl px-6 py-20">
-      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
         {t.puzzle.heading}
       </h2>
       <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
@@ -245,7 +245,7 @@ export default function Puzzle() {
           <button
             type="button"
             onClick={resetGame}
-            className="rounded-full bg-glass-green-text px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
+            className="rounded-full bg-accent-secondary-text px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent-primary"
           >
             {t.puzzle.playAgain}
           </button>

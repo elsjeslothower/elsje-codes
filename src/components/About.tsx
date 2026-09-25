@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <section id="about" className="mx-auto max-w-5xl px-6 py-20">
-      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
         {t.about.heading}
       </h2>
       <div className="mt-8 grid gap-10 sm:grid-cols-3">
@@ -19,7 +19,7 @@ export default function About() {
               href="https://snap.berkeley.edu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-glass-blue hover:text-glass-violet"
+              className="text-accent-primary hover:text-accent-secondary"
             >
               {t.about.developerLinkText}
             </a>

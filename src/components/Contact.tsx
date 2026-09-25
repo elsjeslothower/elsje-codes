@@ -31,10 +31,10 @@ export default function Contact() {
   return (
     <section id="contact" className="border-t border-border bg-surface">
       <div className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-[#f5ede0] dark:text-accent-highlight">
           {t.contact.heading}
         </h2>
-        <p className="mt-6 max-w-xl font-display text-2xl font-semibold leading-snug sm:text-3xl">
+        <p className="mt-6 max-w-xl font-display text-2xl font-semibold leading-snug text-[#f5ede0] dark:text-[#f1e9dc] sm:text-3xl">
           {t.contact.tagline}
         </p>
         <div className="mt-8 flex flex-wrap gap-x-10 gap-y-4">
@@ -46,10 +46,10 @@ export default function Contact() {
               rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
               className="group flex flex-col"
             >
-              <span className="font-mono text-xs uppercase tracking-widest text-foreground-muted">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#f5ede0]">
                 {link.label}
               </span>
-              <span className="mt-1 font-medium underline decoration-glass-amber decoration-2 underline-offset-4 transition-colors group-hover:text-glass-blue dark:group-hover:text-glass-amber">
+              <span className="mt-1 font-medium underline decoration-accent-highlight decoration-2 underline-offset-4 transition-colors text-[#f5ede0] dark:hover:text-accent-highlight">
                 {link.value}
               </span>
             </a>

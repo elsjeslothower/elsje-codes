@@ -14,7 +14,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="mx-auto max-w-5xl px-6 py-20">
-      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
         {t.skills.heading}
       </h2>
       <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

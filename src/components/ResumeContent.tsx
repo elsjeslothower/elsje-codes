@@ -36,9 +36,9 @@ export default function ResumeContent() {
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-20">
-      <div className="animate-fade-in-up">
+      <div>
         <div className="flex flex-wrap items-center gap-6">
-          <a href="/#contact" className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full">
+          <a href="/#contact" className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-full border-2 border-[#f5ede0]">
             <Image
               src="/resume/headshot-june-2026.webp"
               alt={r.headshotAlt}
@@ -62,7 +62,7 @@ export default function ResumeContent() {
               href={`mailto:${r.email}`}
               aria-label={r.email}
               title={r.email}
-              className="hover:text-glass-blue dark:hover:text-glass-amber"
+              className="hover:text-accent-primary dark:hover:text-accent-highlight"
             >
               <MailIcon className="h-4 w-4" />
             </a>
@@ -72,7 +72,7 @@ export default function ResumeContent() {
               rel="noopener noreferrer"
               aria-label={r.linkedinLabel}
               title={r.linkedinLabel}
-              className="hover:text-glass-blue dark:hover:text-glass-amber"
+              className="hover:text-accent-primary dark:hover:text-accent-highlight"
             >
               <LinkedInIcon className="h-4 w-4" />
             </a>
@@ -82,7 +82,7 @@ export default function ResumeContent() {
               rel="noopener noreferrer"
               aria-label={r.githubLabel}
               title={r.githubLabel}
-              className="hover:text-glass-blue dark:hover:text-glass-amber"
+              className="hover:text-accent-primary dark:hover:text-accent-highlight"
             >
               <GitHubIcon className="h-4 w-4" />
             </a>
@@ -96,7 +96,7 @@ export default function ResumeContent() {
           <a
             href="/resume/Elsje-Slothower-Resume.pdf"
             download
-            className="rounded-full bg-glass-green-text px-5 py-2.5 text-white transition-colors hover:bg-glass-blue"
+            className="rounded-full bg-accent-secondary-text px-5 py-2.5 text-white transition-colors hover:bg-accent-primary"
           >
             {r.downloadPdfLabel}
           </a>
@@ -104,15 +104,15 @@ export default function ResumeContent() {
             href={`https://${r.linkedinLabel}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-border px-5 py-2.5 transition-colors hover:border-glass-amber hover:text-glass-amber-text"
+            className="rounded-full border border-border px-5 py-2.5 transition-colors hover:border-accent-highlight hover:text-accent-highlight-text"
           >
             {r.linkedinCta}
           </a>
         </div>
       </div>
 
-      <div id="employment" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "80ms" }}>
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <div id="employment" className="mt-16 scroll-mt-24">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
           {r.sectionLabels.employment}
         </h2>
         <div className="mt-6 space-y-10">
@@ -145,8 +145,8 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div id="skills" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "100ms" }}>
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <div id="skills" className="mt-16 scroll-mt-24">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
           {r.sectionLabels.skills}
         </h2>
         <ul className="mt-6 flex flex-wrap gap-2">
@@ -161,8 +161,8 @@ export default function ResumeContent() {
         </ul>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "120ms" }}>
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <div className="mt-16">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
           {r.sectionLabels.education}
         </h2>
         <div className="mt-6 space-y-8">
@@ -193,8 +193,8 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "160ms" }}>
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <div className="mt-16">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
           {r.sectionLabels.leadership}
         </h2>
         <div className="mt-6 space-y-8">
@@ -239,8 +239,8 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div id="impact" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "200ms" }}>
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+      <div id="impact" className="mt-16 scroll-mt-24">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
           {r.sectionLabels.impact}
         </h2>
         <div className="mt-6 space-y-8">
@@ -258,7 +258,7 @@ export default function ResumeContent() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 inline-block text-sm font-medium text-glass-blue hover:text-glass-violet dark:text-glass-amber"
+                  className="mt-2 inline-block text-sm font-medium text-accent-primary hover:text-accent-secondary dark:text-accent-highlight"
                 >
                   {r.impactLinkLabel}
                 </a>

@@ -41,14 +41,14 @@ const demoHrefs: (string | null)[] = [
 const projectIds = ["purls-of-love", "stained-glass-quote-tool", "pier-to-pier", "aurascope", "pantry-pickings"];
 
 const accents = [
-  "var(--color-glass-blue)",
-  "var(--color-glass-violet)",
-  "var(--color-glass-amber)",
+  "var(--color-accent-primary)",
+  "var(--color-accent-secondary)",
+  "var(--color-accent-highlight)",
 ];
 
 const statusStyles = [
-  { bg: "var(--color-glass-amber)", color: "var(--color-glass-amber-text)" },
-  { bg: "var(--color-glass-green)", color: "#ffffff" },
+  { bg: "var(--color-accent-highlight)", color: "var(--color-lead)" },
+  { bg: "var(--color-accent-secondary-text)", color: "#ffffff" },
 ];
 
 export default function Projects() {
@@ -57,10 +57,10 @@ export default function Projects() {
   return (
     <section id="projects" className="border-y border-border bg-surface">
       <div className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-[#f5ede0] dark:text-accent-highlight">
           {t.projects.heading}
         </h2>
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted">
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#f5ede0] dark:text-foreground-muted">
           {t.projects.paragraph1}
         </p>
 
@@ -69,7 +69,7 @@ export default function Projects() {
             <div
               key={project.title}
               id={projectIds[i]}
-              className="scroll-mt-24 overflow-hidden rounded-2xl border border-border"
+              className="scroll-mt-24 overflow-hidden rounded-2xl border border-border bg-background dark:bg-[#b08d5c] dark:[--foreground:var(--color-ink)] dark:[--foreground-muted:#2b2822]"
             >
               <ProjectImageCarousel
                 images={images[i]}
@@ -86,18 +86,18 @@ export default function Projects() {
                     >
                       {project.status}
                     </span>
-                    <p className="mt-2 font-mono text-xs uppercase tracking-widest text-foreground-muted">
+                    <p className="mt-2 font-mono text-xs uppercase tracking-widest text-foreground">
                       {project.eyebrow}
                     </p>
-                    <h3 className="mt-2 font-display text-2xl font-semibold sm:text-3xl">
+                    <h3 className="mt-2 font-display text-2xl font-semibold text-foreground sm:text-3xl">
                       {project.title}
                     </h3>
                   </div>
                 </div>
 
-                <p className="mt-4 max-w-2xl leading-relaxed text-foreground-muted">
+                <p className="mt-4 max-w-2xl leading-relaxed text-foreground-muted dark:text-[#15181c]">
                   {project.descriptionPre}
-                  <span className="font-medium text-foreground">
+                  <span className="font-medium text-foreground dark:text-[#15181c]">
                     {project.descriptionEmphasis}
                   </span>
                   {project.descriptionPost}
@@ -119,7 +119,7 @@ export default function Projects() {
                     href={hrefs[i]}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full bg-glass-green-text px-5 py-2.5 text-white transition-colors hover:bg-glass-blue"
+                    className="rounded-full bg-accent-secondary-text px-6 py-3 text-white transition-colors hover:bg-accent-primary dark:hover:text-accent-secondary-text"
                   >
                     {project.cta}
                   </a>
@@ -128,7 +128,7 @@ export default function Projects() {
                       href={demoHrefs[i]!}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:border-glass-amber hover:text-glass-amber-text"
+                      className="rounded-full border border-foreground px-6 py-3 text-sm font-medium text-foreground transition-colors dark:border-border hover:border-accent-secondary-text hover:text-accent-secondary-text"
                     >
                       {t.projects.demoCta}
                     </a>

@@ -5,12 +5,15 @@ import Image from "next/image";
 import { useContent } from "@/context/LanguageContext";
 import { ImageIcon, CloseIcon } from "./icons";
 
-// Same palette as the hero's polygon graphic on the homepage (no violet there).
+// Same palette as the hero's polygon graphic on the homepage.
+// Flat/theme-invariant values here where the shared tokens are tuned for a
+// different job (decorative accent or hover-text) and don't stay dark enough
+// for white badge text in both themes.
 const badgeColors = [
-  "var(--color-glass-blue)",
-  "var(--color-glass-green-text)",
-  "var(--color-glass-ruby)",
-  "var(--color-glass-amber-text)",
+  "var(--color-lead)",
+  "var(--color-accent-secondary-text)",
+  "#8f3323",
+  "#8f5f1f",
 ];
 
 const stoneImages: (string | null)[] = [
@@ -42,12 +45,11 @@ export default function SteppingStones() {
 
   return (
     <section className="mx-auto max-w-5xl px-6 py-24">
-      <h1 className="animate-fade-in-up font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+      <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-5xl">
         {t.steppingStones.heading}
       </h1>
       <p
-        className="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
-        style={{ animationDelay: "80ms" }}
+        className="mt-6 max-w-xl text-lg leading-relaxed text-foreground-muted"
       >
         {t.steppingStones.paragraph1}
       </p>
@@ -65,7 +67,7 @@ export default function SteppingStones() {
                 setOpenIndex(i);
               }
             }}
-            className="cursor-pointer overflow-hidden rounded-2xl border border-border transition-colors hover:border-glass-blue dark:hover:border-glass-amber"
+            className="cursor-pointer overflow-hidden rounded-2xl border border-border transition-colors hover:border-accent-primary dark:hover:border-accent-highlight"
           >
             {stoneImages[i] ? (
               <div className="relative aspect-[16/9] w-full border-b border-border bg-surface">
@@ -119,7 +121,7 @@ export default function SteppingStones() {
                 ))}
               </ul>
 
-              <span className="mt-4 inline-block text-sm font-medium text-glass-blue dark:text-glass-amber">
+              <span className="mt-4 inline-block text-sm font-medium text-accent-primary dark:text-accent-highlight">
                 {t.steppingStones.readMore}
               </span>
             </div>
@@ -143,7 +145,7 @@ export default function SteppingStones() {
               type="button"
               onClick={() => setOpenIndex(null)}
               aria-label={t.steppingStones.closeModal}
-              className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-foreground-muted transition-colors hover:bg-background hover:text-foreground"
+              className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full text-[#a9b7bd] transition-colors hover:bg-background hover:text-foreground dark:text-foreground-muted"
             >
               <CloseIcon className="h-4 w-4" />
             </button>
@@ -155,16 +157,16 @@ export default function SteppingStones() {
             >
               {openStone.status}
             </a>
-            <p className="mt-3 font-mono text-xs uppercase tracking-widest text-foreground-muted">
+            <p className="mt-3 font-mono text-xs uppercase tracking-widest text-[#f5ede0] dark:text-foreground-muted">
               {openStone.eyebrow}
             </p>
-            <h2 id="stone-modal-title" className="mt-2 font-display text-3xl font-semibold sm:text-4xl">
+            <h2 id="stone-modal-title" className="mt-2 font-display text-3xl font-semibold text-[#f5ede0] dark:text-foreground sm:text-4xl">
               {openStone.title}
             </h2>
 
             <hr className="my-6 border-border" />
 
-            <p className="max-w-prose text-base leading-relaxed text-foreground-muted sm:text-lg">
+            <p className="max-w-prose text-base leading-relaxed text-[#f5ede0] dark:text-foreground-muted sm:text-lg">
               {openStone.articleBody}
             </p>
 
@@ -172,7 +174,7 @@ export default function SteppingStones() {
               {openStone.tags.map((tag) => (
                 <li
                   key={tag}
-                  className="rounded-full border border-border px-3 py-1 font-mono text-xs text-foreground-muted"
+                  className="rounded-full border border-border px-3 py-1 font-mono text-xs text-[#f5ede0] dark:text-foreground-muted"
                 >
                   {tag}
                 </li>

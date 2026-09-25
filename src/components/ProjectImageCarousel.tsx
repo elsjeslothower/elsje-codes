@@ -19,7 +19,7 @@ export default function ProjectImageCarousel({
 
   if (images.length === 0) {
     return (
-      <div className="flex aspect-[16/9] w-full items-center justify-center border-b border-border bg-surface">
+      <div className="flex aspect-[16/9] w-full items-center justify-center border-b border-border bg-background dark:bg-[#b08d5c]">
         <div className="flex flex-col items-center gap-2 text-foreground-muted">
           <ImageIcon className="h-6 w-6" />
           <span className="font-mono text-xs uppercase tracking-widest">
@@ -44,7 +44,7 @@ export default function ProjectImageCarousel({
     : {};
 
   return (
-    <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border bg-surface">
+    <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-border bg-background dark:bg-[#b08d5c]">
       <Track
         {...trackProps}
         className="flex h-full w-full transition-transform duration-500 ease-in-out"

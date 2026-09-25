@@ -22,37 +22,38 @@ export default function NotFound() {
       <Nav />
       <main className="flex flex-1 items-center justify-center px-6 py-24">
         <div className="mx-auto flex max-w-xl flex-col items-center text-center">
-          <div className="animate-glass-in relative h-56 w-56 sm:h-64 sm:w-64">
+          <div className="relative h-56 w-56 sm:h-64 sm:w-64">
             <svg viewBox="0 0 200 200" className="h-full w-full overflow-visible">
-              <g stroke="var(--color-lead)" strokeWidth="1.5" fill="none">
+              <g stroke="var(--foreground)" strokeWidth="1.5" strokeLinejoin="round" fill="none">
                 <polygon points="100,10 180,60 160,150 40,150 20,60" />
-                <polygon points="100,10 180,60 130,90 100,60" fill="var(--color-glass-green)" fillOpacity="0.55" />
-                <polygon points="180,60 160,150 130,90" fill="var(--color-glass-blue)" fillOpacity="0.5" />
-                <polygon points="160,150 40,150 100,60 130,90" fill="var(--color-glass-amber)" fillOpacity="0.5" />
+                <polygon points="100,10 180,60 130,90 100,60" fill="var(--color-accent-secondary)" fillOpacity="0.55" />
+                <polygon points="180,60 160,150 130,90" fill="var(--color-accent-primary)" fillOpacity="0.5" />
+                <polygon points="160,150 40,150 100,60 130,90" fill="var(--color-accent-highlight)" fillOpacity="0.5" />
                 {/* the missing piece — just an empty, dashed outline where it used to be */}
                 <polygon
                   points="40,150 20,60 100,60"
                   fill="none"
-                  stroke="var(--color-glass-ruby)"
+                  stroke="var(--color-accent-alert)"
                   strokeOpacity="0.5"
                   strokeDasharray="4 4"
                 />
-                <polygon points="100,10 20,60 100,60" fill="var(--color-glass-green)" fillOpacity="0.35" />
+                <polygon points="100,10 20,60 100,60" fill="var(--color-accent-secondary)" fillOpacity="0.35" />
               </g>
               {/* the same piece, broken off and drifting away */}
               <g transform="translate(-28,74) rotate(-16 60 105) scale(0.5)" opacity="0.85">
                 <polygon
                   points="40,150 20,60 100,60"
-                  fill="var(--color-glass-ruby)"
+                  fill="var(--color-accent-alert)"
                   fillOpacity="0.6"
-                  stroke="var(--color-lead)"
+                  stroke="var(--foreground)"
                   strokeWidth="1.5"
+                  strokeLinejoin="round"
                 />
               </g>
             </svg>
           </div>
 
-          <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+          <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-accent-primary dark:text-accent-highlight">
             {t.notFound.eyebrow}
           </p>
           <h1 className="mt-4 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -64,7 +65,7 @@ export default function NotFound() {
           <button
             type="button"
             onClick={goBack}
-            className="mt-8 rounded-full bg-glass-green-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-glass-blue"
+            className="mt-8 rounded-full bg-accent-secondary-text px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-accent-primary"
           >
             {t.notFound.cta}
           </button>
