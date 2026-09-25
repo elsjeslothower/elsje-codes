@@ -7,29 +7,27 @@ import { MailIcon, LinkedInIcon, GitHubIcon } from "./icons";
 const jobLogos: (string | null)[] = [
   "/resume/logos/Fast-Enterprises.webp",
   "/resume/logos/Skytap.webp",
-];
-
-const jobLogoLinks: (string | undefined)[] = ["https://www.fastenterprises.com", "https://www.kyndryl.com/us/en/services/cloud-uplift"];
-
-const educationLogos: (string | null)[] = [
-  "/resume/logos/UW-Seattle.webp",
   "/resume/logos/Ada-Developers-Academy.webp",
 ];
 
-const educationLogoLinks: (string | undefined)[] = ["https://www.washington.edu/about/seattle-campus/", "https://adadevelopersacademy.org/history"];
-
-const extracurricularLogos: (string | null)[] = [
-  "/resume/logos/Fast-for-All.webp",
-  "/resume/logos/Purls-of-Love.svg",
-  "/resume/logos/Common-People-Yoga.webp",
-  "/resume/logos/Elsje-Codes-pfp.webp",
+const jobLogoLinks: (string | undefined)[] = [
+  "https://www.fastenterprises.com",
+  "https://www.skytap.com",
+  "https://adadevelopersacademy.org/history",
 ];
 
-const extracurricularLogoLinks: (string | null)[] = [
+const educationLogos: (string | null)[] = ["/resume/logos/UW-Seattle.webp"];
+
+const educationLogoLinks: (string | undefined)[] = ["https://www.washington.edu/about/seattle-campus/"];
+
+const leadershipLogos: (string | null)[] = [
+  "/resume/logos/Fast-for-All.webp",
+  "/resume/logos/Purls-of-Love.svg",
+];
+
+const leadershipLogoLinks: (string | null)[] = [
   "https://www.fastenterprises.com/community/",
   "https://elsjeslothower.github.io/purls-of-love/",
-  "https://www.commonpeopleyoga.com/",
-  "https://www.youtube.com/@elsjesglass",
 ];
 
 export default function ResumeContent() {
@@ -147,36 +145,7 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div id="impact" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "100ms" }}>
-        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
-          {r.sectionLabels.impact}
-        </h2>
-        <div className="mt-6 space-y-8">
-          {r.impact.map((project) => (
-            <div key={project.title}>
-              <p className="font-medium">{project.title}</p>
-              <p className="mt-1 font-mono text-xs uppercase tracking-widest text-foreground-muted">
-                {project.org}
-              </p>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted">
-                {project.summary}
-              </p>
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block text-sm font-medium text-glass-blue hover:text-glass-violet dark:text-glass-amber"
-                >
-                  {r.impactLinkLabel}
-                </a>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div id="skills" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "120ms" }}>
+      <div id="skills" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "100ms" }}>
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
           {r.sectionLabels.skills}
         </h2>
@@ -192,7 +161,7 @@ export default function ResumeContent() {
         </ul>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "160ms" }}>
+      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "120ms" }}>
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
           {r.sectionLabels.education}
         </h2>
@@ -224,23 +193,23 @@ export default function ResumeContent() {
         </div>
       </div>
 
-      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "200ms" }}>
+      <div className="animate-fade-in-up mt-16" style={{ animationDelay: "160ms" }}>
         <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
-          {r.sectionLabels.extracurriculars}
+          {r.sectionLabels.leadership}
         </h2>
         <div className="mt-6 space-y-8">
-          {r.extracurriculars.map((entry, i) => (
+          {r.leadership.map((entry, i) => (
             <div key={entry.role} className="flex items-start gap-4">
-              {extracurricularLogos[i] &&
-                (extracurricularLogoLinks[i] ? (
+              {leadershipLogos[i] &&
+                (leadershipLogoLinks[i] ? (
                   <a
-                    href={extracurricularLogoLinks[i]!}
+                    href={leadershipLogoLinks[i]!}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-shrink-0"
                   >
                     <Image
-                      src={extracurricularLogos[i]!}
+                      src={leadershipLogos[i]!}
                       alt={`${entry.org} ${r.logoAlt}`}
                       width={48}
                       height={48}
@@ -249,7 +218,7 @@ export default function ResumeContent() {
                   </a>
                 ) : (
                   <Image
-                    src={extracurricularLogos[i]!}
+                    src={leadershipLogos[i]!}
                     alt={`${entry.org} ${r.logoAlt}`}
                     width={48}
                     height={48}
@@ -265,6 +234,35 @@ export default function ResumeContent() {
                   {entry.description}
                 </p>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div id="impact" className="animate-fade-in-up mt-16 scroll-mt-24" style={{ animationDelay: "200ms" }}>
+        <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-glass-blue dark:text-glass-amber">
+          {r.sectionLabels.impact}
+        </h2>
+        <div className="mt-6 space-y-8">
+          {r.impact.map((project) => (
+            <div key={project.title}>
+              <p className="font-medium">{project.title}</p>
+              <p className="mt-1 font-mono text-xs uppercase tracking-widest text-foreground-muted">
+                {project.org}
+              </p>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted">
+                {project.summary}
+              </p>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block text-sm font-medium text-glass-blue hover:text-glass-violet dark:text-glass-amber"
+                >
+                  {r.impactLinkLabel}
+                </a>
+              )}
             </div>
           ))}
         </div>

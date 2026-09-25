@@ -57,8 +57,8 @@ export const es: SiteContent = {
     items: [
       {
         eyebrow: "Sitio Web Sin Fines de Lucro (Pro Bono)",
-        status: "Completo",
-        statusStyle: 1,
+        status: "En progreso",
+        statusStyle: 0,
         title: "Purls of Love",
         descriptionPre:
           "Un sitio completo hecho de forma gratuita para una organización sin fines de lucro dirigida por voluntarios que teje y hace crochet de mantas y gorros para personas en momentos difíciles, desde bebés en la UCIN hasta familias en refugios. Tiene una galería de trabajos terminados, una página de donaciones, y patrones gratis para ",
@@ -133,15 +133,15 @@ export const es: SiteContent = {
     heading: "Currículum",
     headshotAlt: "Retrato de Elsje Slothower",
     logoAlt: "logo",
-    name: "Elsje Slothower",
-    title: "Desarrolladora de Software",
-    location: "Salem, OR (EE. UU.)",
+    name: "Elisabeth (Elsje) Slothower",
+    title: "Ingeniera de Software y Consultora de Implementación",
+    location: "Seattle, WA (Reubicándose)",
     email: "contact@elsje.codes",
     linkedinLabel: "linkedin.com/in/elsje-slothower",
     githubLabel: "github.com/elsjeslothower",
     phone: "(253) 509-8262",
     summary:
-      "Desarrolladora de Software enfocada en crear soluciones web y empresariales listas para producción, con experiencia práctica en implementación y desarrollo frontend. Busco aplicar mis habilidades de depuración, diseño de interfaces, y trabajo en equipo para construir sistemas confiables.",
+      "Ingeniera de software y consultora de implementación con experiencia en desarrollo full stack (React, JavaScript, C#, Python, SQL) y en la entrega de soluciones para clientes, incluyendo implementaciones empresariales en sitio para agencias de gobiernos municipales. Me siento igual de cómoda escribiendo y probando código que capacitando a los usuarios que lo usan.",
     downloadPdfLabel: "Descargar PDF",
     linkedinCta: "Ver en LinkedIn",
     sectionLabels: {
@@ -149,7 +149,7 @@ export const es: SiteContent = {
       impact: "Impacto",
       skills: "Habilidades",
       education: "Educación",
-      extracurriculars: "Actividades extracurriculares",
+      leadership: "Liderazgo y Actividades",
     },
     impactLinkLabel: "Ver más",
     impact: [
@@ -184,7 +184,7 @@ export const es: SiteContent = {
     ],
     jobs: [
       {
-        title: "Software Desarrolladora",
+        title: "Ingeniera de Software",
         org: "Fast Enterprises, Salem, OR (EE. UU.)",
         dates: "Abril 2024 – Presente",
         bullets: [
@@ -195,78 +195,62 @@ export const es: SiteContent = {
         ],
       },
       {
-        title: "Pasante de Desarrollo",
-        org: "Kyndryl (formerly Skytap), Remoto (EE. UU.)",
+        title: "Pasante de Ingeniería de Software",
+        org: "Skytap, Remoto, EE. UU.",
         dates: "Marzo 2023 – Agosto 2023",
         bullets: [
-          "Escribí pruebas unitarias con Jest para módulos principales, detectando errores antes del control de calidad y mejorando la confiabilidad del código.",
-          "Refactoricé scripts antiguos de Backbone MVC a funciones modulares de React, reduciendo el tiempo de ejecución y facilitando el mantenimiento.",
-          "Adopté prácticas de Agile/Scrum, reduciendo las tareas pendientes a menos del 10% entre sprints.",
-          "Implementé funciones de interfaz para la aplicación en línea de la empresa, usada por clientes y negocios.",
+          "Migré la página de verificación de conectividad de Backbone.js MVC a renderizado del lado del cliente con React.",
+          "Realicé revisiones de código y creé pull requests; configuré flex stacks usando Docker, Jenkins y la línea de comandos.",
+          "Participante activa en las reuniones diarias y en los sprints de Agile/Scrum cada dos semanas, ayudando a reducir las tareas pendientes a menos del 10%.",
+        ],
+      },
+      {
+        title: "Aprendiz de Ingeniería de Software",
+        org: "Ada Developers Academy, Seattle, WA",
+        dates: "Septiembre 2022 – Julio 2023",
+        bullets: [
+          "Completé un aprendizaje de ingeniería de software muy competitivo (8% de aceptación) que cubrió Python, programación orientada a objetos, notación Big O, y bases de datos relacionales, junto con la entrega de proyectos en equipo.",
+          'Construí el proyecto final "Pantry Pickings," una despensa virtual que sugiere comidas usando los ingredientes que ya tienes; obtuve una certificación en desarrollo web.',
         ],
       },
     ],
     skillsList: [
-      "Diseño UI/UX",
-      "Resolución de Problemas",
-      "C#",
-      "React",
       "JavaScript",
-      "Desarrollo Web",
-      "Fullstack",
-      "Pensamiento Crítico",
-      "Creatividad",
-      "Gestión del Tiempo",
-      "Python",
+      "React",
+      "C#",
       "SQL",
       "Desarrollo de APIs",
-      "AI",
-      "HTML",
-      "CSS",
-      "REST",
-      "CI/CD",
-      "Jira",
+      "Programación Orientada a Objetos (POO)",
+      "Implementación y Capacitación de Clientes",
+      "Gestión de Interesados",
+      "Recopilación de Requisitos",
+      "Consultoría",
+      "Agile/Scrum",
+      "Resolución de Problemas",
+      "Colaboración Multifuncional",
+      "Documentación Técnica",
     ],
     education: [
       {
-        degree: "Licenciatura en Periodismo e Interés Público",
-        org: "University of Washington-Seattle Campus, Seattle, WA (EE. UU.)",
+        degree: "Licenciatura en Comunicación",
+        org: "University of Washington–Seattle, Seattle, WA",
         dates: "Septiembre 2018 – Diciembre 2021",
         description:
-          "Título universitario con especialización menor en música. Publiqué artículos en varias revistas de Seattle. Estuve en la Lista del Decano la mayoría de los trimestres.",
-      },
-      {
-        degree: "Certificado en Ingeniería de Software",
-        org: "Ada Developers Academy, Seattle, WA (EE. UU.)",
-        dates: "Septiembre 2022 – Julio 2023",
-        description:
-          'Programa selectivo de desarrollo de software con una tasa de aceptación menor al 8%, enfocado en desarrollo web full stack y fundamentos de ciencias de la computación. El proyecto final "Pantry Pickings" fue una despensa virtual que sugiere comidas usando los ingredientes que ya tienes, para reducir el desperdicio de comida.',
+          "Concentración en Periodismo. Especialización menor en música. Publiqué artículos en varias revistas de Seattle. Lista del Decano la mayoría de los trimestres.",
       },
     ],
-    extracurriculars: [
+    leadership: [
       {
         role: "Miembro del Comité",
-        org: "Fast for All at Fast Enterprises",
+        org: "Fast for All",
         description:
-          "Miembro de un comité cuya misión es mejorar la experiencia de los empleados, implementando beneficios más equitativos, creando y administrando grupos de recursos para empleados (ERGs), y organizando oportunidades de voluntariado dos veces al año para toda la empresa.",
+          "Grupo de recursos para empleados en Fast Enterprises enfocado en beneficios equitativos y programas de voluntariado dos veces al año para toda la empresa.",
       },
       {
-        role: "Voluntaria de Costura",
+        role: "Desarrolladora Web Voluntaria",
         org: "Purls of Love",
         description:
-          "Participante en un esfuerzo voluntario para coser, tejer y hacer crochet de gorros para pacientes de cáncer en quimioterapia.",
-      },
-      {
-        role: "Miembro de la Comunidad",
-        org: "Common People Yoga",
-        description:
-          "Miembro de un estudio de yoga comunitario que promueve la accesibilidad y la inclusión en la práctica de yoga, incluyendo clases para personas con discapacidades y personas neurodivergentes.",
-      },
-      {
-        role: "Dueña de Pequeño Negocio",
-        org: "Elsje's Glass",
-        description:
-          "Creadora de un canal de YouTube que documenta el proceso de hacer y vender arte de vidrio de colores, incluyendo tutoriales, contenido detrás de cámaras, y reflexiones sobre el proceso creativo.",
+          "Construí un sitio web gratuito (Next.js, TypeScript, Tailwind CSS) para una organización sin fines de lucro dirigida por voluntarios que da artículos tejidos y de crochet a familias en la UCIN y refugios, incluyendo una página de donaciones y una biblioteca de patrones gratis.",
       },
     ],
   },

@@ -53,8 +53,8 @@ export const en = {
     items: [
       {
         eyebrow: "Pro Bono Nonprofit Website",
-        status: "Complete",
-        statusStyle: 1,
+        status: "Now building",
+        statusStyle: 0,
         title: "Purls of Love",
         descriptionPre:
           "A full site built pro bono for a volunteer-run nonprofit that knits and crochets blankets and hats for people in hard seasons, from NICU babies to families in shelters. It has a gallery of finished work, a donation page, and free patterns for ",
@@ -86,7 +86,7 @@ export const en = {
       },
       {
         eyebrow: "Kaleidoscopic, Alphanumeric Visualizer",
-        status: "In Progress",
+        status: "Now building",
         statusStyle: 0,
         title: "AuraScope",
         descriptionPre:
@@ -129,15 +129,15 @@ export const en = {
     heading: "Resume",
     headshotAlt: "Portrait of Elsje Slothower",
     logoAlt: "logo",
-    name: "Elsje Slothower",
-    title: "Software Developer",
-    location: "Salem, OR (US)",
+    name: "Elisabeth (Elsje) Slothower",
+    title: "Software Engineer & Implementation Consultant",
+    location: "Seattle, WA (Relocating)",
     email: "contact@elsje.codes",
     linkedinLabel: "linkedin.com/in/elsje-slothower",
     githubLabel: "github.com/elsjeslothower",
     phone: "(253) 509-8262",
     summary:
-      "Software Developer focused on delivering production-ready web and enterprise solutions through hands-on deployment and front-end engineering. Seeks to apply strong debugging, UI design, and collaborative deployment skills to build resilient systems.",
+      "Software engineer and implementation consultant with experience spanning full-stack development (React, JavaScript, C#, Python, SQL) and client-facing solution delivery, including on-site enterprise deployments for municipal government agencies. Equally comfortable writing and testing code and training the end users who rely on it.",
     downloadPdfLabel: "Download PDF",
     linkedinCta: "View on LinkedIn",
     sectionLabels: {
@@ -145,7 +145,7 @@ export const en = {
       impact: "Impact",
       skills: "Skills",
       education: "Education",
-      extracurriculars: "Extracurriculars",
+      leadership: "Leadership & Activities",
     },
     impactLinkLabel: "See more",
     impact: [
@@ -192,75 +192,62 @@ export const en = {
       },
       {
         title: "Software Engineer Intern",
-        org: "Kyndryl (formerly Skytap), Remote (US)",
+        org: "Skytap, Remote, US",
         dates: "Mar 2023 – Aug 2023",
         bullets: [
-          "Wrote Jest unit tests for core modules, catching regressions before QA and improving code reliability.",
-          "Refactored legacy Backbone MVC scripts into modular React functions, reducing runtime and easing maintenance.",
-          "Adopted Agile/Scrum practices, cutting task rollover to under 10% between sprints.",
-          "Implemented front end UI features for the company's online application for customers and businesses.",
+          "Migrated the connectivity checker page from Backbone.js MVC to React client-side rendering.",
+          "Conducted code reviews and created pull requests; spun up flex stacks using Docker, Jenkins, and the CLI.",
+          "Active participant in daily standups and bi-weekly Agile/Scrum sprints, helping cut task rollover to under 10%.",
+        ],
+      },
+      {
+        title: "Software Engineering Apprentice",
+        org: "Ada Developers Academy, Seattle, WA",
+        dates: "Sep 2022 – Jul 2023",
+        bullets: [
+          "Completed a highly competitive (8% acceptance rate) software engineering apprenticeship covering Python, object-oriented programming, Big O notation, and relational databases, alongside team-based project delivery.",
+          'Built capstone project "Pantry Pickings," a virtual pantry app that suggests meals from existing ingredients to reduce food waste; earned certification in web development.',
         ],
       },
     ],
     skillsList: [
-      "UI/UX Design",
-      "Problem Solving",
-      "C#",
-      "React",
       "JavaScript",
-      "Web Development",
-      "Fullstack",
-      "Critical Thinking",
-      "Creativity",
-      "Time Management",
-      "Python",
+      "React",
+      "C#",
       "SQL",
       "API Development",
-      "AI",
-      "HTML",
-      "CSS",
-      "REST",
-      "CI/CD",
-      "Jira",
+      "Object-Oriented Programming (OOP)",
+      "Client Implementation & Training",
+      "Stakeholder Management",
+      "Requirements Gathering",
+      "Consulting",
+      "Agile/Scrum",
+      "Problem Solving",
+      "Cross-Functional Collaboration",
+      "Technical Documentation",
     ],
     education: [
       {
-        degree: "Bachelor's in Journalism and Public Interest",
-        org: "University of Washington-Seattle Campus, Seattle, WA (US)",
+        degree: "Bachelor's of Arts in Communication",
+        org: "University of Washington–Seattle, Seattle, WA",
         dates: "Sep 2018 – Dec 2021",
         description:
-          "Undergraduate degree with a minor in music. Published in multiple Seattle magazines. Qualified Dean's List recipient for majority of quarters attended.",
-      },
-      {
-        degree: "Software Engineering Certificate",
-        org: "Ada Developers Academy, Seattle, WA (US)",
-        dates: "Sep 2022 – Jul 2023",
-        description:
-          'Selective software development program with a less than 8% acceptance rate specializing in full stack web development and computer science fundamentals. Capstone project "Pantry Pickings" featured a virtual pantry that takes existing ingredients and suggests meals to reduce food waste.',
+          "Concentration in Journalism. Minor in music. Published in multiple Seattle magazines. Dean's List, majority of quarters attended.",
       },
     ],
-    extracurriculars: [
+    leadership: [
       {
         role: "Committee Member",
-        org: "Fast for All at Fast Enterprises",
+        org: "Fast for All",
         description:
-          "Member of committee whose mission is to enhance employee experiences through implementing more equitable benefits, creating and managing employee resource groups (ERGs), and administrating biannual company-wide volunteer opportunities.",
+          "Employee resource group at Fast Enterprises focused on equitable benefits and biannual company-wide volunteer programs.",
       },
       {
-        role: "Stitch Supporter",
+        role: "Volunteer Web Developer",
         org: "Purls of Love",
-        description: "Participant in a volunteer effort to sew, knit, and crochet hats for cancer patients undergoing chemotherapy.",
+        description:
+          "Built a pro bono website (Next.js, TypeScript, Tailwind CSS) for a volunteer-run nonprofit providing knitted and crocheted items to NICU families and shelters, including a donation page and free pattern library.",
       },
-      {
-        role: "Community Member",
-        org: "Common People Yoga",
-        description: "Member of a community yoga studio that emphasizes accessibility and inclusivity in yoga practice, including offering classes for people with disabilities and neurodivergent folks.",
-      },
-      {
-        role: "Small Business Owner",
-        org: "Elsje's Glass",
-        description: "Creator of a YouTube channel that documents the process of making and selling stained glass art, including tutorials, behind-the-scenes content, and reflections on the creative process.",
-      }
     ],
   },
   puzzle: {
